@@ -474,7 +474,25 @@ cp /home/git/.bashrc .        #拷贝有颜色的bashrc文件</code></pre>
 <h4 id="使配置生效"><a href="#使配置生效" class="headerlink" title="使配置生效"></a>使配置生效</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> .bashrc
 <span class="token function">ls</span> /etc</code></pre>
 <p>可以看到显示的文件已经有颜色了!</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -499,7 +517,7 @@ cp /home/git/.bashrc .        #拷贝有颜色的bashrc文件</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://amahv.github.io/2020/06/21/Debian%20Linux%20root%20%E7%94%A8%E6%88%B7%E6%B2%A1%E6%9C%89%E9%A2%9C%E8%89%B2/">http://amahv.github.io/2020/06/21/Debian%20Linux%20root%20%E7%94%A8%E6%88%B7%E6%B2%A1%E6%9C%89%E9%A2%9C%E8%89%B2/</a>
+                    <a href="http://amahv.github.io/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/">http://amahv.github.io/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -743,7 +761,7 @@ cp /home/git/.bashrc .        #拷贝有颜色的bashrc文件</code></pre>
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/21/Debian%20Linux%20root%20%E7%94%A8%E6%88%B7%E6%B2%A1%E6%9C%89%E9%A2%9C%E8%89%B2/">
+                <a href="/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/">
                     <div class="card-image">
                         
                         

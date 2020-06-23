@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/06/23/hello-world/"/>
+      <url>/2020/06/23/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Debian Linux root 用户没有颜色</title>
+      <link href="/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/"/>
+      <url>/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/</url>
+      
+        <content type="html"><![CDATA[<p>@[toc]</p><h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p>阿里云 Debian10<br>用户：root</p><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>默认用户root在运行ls命令显示的目录和文件都是没有颜色的，这就无法很直接的分别是普通文件还是目录，这就感觉很难看，而且很难受，非得敲 # ls -all  命令才能看到是文件还是目录，这就很不爽。</p><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>我在我的Debian系统中新建了一个git用户，可以在git的用户目录下面看到自动生成了一个.bashrc的文件</p><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> /home/gitvim .bashrc</code></pre><p><img src="https://img-blog.csdnimg.cn/20200621223750783.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTAzMzM0Mg==,size_16,color_FFFFFF,t_70" alt="/home/git目录下.bashrc文件"><br>可以看到git用户目录下的.bashrc文件中有很多内容.<br>再回头看看root目录下的.bashrc文件</p><pre class=" language-bash"><code class="language-bash">vim ~/.bashrc</code></pre><p><img src="https://img-blog.csdnimg.cn/20200621223947828.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTAzMzM0Mg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>空空如也<del>~</del></p><h4 id="拷贝一个-bashrc文件"><a href="#拷贝一个-bashrc文件" class="headerlink" title="拷贝一个.bashrc文件"></a>拷贝一个.bashrc文件</h4><pre class=" language-shell"><code class="language-shell">cd ~/cp .bashrc .bashrc.backup     #备份原生的.bashrc文件cp /home/git/.bashrc .        #拷贝有颜色的bashrc文件</code></pre><h4 id="使配置生效"><a href="#使配置生效" class="headerlink" title="使配置生效"></a>使配置生效</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">source</span> .bashrc<span class="token function">ls</span> /etc</code></pre><p>可以看到显示的文件已经有颜色了!</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
