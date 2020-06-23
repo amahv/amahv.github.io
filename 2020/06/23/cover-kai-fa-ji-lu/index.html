@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, AMAHV">
+    <meta name="keywords" content="cover开发记录, AMAHV">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | AMAHV</title>
+    <title>cover开发记录 | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">cover开发记录</h1>
                 </div>
             </div>
         </div>
@@ -459,15 +459,55 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h3 id="硬件方案修改（陶逸南2020-6-17更新）"><a href="#硬件方案修改（陶逸南2020-6-17更新）" class="headerlink" title="硬件方案修改（陶逸南2020-6-17更新）"></a>硬件方案修改（陶逸南2020-6-17更新）</h3><p>2020年6月将电池从4节干电池换为锂亚电池，相应的在电路电源方案上作了修改。</p>
+<p>将4节1号干电池换为锂亚电池锂亚电池有以下好处：</p>
+<ol>
+<li><p>锂亚电池无漏液风险，低自放电，电池寿命长，容量大</p>
+</li>
+<li><p>减少一级开关管降压的电路，减少能量的损耗</p>
+</li>
+<li><p>电池占用空间和重量更少</p>
+</li>
+</ol>
+<h4 id="具体电路方案修改如下："><a href="#具体电路方案修改如下：" class="headerlink" title="具体电路方案修改如下："></a>具体电路方案修改如下：</h4><ol>
+<li><p>去掉了TPS62050的开关降压芯片和相应的电感L1</p>
+</li>
+<li><p>去掉电感L2，短路2端焊点</p>
+</li>
+<li><p>将C25电容从原来的22uf更换为330uf</p>
+</li>
+<li><p>跳线JPW短路</p>
+</li>
+<li><p>去掉电阻R71、R72</p>
+</li>
+<li><p>去掉电容C71</p>
+</li>
+<li><p>去掉电阻R19</p>
+</li>
+</ol>
+<h4 id="性能指标的提升"><a href="#性能指标的提升" class="headerlink" title="性能指标的提升"></a>性能指标的提升</h4><p>从原来的静态电流6V 40ua降低到了现在的3.6V 30ua</p>
+<p>电池容量提升到了19000mAh</p>
+<h3 id="软件方案修改（陶逸南2020-6-17更新）"><a href="#软件方案修改（陶逸南2020-6-17更新）" class="headerlink" title="软件方案修改（陶逸南2020-6-17更新）"></a>软件方案修改（陶逸南2020-6-17更新）</h3><h4 id="NB模块方案修改"><a href="#NB模块方案修改" class="headerlink" title="NB模块方案修改"></a>NB模块方案修改</h4><ol>
+<li><p>从山东有人透传云平台转换到中国电信ctwing.cn平台</p>
+</li>
+<li><p>通信协议使用LWM2M，平台IP变更为221.229.214.202:5683</p>
+</li>
+</ol>
+<h4 id="MCU方案修改"><a href="#MCU方案修改" class="headerlink" title="MCU方案修改"></a>MCU方案修改</h4><ol>
+<li><p>采用MCU内部基准电压来校准ADC的采样值，可以替代手动校准方案。特别是当VCC的电压&lt;3.3V，无电压基准方案的ADC测量将会失效</p>
+</li>
+<li><p>电池的电压使用直接采集的方式，如果电池采样值校准后开始低于4096，则表明电池电压开始低于3.3V（标称3.6V）开始报告中等电量 </p>
+</li>
+<li><p>NB模块发送数据后通过反馈信息来判断本次发送是否成功，若不成功则启动重发机制</p>
+</li>
+<li><p>接收NB模块的数据最少等待2秒钟，最多等待10秒钟。（获取缓存条目数不增加后立即结束等待）</p>
+</li>
+<li><p>日常运行模式下，默认扫描时间5秒一次，默认心跳时间1小时9分钟一次，预计这种模式电池可以工作5年</p>
+</li>
+<li><p>MCU可以自动通过AT命令配置NB模块为所需工作模式</p>
+</li>
+</ol>
+<h3 id="PCB图片"><a href="#PCB图片" class="headerlink" title="PCB图片"></a>PCB图片</h3><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.2/img/cover_iotV3_02020_1_3.jpg" alt="1592900028064"></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -511,7 +551,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://amahv.github.io/2020/06/23/hello-world/">http://amahv.github.io/2020/06/23/hello-world/</a>
+                    <a href="http://amahv.github.io/2020/06/23/cover-kai-fa-ji-lu/">http://amahv.github.io/2020/06/23/cover-kai-fa-ji-lu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -714,9 +754,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/06/23/cover-kai-fa-ji-lu/">
                     <div class="card-image">
@@ -739,9 +780,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -750,6 +791,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -760,26 +802,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/">
+                <a href="/2020/06/23/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Debian Linux root 用户没有颜色">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">Debian Linux root 用户没有颜色</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            @[toc]
-环境阿里云 Debian10用户：root
-问题默认用户root在运行ls命令显示的目录和文件都是没有颜色的，这就无法很直接的分别是普通文件还是目录，这就感觉很难看，而且很难受，非得敲 # ls -all  命令才能看到是文件
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-23
                             </span>
                         <span class="publish-author">
                             

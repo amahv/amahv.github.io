@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>cover开发记录</title>
+      <link href="/2020/06/23/cover-kai-fa-ji-lu/"/>
+      <url>/2020/06/23/cover-kai-fa-ji-lu/</url>
+      
+        <content type="html"><![CDATA[<h3 id="硬件方案修改（陶逸南2020-6-17更新）"><a href="#硬件方案修改（陶逸南2020-6-17更新）" class="headerlink" title="硬件方案修改（陶逸南2020-6-17更新）"></a>硬件方案修改（陶逸南2020-6-17更新）</h3><p>2020年6月将电池从4节干电池换为锂亚电池，相应的在电路电源方案上作了修改。</p><p>将4节1号干电池换为锂亚电池锂亚电池有以下好处：</p><ol><li><p>锂亚电池无漏液风险，低自放电，电池寿命长，容量大</p></li><li><p>减少一级开关管降压的电路，减少能量的损耗</p></li><li><p>电池占用空间和重量更少</p></li></ol><h4 id="具体电路方案修改如下："><a href="#具体电路方案修改如下：" class="headerlink" title="具体电路方案修改如下："></a>具体电路方案修改如下：</h4><ol><li><p>去掉了TPS62050的开关降压芯片和相应的电感L1</p></li><li><p>去掉电感L2，短路2端焊点</p></li><li><p>将C25电容从原来的22uf更换为330uf</p></li><li><p>跳线JPW短路</p></li><li><p>去掉电阻R71、R72</p></li><li><p>去掉电容C71</p></li><li><p>去掉电阻R19</p></li></ol><h4 id="性能指标的提升"><a href="#性能指标的提升" class="headerlink" title="性能指标的提升"></a>性能指标的提升</h4><p>从原来的静态电流6V 40ua降低到了现在的3.6V 30ua</p><p>电池容量提升到了19000mAh</p><h3 id="软件方案修改（陶逸南2020-6-17更新）"><a href="#软件方案修改（陶逸南2020-6-17更新）" class="headerlink" title="软件方案修改（陶逸南2020-6-17更新）"></a>软件方案修改（陶逸南2020-6-17更新）</h3><h4 id="NB模块方案修改"><a href="#NB模块方案修改" class="headerlink" title="NB模块方案修改"></a>NB模块方案修改</h4><ol><li><p>从山东有人透传云平台转换到中国电信ctwing.cn平台</p></li><li><p>通信协议使用LWM2M，平台IP变更为221.229.214.202:5683</p></li></ol><h4 id="MCU方案修改"><a href="#MCU方案修改" class="headerlink" title="MCU方案修改"></a>MCU方案修改</h4><ol><li><p>采用MCU内部基准电压来校准ADC的采样值，可以替代手动校准方案。特别是当VCC的电压&lt;3.3V，无电压基准方案的ADC测量将会失效</p></li><li><p>电池的电压使用直接采集的方式，如果电池采样值校准后开始低于4096，则表明电池电压开始低于3.3V（标称3.6V）开始报告中等电量 </p></li><li><p>NB模块发送数据后通过反馈信息来判断本次发送是否成功，若不成功则启动重发机制</p></li><li><p>接收NB模块的数据最少等待2秒钟，最多等待10秒钟。（获取缓存条目数不增加后立即结束等待）</p></li><li><p>日常运行模式下，默认扫描时间5秒一次，默认心跳时间1小时9分钟一次，预计这种模式电池可以工作5年</p></li><li><p>MCU可以自动通过AT命令配置NB模块为所需工作模式</p></li></ol><h3 id="PCB图片"><a href="#PCB图片" class="headerlink" title="PCB图片"></a>PCB图片</h3><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.2/img/cover_iotV3_02020_1_3.jpg" alt="1592900028064"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/06/23/hello-world/"/>
       <url>/2020/06/23/hello-world/</url>
