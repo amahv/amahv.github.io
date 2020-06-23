@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AMAHV</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://amahv.github.io/"/>
+  <updated>2020-06-22T18:06:51.028Z</updated>
+  <id>http://amahv.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://amahv.github.io/2020/06/23/hello-world/"/>
+    <id>http://amahv.github.io/2020/06/23/hello-world/</id>
+    <published>2020-06-22T18:06:51.028Z</published>
+    <updated>2020-06-22T18:06:51.028Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Debian Linux root 用户没有颜色</title>
+    <link href="http://amahv.github.io/2020/06/21/Debian%20Linux%20root%20%E7%94%A8%E6%88%B7%E6%B2%A1%E6%9C%89%E9%A2%9C%E8%89%B2/"/>
+    <id>http://amahv.github.io/2020/06/21/Debian%20Linux%20root%20%E7%94%A8%E6%88%B7%E6%B2%A1%E6%9C%89%E9%A2%9C%E8%89%B2/</id>
+    <published>2020-06-21T15:57:20.000Z</published>
+    <updated>2020-06-23T02:06:11.132Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;@[toc]&lt;/p&gt;
+&lt;h3 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;/a&gt;环境&lt;/h3&gt;&lt;p&gt;阿里云 Debian10&lt;br&gt;用户：root&lt;/p&gt;
+&lt;h3 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
