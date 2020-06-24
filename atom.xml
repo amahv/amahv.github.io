@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-06-24T01:34:27.191Z</updated>
+  <updated>2020-06-24T02:02:41.831Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -17,28 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>cover开发记录</title>
-    <link href="http://blog.amahv.cn/2020/06/23/cover-kai-fa-ji-lu/"/>
-    <id>http://blog.amahv.cn/2020/06/23/cover-kai-fa-ji-lu/</id>
-    <published>2020-06-23T07:13:11.000Z</published>
-    <updated>2020-06-24T01:34:27.191Z</updated>
-    
-    <summary type="html">
-    
-      ......
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>【长期更新】STM32CubeMX和MDK ARM最新版下载地址</title>
-    <link href="http://blog.amahv.cn/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/"/>
-    <id>http://blog.amahv.cn/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/</id>
-    <published>2020-06-23T07:13:11.000Z</published>
-    <updated>2020-06-24T01:38:05.937Z</updated>
+    <link href="http://blog.amahv.cn/2020/06/24/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/"/>
+    <id>http://blog.amahv.cn/2020/06/24/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/</id>
+    <published>2020-06-24T07:13:11.000Z</published>
+    <updated>2020-06-24T02:02:41.831Z</updated>
     
     <summary type="html">
     
@@ -62,6 +45,50 @@
       <category term="keil" scheme="http://blog.amahv.cn/tags/keil/"/>
     
       <category term="MDK" scheme="http://blog.amahv.cn/tags/MDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode输出窗口中文乱码</title>
+    <link href="http://blog.amahv.cn/2020/06/24/vscode-shu-chu-chuang-kou-zhong-wen-luan-ma/"/>
+    <id>http://blog.amahv.cn/2020/06/24/vscode-shu-chu-chuang-kou-zhong-wen-luan-ma/</id>
+    <published>2020-06-24T02:09:53.000Z</published>
+    <updated>2020-06-24T02:38:35.412Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h1&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="vscode" scheme="http://blog.amahv.cn/tags/vscode/"/>
+    
+      <category term="windows" scheme="http://blog.amahv.cn/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cover开发记录</title>
+    <link href="http://blog.amahv.cn/2020/06/23/cover-kai-fa-ji-lu/"/>
+    <id>http://blog.amahv.cn/2020/06/23/cover-kai-fa-ji-lu/</id>
+    <published>2020-06-23T07:13:11.000Z</published>
+    <updated>2020-06-24T01:34:27.191Z</updated>
+    
+    <summary type="html">
+    
+      ......
+    
+    </summary>
+    
+    
     
   </entry>
   
