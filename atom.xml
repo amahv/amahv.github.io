@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://amahv.github.io/"/>
-  <updated>2020-06-23T09:41:58.009Z</updated>
+  <updated>2020-06-24T01:34:27.191Z</updated>
   <id>http://amahv.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://amahv.github.io/2020/06/23/cover-kai-fa-ji-lu/"/>
     <id>http://amahv.github.io/2020/06/23/cover-kai-fa-ji-lu/</id>
     <published>2020-06-23T07:13:11.000Z</published>
-    <updated>2020-06-23T09:41:58.009Z</updated>
+    <updated>2020-06-24T01:34:27.191Z</updated>
     
     <summary type="html">
     
@@ -30,6 +30,32 @@
     </summary>
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>cover开发记录</title>
+    <link href="http://amahv.github.io/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/"/>
+    <id>http://amahv.github.io/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/</id>
+    <published>2020-06-23T07:13:11.000Z</published>
+    <updated>2020-06-24T01:34:16.794Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;﻿# 一.STM32CubeMX&lt;/p&gt;
+&lt;h4 id=&quot;STM32CubeMX-5-6-0&quot;&gt;&lt;a href=&quot;#STM32CubeMX-5-6-0&quot; class=&quot;headerlink&quot; title=&quot;STM32CubeMX
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="stm32 cubeMX keil MDK" scheme="http://amahv.github.io/tags/stm32-cubeMX-keil-MDK/"/>
     
   </entry>
   
