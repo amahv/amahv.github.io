@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>在hexo中接入站长统计工具</title>
+      <link href="/2020/06/25/zai-hexo-zhong-jie-ru-zhan-chang-tong-ji-gong-ju/"/>
+      <url>/2020/06/25/zai-hexo-zhong-jie-ru-zhan-chang-tong-ji-gong-ju/</url>
+      
+        <content type="html"><![CDATA[<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><h3 id="1234"><a href="#1234" class="headerlink" title="1234"></a>1234</h3><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在matery中嵌入bilibili视频</title>
       <link href="/2020/06/25/zai-matery-zhong-qian-ru-bilibili-shi-pin/"/>
       <url>/2020/06/25/zai-matery-zhong-qian-ru-bilibili-shi-pin/</url>
