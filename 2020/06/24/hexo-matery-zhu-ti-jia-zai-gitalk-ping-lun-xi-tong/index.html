@@ -440,9 +440,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
+                            </a>
+                        
+                            <a href="/tags/matery/">
+                                <span class="chip bg-color">matery</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -485,7 +493,44 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <h2 id="注册GitHub-oAuth"><a href="#注册GitHub-oAuth" class="headerlink" title="注册GitHub oAuth"></a>注册GitHub oAuth</h2><p>登录GitHub之后按照图示点下去,注册oAuth功能</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624224755.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624224850.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624225514.png" alt=""></p>
+<p><img src="C:%5CUsers%5CYarnell-PC-MI%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200624225615247.png" alt="image-20200624225615247"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo20200624224009.png" alt=""></p>
+<p><strong>记录好这2串密钥,需要填写到主题目录下的_config.yml</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624232644.png" alt=""></p>
+<h2 id="修改主题文件夹下的-config"><a href="#修改主题文件夹下的-config" class="headerlink" title="修改主题文件夹下的_config"></a>修改主题文件夹下的_config</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> themes/hexo-theme-matery/
+vim _config.yml</code></pre>
+<p>找到gitalk的设置:</p>
+<ul>
+<li><p><strong>clientID</strong> <code>String</code></p>
+<p><strong>必须</strong>. GitHub Application Client ID.</p>
+</li>
+<li><p><strong>clientSecret</strong> <code>String</code></p>
+<p><strong>必须</strong>. GitHub Application Client Secret.</p>
+</li>
+<li><p><strong>repo</strong> <code>String</code></p>
+<p><strong>必须</strong>. GitHub repository.</p>
+</li>
+<li><p><strong>owner</strong> <code>String</code></p>
+<p><strong>必须</strong>. GitHub repository 所有者，可以是个人或者组织。</p>
+</li>
+<li><p><strong>admin</strong> <code>Array</code></p>
+<p><strong>必须</strong>. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。</p>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624231212.png" alt=""></p>
+<p>修改好配置后保存.</p>
+<h2 id="生成-amp-发布"><a href="#生成-amp-发布" class="headerlink" title="生成&amp;发布"></a>生成&amp;发布</h2><pre class=" language-shell"><code class="language-shell">hexo g -d    # 生成和发布</code></pre>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>1.打开你的网页</p>
+<p>2.随便点开一篇博客</p>
+<p>3.下翻到评论区</p>
+<p>4.登录管理员的GitHub</p>
+<p>5.测试一下评论的效果</p>
+<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624233722.png" alt=""></p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -565,7 +610,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
+                                </a>
+                            
+                                <a href="/tags/matery/">
+                                    <span class="chip bg-color">matery</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -775,10 +828,15 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            注册GitHub oAuth登录GitHub之后按照图示点下去,注册oAuth功能
+
+
+
+
+
+记录好这2串密钥,需要填写到主题目录下的_config.yml
+
+修改主题文件夹下的_configcd themes/hexo-theme-mat
                         
                     </div>
                     <div class="publish-info">
@@ -794,6 +852,18 @@
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                    <a href="/tags/matery/">
+                        <span class="chip bg-color">matery</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-06-24T14:14:49.622Z</updated>
+  <updated>2020-06-24T15:38:17.884Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.amahv.cn/2020/06/24/hexo-matery-zhu-ti-jia-zai-gitalk-ping-lun-xi-tong/"/>
     <id>http://blog.amahv.cn/2020/06/24/hexo-matery-zhu-ti-jia-zai-gitalk-ping-lun-xi-tong/</id>
     <published>2020-06-24T13:59:05.000Z</published>
-    <updated>2020-06-24T14:14:49.622Z</updated>
+    <updated>2020-06-24T15:38:17.884Z</updated>
     
     <summary type="html">
     
@@ -29,17 +29,17 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;h2 id=&quot;注册GitHub-oAuth&quot;&gt;&lt;a href=&quot;#注册GitHub-oAuth&quot; class=&quot;headerlink&quot; title=&quot;注册GitHub oAuth&quot;&gt;&lt;/a&gt;注册GitHub
         
       
     
     </summary>
     
     
+    
+      <category term="hexo" scheme="http://blog.amahv.cn/tags/hexo/"/>
+    
+      <category term="matery" scheme="http://blog.amahv.cn/tags/matery/"/>
     
   </entry>
   
