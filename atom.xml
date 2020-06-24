@@ -38,7 +38,7 @@
     <link href="http://amahv.github.io/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/"/>
     <id>http://amahv.github.io/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/</id>
     <published>2020-06-23T07:13:11.000Z</published>
-    <updated>2020-06-24T01:35:57.373Z</updated>
+    <updated>2020-06-24T01:38:05.937Z</updated>
     
     <summary type="html">
     
@@ -55,7 +55,13 @@
     
     
     
-      <category term="stm32,cubeMX,keil,MDK" scheme="http://amahv.github.io/tags/stm32-cubeMX-keil-MDK/"/>
+      <category term="stm32" scheme="http://amahv.github.io/tags/stm32/"/>
+    
+      <category term="cubeMX" scheme="http://amahv.github.io/tags/cubeMX/"/>
+    
+      <category term="keil" scheme="http://amahv.github.io/tags/keil/"/>
+    
+      <category term="MDK" scheme="http://amahv.github.io/tags/MDK/"/>
     
   </entry>
   

@@ -27,7 +27,13 @@
       
         <tags>
             
-            <tag> stm32,cubeMX,keil,MDK </tag>
+            <tag> stm32 </tag>
+            
+            <tag> cubeMX </tag>
+            
+            <tag> keil </tag>
+            
+            <tag> MDK </tag>
             
         </tags>
       
