@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo matery(主题)加载gitalk评论系统, AMAHV">
+    <meta name="keywords" content="在matery中嵌入bilibili视频, AMAHV">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>hexo matery(主题)加载gitalk评论系统 | AMAHV</title>
+    <title>在matery中嵌入bilibili视频 | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo matery(主题)加载gitalk评论系统</h1>
+                    <h1 class="description center-align post-title">在matery中嵌入bilibili视频</h1>
                 </div>
             </div>
         </div>
@@ -442,10 +442,6 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
-                            </a>
-                        
                             <a href="/tags/matery/">
                                 <span class="chip bg-color">matery</span>
                             </a>
@@ -462,14 +458,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-24
+                    2020-06-25
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-24
+                    2020-06-25
                 </div>
                 
 
@@ -478,7 +474,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -493,44 +489,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="注册GitHub-oAuth"><a href="#注册GitHub-oAuth" class="headerlink" title="注册GitHub oAuth"></a>注册GitHub oAuth</h2><p>登录GitHub之后按照图示点下去,注册oAuth功能</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624224755.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624224850.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624225514.png" alt=""></p>
-<p><img src="C:%5CUsers%5CYarnell-PC-MI%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200624225615247.png" alt="image-20200624225615247"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo20200624224009.png" alt=""></p>
-<p><strong>记录好这2串密钥,需要填写到主题目录下的_config.yml</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624232644.png" alt=""></p>
-<h2 id="修改主题文件夹下的-config"><a href="#修改主题文件夹下的-config" class="headerlink" title="修改主题文件夹下的_config"></a>修改主题文件夹下的_config</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> themes/hexo-theme-matery/
-vim _config.yml</code></pre>
-<p>找到gitalk的设置:</p>
-<ul>
-<li><p><strong>clientID</strong> <code>String</code></p>
-<p><strong>必须</strong>. GitHub Application Client ID.</p>
-</li>
-<li><p><strong>clientSecret</strong> <code>String</code></p>
-<p><strong>必须</strong>. GitHub Application Client Secret.</p>
-</li>
-<li><p><strong>repo</strong> <code>String</code></p>
-<p><strong>必须</strong>. GitHub repository.</p>
-</li>
-<li><p><strong>owner</strong> <code>String</code></p>
-<p><strong>必须</strong>. GitHub repository 所有者，可以是个人或者组织。</p>
-</li>
-<li><p><strong>admin</strong> <code>Array</code></p>
-<p><strong>必须</strong>. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。</p>
-</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624231212.png" alt=""></p>
-<p>修改好配置后保存.</p>
-<h2 id="生成-amp-发布"><a href="#生成-amp-发布" class="headerlink" title="生成&amp;发布"></a>生成&amp;发布</h2><pre class=" language-shell"><code class="language-shell">hexo g -d    # 生成和发布</code></pre>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>1.打开你的网页</p>
-<p>2.随便点开一篇博客</p>
-<p>3.下翻到评论区</p>
-<p>4.登录管理员的GitHub</p>
-<p>5.测试一下评论的效果</p>
-<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200624233722.png" alt=""></p>
-<script>
+                <h3 id="首先找到分享嵌入代码"><a href="#首先找到分享嵌入代码" class="headerlink" title="首先找到分享嵌入代码"></a>首先找到分享嵌入代码</h3><p><img src="https://i.loli.net/2019/10/10/di3Cxcr9VLvjqM6.png" alt="Bilibili分享截图"></p>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//player.bilibili.com/player.html?aid<span class="token punctuation">=</span>29789749&amp;cid<span class="token punctuation">=</span>51852984&amp;page<span class="token punctuation">=</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">scrolling</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">framespacing</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">allowfullscreen</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="在markdown中使用嵌入代码"><a href="#在markdown中使用嵌入代码" class="headerlink" title="在markdown中使用嵌入代码"></a>在markdown中使用嵌入代码</h3><iframe src="https://player.bilibili.com/player.html?aid=29789749&amp;cid=51852984&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="box-sizing: border-box; margin: 0px 0px 1rem;"></iframe>
+
+<h3 id="调整大小和居中等"><a href="#调整大小和居中等" class="headerlink" title="调整大小和居中等"></a>调整大小和居中等</h3><p><a href="https://www.w3school.com.cn/tags/tag_iframe.asp" target="_blank" rel="noopener">iframe标签属性设置</a></p>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!--
+    调整大小: width="xxx" height="xxx"
+--></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//player.bilibili.com/player.html?aid<span class="token punctuation">=</span>29789749&amp;cid<span class="token punctuation">=</span>51852984&amp;page<span class="token punctuation">=</span>1<span class="token punctuation">"</span></span>  <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>600<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>400<span class="token punctuation">"</span></span>  <span class="token attr-name">scrolling</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">framespacing</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">allowfullscreen</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">></span></span></code></pre>
+<iframe src="https://player.bilibili.com/player.html?aid=29789749&amp;cid=51852984&amp;page=1" width="700" height="480" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="box-sizing: border-box; margin: 0px 0px 1rem;"></iframe>
+
+
+
+<h3 id="matery-主题修改首页展示视频"><a href="#matery-主题修改首页展示视频" class="headerlink" title="matery 主题修改首页展示视频"></a>matery 主题修改首页展示视频</h3><p>找到 /themes/hexo-theme-matery/layout/_widget/video.ejs 将第十一行左右代码改成Bilibili视频即可, 引入的 script 可以删掉.</p>
+<p>修改后如下.</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>link rel<span class="token operator">=</span><span class="token string">"stylesheet"</span> href<span class="token operator">=</span><span class="token string">"&lt;%- theme.jsDelivr.url %>&lt;%- url_for(theme.libs.css.dplayer) %>"</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"video-player"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>video<span class="token punctuation">.</span>showTitle<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"title center-align"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>i <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"fas fa-video-camera"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>i<span class="token operator">></span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">=</span> theme<span class="token punctuation">.</span>video<span class="token punctuation">.</span>title <span class="token operator">%</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"row"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"col l8 offset-l2 m10 offset-m1 s12"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"dplayer"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"dplayer-video"</span><span class="token operator">></span>
+                <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"position: relative; width: 100%; height: 0; padding-bottom: 75%;"</span><span class="token operator">></span>
+                    <span class="token operator">&lt;</span>iframe src<span class="token operator">=</span><span class="token string">"//player.bilibili.com/player.html?aid=29789749&amp;cid=51852984&amp;page=1"</span>  scrolling<span class="token operator">=</span><span class="token string">"no"</span> border<span class="token operator">=</span><span class="token string">"0"</span> frameborder<span class="token operator">=</span><span class="token string">"no"</span> framespacing<span class="token operator">=</span><span class="token string">"0"</span> allowfullscreen<span class="token operator">=</span><span class="token string">"true"</span> style<span class="token operator">=</span><span class="token string">"position: absolute; width: 100%; height: 100%; left: 0; top: 0;"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>iframe<span class="token operator">></span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></code></pre>
+<p>1.把上面的aid和cid替换成你想嵌入的视频id</p>
+<p>2.去主题文件夹下的_config文件中把首页显示视频选项设置为true</p>
+<h3 id="原生video-ejs文件"><a href="#原生video-ejs文件" class="headerlink" title="原生video.ejs文件"></a>原生video.ejs文件</h3><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -573,7 +568,7 @@ vim _config.yml</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/06/24/hexo-matery-zhu-ti-jia-zai-gitalk-ping-lun-xi-tong/">http://blog.amahv.cn/2020/06/24/hexo-matery-zhu-ti-jia-zai-gitalk-ping-lun-xi-tong/</a>
+                    <a href="http://blog.amahv.cn/2020/06/25/zai-matery-zhong-qian-ru-bilibili-shi-pin/">http://blog.amahv.cn/2020/06/25/zai-matery-zhong-qian-ru-bilibili-shi-pin/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -610,10 +605,6 @@ vim _config.yml</code></pre>
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
-                                </a>
                             
                                 <a href="/tags/matery/">
                                     <span class="chip bg-color">matery</span>
@@ -787,7 +778,7 @@ vim _config.yml</code></pre>
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-06-24T21-59-05',
+        id: '2020-06-25T02-09-17',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -811,9 +802,10 @@ vim _config.yml</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/06/25/zai-matery-zhong-qian-ru-bilibili-shi-pin/">
                     <div class="card-image">
@@ -832,9 +824,9 @@ vim _config.yml</code></pre>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -843,6 +835,7 @@ vim _config.yml</code></pre>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -861,21 +854,27 @@ vim _config.yml</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/24/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/">
+                <a href="/2020/06/24/hexo-matery-zhu-ti-jia-zai-gitalk-ping-lun-xi-tong/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/0.jpg" class="responsive-img" alt="【长期更新】STM32CubeMX和MDK ARM最新版下载地址">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/15.jpg" class="responsive-img" alt="hexo matery(主题)加载gitalk评论系统">
                         
-                        <span class="card-title">【长期更新】STM32CubeMX和MDK ARM最新版下载地址</span>
+                        <span class="card-title">hexo matery(主题)加载gitalk评论系统</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ﻿# 一.STM32CubeMX
-STM32CubeMX 5.6.0下载地址https://download.csdn.net/download/weixin_45033342/12291865
-STM32CubeMX V5.6.1下载地址
+                            注册GitHub oAuth登录GitHub之后按照图示点下去,注册oAuth功能
+
+
+
+
+
+记录好这2串密钥,需要填写到主题目录下的_config.yml
+
+修改主题文件夹下的_configcd themes/hexo-theme-mat
                         
                     </div>
                     <div class="publish-info">
@@ -885,7 +884,7 @@ STM32CubeMX V5.6.1下载地址
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            amahv
+                            Yarnell
                             
                         </span>
                     </div>
@@ -893,20 +892,12 @@ STM32CubeMX V5.6.1下载地址
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/stm32/">
-                        <span class="chip bg-color">stm32</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
-                    <a href="/tags/cubeMX/">
-                        <span class="chip bg-color">cubeMX</span>
-                    </a>
-                    
-                    <a href="/tags/keil/">
-                        <span class="chip bg-color">keil</span>
-                    </a>
-                    
-                    <a href="/tags/MDK/">
-                        <span class="chip bg-color">MDK</span>
+                    <a href="/tags/matery/">
+                        <span class="chip bg-color">matery</span>
                     </a>
                     
                 </div>
