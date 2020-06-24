@@ -5,9 +5,9 @@
   <subtitle>Yarnell</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://amahv.github.io/"/>
+  <link href="http://blog.amahv.cn/"/>
   <updated>2020-06-24T01:34:27.191Z</updated>
-  <id>http://amahv.github.io/</id>
+  <id>http://blog.amahv.cn/</id>
   
   <author>
     <name>amahv</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>cover开发记录</title>
-    <link href="http://amahv.github.io/2020/06/23/cover-kai-fa-ji-lu/"/>
-    <id>http://amahv.github.io/2020/06/23/cover-kai-fa-ji-lu/</id>
+    <link href="http://blog.amahv.cn/2020/06/23/cover-kai-fa-ji-lu/"/>
+    <id>http://blog.amahv.cn/2020/06/23/cover-kai-fa-ji-lu/</id>
     <published>2020-06-23T07:13:11.000Z</published>
     <updated>2020-06-24T01:34:27.191Z</updated>
     
@@ -35,8 +35,8 @@
   
   <entry>
     <title>【长期更新】STM32CubeMX和MDK ARM最新版下载地址</title>
-    <link href="http://amahv.github.io/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/"/>
-    <id>http://amahv.github.io/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/</id>
+    <link href="http://blog.amahv.cn/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/"/>
+    <id>http://blog.amahv.cn/2020/06/23/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/</id>
     <published>2020-06-23T07:13:11.000Z</published>
     <updated>2020-06-24T01:38:05.937Z</updated>
     
@@ -55,20 +55,20 @@
     
     
     
-      <category term="stm32" scheme="http://amahv.github.io/tags/stm32/"/>
+      <category term="stm32" scheme="http://blog.amahv.cn/tags/stm32/"/>
     
-      <category term="cubeMX" scheme="http://amahv.github.io/tags/cubeMX/"/>
+      <category term="cubeMX" scheme="http://blog.amahv.cn/tags/cubeMX/"/>
     
-      <category term="keil" scheme="http://amahv.github.io/tags/keil/"/>
+      <category term="keil" scheme="http://blog.amahv.cn/tags/keil/"/>
     
-      <category term="MDK" scheme="http://amahv.github.io/tags/MDK/"/>
+      <category term="MDK" scheme="http://blog.amahv.cn/tags/MDK/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://amahv.github.io/2020/06/23/hello-world/"/>
-    <id>http://amahv.github.io/2020/06/23/hello-world/</id>
+    <link href="http://blog.amahv.cn/2020/06/23/hello-world/"/>
+    <id>http://blog.amahv.cn/2020/06/23/hello-world/</id>
     <published>2020-06-22T18:06:51.028Z</published>
     <updated>2020-06-22T18:06:51.028Z</updated>
     
@@ -90,8 +90,8 @@
   
   <entry>
     <title>Debian Linux root 用户没有颜色</title>
-    <link href="http://amahv.github.io/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/"/>
-    <id>http://amahv.github.io/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/</id>
+    <link href="http://blog.amahv.cn/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/"/>
+    <id>http://blog.amahv.cn/2020/06/21/debian-linux-root-yong-hu-mei-you-yan-se/</id>
     <published>2020-06-21T15:57:20.000Z</published>
     <updated>2020-06-23T02:06:11.132Z</updated>
     
