@@ -8,9 +8,15 @@
       <link href="/2020/06/25/zai-hexo-zhong-jie-ru-zhan-chang-tong-ji-gong-ju/"/>
       <url>/2020/06/25/zai-hexo-zhong-jie-ru-zhan-chang-tong-ji-gong-ju/</url>
       
-        <content type="html"><![CDATA[<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><h3 id="1234"><a href="#1234" class="headerlink" title="1234"></a>1234</h3><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="申请百度统计的ID"><a href="#申请百度统计的ID" class="headerlink" title="申请百度统计的ID"></a>申请百度统计的ID</h2><h3 id="新增网站"><a href="#新增网站" class="headerlink" title="新增网站"></a>新增网站</h3><p>按照我给的示例填写</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200625150559.png" alt=""></p><h3 id="获取ID"><a href="#获取ID" class="headerlink" title="获取ID"></a>获取ID</h3><p>下图框起来的就是ID了，把这串ID复制，一会儿有用</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200625150806.png" alt=""></p><h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><p>进入theme/hexo-theme-matery/目录</p><pre class=" language-shell"><code class="language-shell">cd theme/hexo-theme-matery/vim _config.yml</code></pre><p>修改false为true</p><p>将ID填入</p><p>图示:</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200625151315.png" alt=""></p><p>保存!</p><h2 id="生成-amp-发布"><a href="#生成-amp-发布" class="headerlink" title="生成&amp;发布"></a>生成&amp;发布</h2><p>最后就是生成和发布了,运行以下命令:</p><pre class=" language-shell"><code class="language-shell">hexo g -d</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Matery </tag>
+            
+        </tags>
       
     </entry>
     
