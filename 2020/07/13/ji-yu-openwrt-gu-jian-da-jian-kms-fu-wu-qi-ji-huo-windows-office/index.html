@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="solidworks保存实体时提示默认模板无效怎么办?, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
+    <meta name="keywords" content="基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
     <meta name="description" content="陶逸南的个人站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>solidworks保存实体时提示默认模板无效怎么办? | AMAHV</title>
+    <title>基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">solidworks保存实体时提示默认模板无效怎么办?</h1>
+                    <h1 class="description center-align post-title">基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE</h1>
                 </div>
             </div>
         </div>
@@ -442,8 +442,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/solidworks/">
-                                <span class="chip bg-color">solidworks</span>
+                            <a href="/tags/openwrt/">
+                                <span class="chip bg-color">openwrt</span>
+                            </a>
+                        
+                            <a href="/tags/office/">
+                                <span class="chip bg-color">office</span>
+                            </a>
+                        
+                            <a href="/tags/kms/">
+                                <span class="chip bg-color">kms</span>
                             </a>
                         
                     </div>
@@ -458,14 +466,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-09
+                    2020-07-13
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-09
+                    2020-07-13
                 </div>
                 
 
@@ -474,7 +482,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -489,13 +497,31 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>保存实体时提示默认模板无效，或者分割特征失败，如下图：</p>
-<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200709113600.png">
-
-<p><strong>解决办法</strong>：点击右下角齿轮图标，点击默认模板，将零件、装配体、工程图三个默认模板选择一下保存即可，具体设置看下图。</p>
-<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200709113941.png">
-
-<p>挨个点一下，选择一个有效模板，问题就解决了！</p>
+                <p><em>原文：<a href="https://www.bilibili.com/read/cv1712931/" target="_blank" rel="noopener">https://www.bilibili.com/read/cv1712931/</a></em></p>
+<h1 id="逼逼叨"><a href="#逼逼叨" class="headerlink" title="逼逼叨"></a>逼逼叨</h1><p>首先，先介绍一下KMS这东西，KMS全称 Key Management Service，是微软官方面对大客户（使用数量多）的用于VOL版系统和OFFICE大批量激活的一个服务器。现在常见的KMS激活工具激活原理使用最小化的虚拟机搭建KMS服务器激活，但是这些工具内置病毒（把你电脑变成肉鸡，号称报毒是正常现象，实际上电脑端KMS激活只是几条批处理命令的事情），偷取个人信息以及偷偷占用你的电脑资源挖矿等。</p>
+<p>至于KMS服务器，现在github上已有名为vlmcsd的开源KMS服务器，又经人移植到了openwrt（路由用的linux系统）平台上。</p>
+<h1 id="开始激活"><a href="#开始激活" class="headerlink" title="开始激活"></a>开始激活</h1><p>首先，保证你的WINDOWS系统和OFFICE是VOL版的，这样才可以激活。</p>
+<p>WINDOWS系统除了旗舰版和家庭版都能激活。（我使用WIN10 专业版）</p>
+<p>OFFICE 2016在MSDN只有专业增强版，下载进来并安装，</p>
+<p>使用“OFFICE2016转VOL版.bat”这个批处理文件能将OFFICE转为VOL版</p>
+<h2 id="WINDOWS激活："><a href="#WINDOWS激活：" class="headerlink" title="WINDOWS激活："></a>WINDOWS激活：</h2><h3 id="第一步、打开DOS或powershell，输入slmgr-upk，卸载WINDOWS自带密钥"><a href="#第一步、打开DOS或powershell，输入slmgr-upk，卸载WINDOWS自带密钥" class="headerlink" title="第一步、打开DOS或powershell，输入slmgr /upk，卸载WINDOWS自带密钥"></a>第一步、打开DOS或powershell，输入slmgr /upk，卸载WINDOWS自带密钥</h3><h3 id="第二步、输入slmgr-ipk-W269N-WFGWX-YVC9B-4J6C9-T83GX"><a href="#第二步、输入slmgr-ipk-W269N-WFGWX-YVC9B-4J6C9-T83GX" class="headerlink" title="第二步、输入slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX"></a>第二步、输入slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX</h3><p>(在上面key列表选择对应版本的Key，也可以搜索找对应版本key)</p>
+<h3 id="安装对应密钥"><a href="#安装对应密钥" class="headerlink" title="安装对应密钥"></a>安装对应密钥</h3><p>常用Windows VL版KMS激活密钥列表：</p>
+<p>Win10专业版KMS： W269N-WFGWX-YVC9B-4J6C9-T83GX</p>
+<p>Win10企业版KMS： NPPR9-FWDCX-D2C8J-H872K-2YT43</p>
+<p>Win10LTSB版KMS： DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ</p>
+<p>Win10家庭版KMS： TX9XD-98N7V-6WMQ6-BX7FG-H8Q99</p>
+<p>Win10教育版KMS： NW6C2-QMPVW-D7KKK-3GKT6-VCFB2</p>
+<p>Win7专业版KMS： FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4</p>
+<p>Win7企业版KMS： 33PXH-7Y6KF-2VJC9-XBBR8-HVTHH</p>
+<h3 id="第三步、slmgr-skms-192-168-1-1（路由器IP地址"><a href="#第三步、slmgr-skms-192-168-1-1（路由器IP地址" class="headerlink" title="第三步、slmgr /skms 192.168.1.1（路由器IP地址)"></a>第三步、slmgr /skms 192.168.1.1（路由器IP地址)</h3><h3 id="第四步、slmgr-ato"><a href="#第四步、slmgr-ato" class="headerlink" title="第四步、slmgr /ato"></a>第四步、slmgr /ato</h3><h2 id="OFFICE激活："><a href="#OFFICE激活：" class="headerlink" title="OFFICE激活："></a>OFFICE激活：</h2><h3 id="第一步、找到你的OFFICE目录"><a href="#第一步、找到你的OFFICE目录" class="headerlink" title="第一步、找到你的OFFICE目录"></a>第一步、找到你的OFFICE目录</h3><p>我的是OFFICE 2016 32位版，目录为：</p>
+<p>C:\Program Files (x86)\Microsoft Office\Office16</p>
+<p>进去这个目录，可以看见有个OSPP.VBS文件</p>
+<p>如果是OFFICE 2016 64位版，目录应为：</p>
+<p>C:\Program Files\Microsoft Office\Office16</p>
+<h3 id="第二步、powershell中"><a href="#第二步、powershell中" class="headerlink" title="第二步、powershell中"></a>第二步、powershell中</h3><pre class=" language-shell"><code class="language-shell">cd “C:\Program Files (x86)\Microsoft Office\Office16”  #（双引号中对应你的实际目录）</code></pre>
+<h3 id="第三步、输入"><a href="#第三步、输入" class="headerlink" title="第三步、输入"></a>第三步、输入</h3><pre class=" language-shell"><code class="language-shell">cscript ospp.vbs /sethst:192.168.1.1    #（你的路由IP）</code></pre>
+<h3 id="第四步、输入"><a href="#第四步、输入" class="headerlink" title="第四步、输入"></a>第四步、输入</h3><pre class=" language-bash"><code class="language-bash">cscript ospp.vbs /act</code></pre>
+<p>接下来享受激活的WINDOWS和OFFICE吧（使用系统自身批处理命令激活，因此不可能有后门，不用担心病毒和信息窃取之类的）。如果失败，请检查WINDOWS和OFFICE具体版本信息。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -539,7 +565,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/07/09/solidworks-bao-cun-shi-ti-shi-ti-shi-mo-ren-mo-ban-wu-xiao-zen-me-ban/">http://blog.amahv.cn/2020/07/09/solidworks-bao-cun-shi-ti-shi-ti-shi-mo-ren-mo-ban-wu-xiao-zen-me-ban/</a>
+                    <a href="http://blog.amahv.cn/2020/07/13/ji-yu-openwrt-gu-jian-da-jian-kms-fu-wu-qi-ji-huo-windows-office/">http://blog.amahv.cn/2020/07/13/ji-yu-openwrt-gu-jian-da-jian-kms-fu-wu-qi-ji-huo-windows-office/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -577,8 +603,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/solidworks/">
-                                    <span class="chip bg-color">solidworks</span>
+                                <a href="/tags/openwrt/">
+                                    <span class="chip bg-color">openwrt</span>
+                                </a>
+                            
+                                <a href="/tags/office/">
+                                    <span class="chip bg-color">office</span>
+                                </a>
+                            
+                                <a href="/tags/kms/">
+                                    <span class="chip bg-color">kms</span>
                                 </a>
                             
                         </div>
@@ -749,7 +783,7 @@
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-07-09T11-15-03',
+        id: '2020-07-13T10-43-06',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -773,9 +807,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/07/13/ji-yu-openwrt-gu-jian-da-jian-kms-fu-wu-qi-ji-huo-windows-office/">
                     <div class="card-image">
@@ -794,9 +829,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -805,6 +840,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -831,35 +867,37 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/25/zai-hexo-zhong-jie-ru-zhan-chang-tong-ji-gong-ju/">
+                <a href="/2020/07/09/solidworks-bao-cun-shi-ti-shi-ti-shi-mo-ren-mo-ban-wu-xiao-zen-me-ban/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/3.jpg" class="responsive-img" alt="在hexo中接入站长统计工具">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/10.jpg" class="responsive-img" alt="solidworks保存实体时提示默认模板无效怎么办?">
                         
-                        <span class="card-title">在hexo中接入站长统计工具</span>
+                        <span class="card-title">solidworks保存实体时提示默认模板无效怎么办?</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            申请百度统计的ID新增网站按照我给的示例填写
+                            保存实体时提示默认模板无效，或者分割特征失败，如下图：
 
-获取ID下图框起来的就是ID了，把这串ID复制，一会儿有用
 
-修改配置进入theme/hexo-theme-matery/目录
-cd theme/hexo-theme-matery/
-vim 
+解决办法：点击右下角齿轮图标，点击默认模板，将零件、装配体、工程图三个默认模板选择一下保存即可，具体设置看下图。
+
+
+挨个点一下，选择一个有效模板，问题就解决了！
+
+       
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            Yarnell
+                            陶逸南
                             
                         </span>
                     </div>
@@ -867,8 +905,8 @@ vim
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Matery/">
-                        <span class="chip bg-color">Matery</span>
+                    <a href="/tags/solidworks/">
+                        <span class="chip bg-color">solidworks</span>
                     </a>
                     
                 </div>

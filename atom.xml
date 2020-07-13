@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-07-09T03:43:50.089Z</updated>
+  <updated>2020-07-13T03:07:54.706Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE</title>
+    <link href="http://blog.amahv.cn/2020/07/13/ji-yu-openwrt-gu-jian-da-jian-kms-fu-wu-qi-ji-huo-windows-office/"/>
+    <id>http://blog.amahv.cn/2020/07/13/ji-yu-openwrt-gu-jian-da-jian-kms-fu-wu-qi-ji-huo-windows-office/</id>
+    <published>2020-07-13T02:43:06.000Z</published>
+    <updated>2020-07-13T03:07:54.706Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;em&gt;原文：&lt;a href=&quot;https://www.bilibili.com/read/cv1712931/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="openwrt" scheme="http://blog.amahv.cn/tags/openwrt/"/>
+    
+      <category term="office" scheme="http://blog.amahv.cn/tags/office/"/>
+    
+      <category term="kms" scheme="http://blog.amahv.cn/tags/kms/"/>
+    
+  </entry>
   
   <entry>
     <title>solidworks保存实体时提示默认模板无效怎么办?</title>
