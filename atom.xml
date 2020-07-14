@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-07-13T03:07:54.706Z</updated>
+  <updated>2020-07-14T17:23:17.646Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3t-audio</title>
+    <link href="http://blog.amahv.cn/2020/07/15/3t-audio/"/>
+    <id>http://blog.amahv.cn/2020/07/15/3t-audio/</id>
+    <published>2020-07-14T17:18:07.000Z</published>
+    <updated>2020-07-14T17:23:17.646Z</updated>
+    
+    <summary type="html">
+    
+      ......
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE</title>

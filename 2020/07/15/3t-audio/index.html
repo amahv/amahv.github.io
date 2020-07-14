@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
+    <meta name="keywords" content="3t-audio, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
     <meta name="description" content="陶逸南的个人站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE | AMAHV</title>
+    <title>3t-audio | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE</h1>
+                    <h1 class="description center-align post-title">3t-audio</h1>
                 </div>
             </div>
         </div>
@@ -440,21 +440,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/openwrt/">
-                                <span class="chip bg-color">openwrt</span>
-                            </a>
-                        
-                            <a href="/tags/office/">
-                                <span class="chip bg-color">office</span>
-                            </a>
-                        
-                            <a href="/tags/kms/">
-                                <span class="chip bg-color">kms</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -466,14 +454,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-13
+                    2020-07-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-13
+                    2020-07-15
                 </div>
                 
 
@@ -482,7 +470,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -497,50 +485,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><em>原文：<a href="https://www.bilibili.com/read/cv1712931/" target="_blank" rel="noopener">https://www.bilibili.com/read/cv1712931/</a></em></p>
-<h1 id="逼逼叨"><a href="#逼逼叨" class="headerlink" title="逼逼叨"></a>逼逼叨</h1><p>首先，先介绍一下KMS这东西，KMS全称 Key Management Service，是微软官方面对大客户（使用数量多）的用于VOL版系统和OFFICE大批量激活的一个服务器。现在常见的KMS激活工具激活原理使用最小化的虚拟机搭建KMS服务器激活，但是这些工具内置病毒（把你电脑变成肉鸡，号称报毒是正常现象，实际上电脑端KMS激活只是几条批处理命令的事情），偷取个人信息以及偷偷占用你的电脑资源挖矿等。</p>
-<p>至于KMS服务器，现在github上已有名为vlmcsd的开源KMS服务器，又经人移植到了openwrt（路由用的linux系统）平台上。</p>
-<h1 id="开始激活"><a href="#开始激活" class="headerlink" title="开始激活"></a>开始激活</h1><p>首先，保证你的WINDOWS系统和OFFICE是VOL版的，这样才可以激活。</p>
-<p>WINDOWS系统除了旗舰版和家庭版都能激活。（我使用WIN10 专业版）</p>
-<p>OFFICE 2016在MSDN只有专业增强版，下载进来并安装，</p>
-<p>使用“OFFICE2016转VOL版.bat”这个批处理文件能将OFFICE转为VOL版</p>
-<h2 id="WINDOWS激活："><a href="#WINDOWS激活：" class="headerlink" title="WINDOWS激活："></a>WINDOWS激活：</h2><h3 id="第一步、打开DOS或powershell，输入slmgr-upk，卸载WINDOWS自带密钥"><a href="#第一步、打开DOS或powershell，输入slmgr-upk，卸载WINDOWS自带密钥" class="headerlink" title="第一步、打开DOS或powershell，输入slmgr /upk，卸载WINDOWS自带密钥"></a>第一步、打开DOS或powershell，输入slmgr /upk，卸载WINDOWS自带密钥</h3><h3 id="第二步、输入slmgr-ipk-W269N-WFGWX-YVC9B-4J6C9-T83GX"><a href="#第二步、输入slmgr-ipk-W269N-WFGWX-YVC9B-4J6C9-T83GX" class="headerlink" title="第二步、输入slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX"></a>第二步、输入slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX</h3><p>(在上面key列表选择对应版本的Key，也可以搜索找对应版本key)</p>
-<h3 id="安装对应密钥"><a href="#安装对应密钥" class="headerlink" title="安装对应密钥"></a>安装对应密钥</h3><p>常用Windows VL版KMS激活密钥列表：</p>
-<p>Win10专业版KMS： W269N-WFGWX-YVC9B-4J6C9-T83GX</p>
-<p>Win10企业版KMS： NPPR9-FWDCX-D2C8J-H872K-2YT43</p>
-<p>Win10LTSB版KMS： DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ</p>
-<p>Win10家庭版KMS： TX9XD-98N7V-6WMQ6-BX7FG-H8Q99</p>
-<p>Win10教育版KMS： NW6C2-QMPVW-D7KKK-3GKT6-VCFB2</p>
-<p>Win7专业版KMS： FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4</p>
-<p>Win7企业版KMS： 33PXH-7Y6KF-2VJC9-XBBR8-HVTHH</p>
-<h3 id="第三步、slmgr-skms-192-168-1-1（路由器IP地址"><a href="#第三步、slmgr-skms-192-168-1-1（路由器IP地址" class="headerlink" title="第三步、slmgr /skms 192.168.1.1（路由器IP地址)"></a>第三步、slmgr /skms 192.168.1.1（路由器IP地址)</h3><h3 id="第四步、slmgr-ato"><a href="#第四步、slmgr-ato" class="headerlink" title="第四步、slmgr /ato"></a>第四步、slmgr /ato</h3><h2 id="OFFICE激活："><a href="#OFFICE激活：" class="headerlink" title="OFFICE激活："></a>OFFICE激活：</h2><h3 id="第一步、找到你的OFFICE目录"><a href="#第一步、找到你的OFFICE目录" class="headerlink" title="第一步、找到你的OFFICE目录"></a>第一步、找到你的OFFICE目录</h3><p>我的是OFFICE 2016 32位版，目录为：</p>
-<p>C:\Program Files (x86)\Microsoft Office\Office16</p>
-<p>进去这个目录，可以看见有个OSPP.VBS文件</p>
-<p>如果是OFFICE 2016 64位版，目录应为：</p>
-<p>C:\Program Files\Microsoft Office\Office16</p>
-<h3 id="第二步、powershell中"><a href="#第二步、powershell中" class="headerlink" title="第二步、powershell中"></a>第二步、powershell中</h3><pre class=" language-shell"><code class="language-shell">cd “C:\Program Files (x86)\Microsoft Office\Office16”  #（双引号中对应你的实际目录）</code></pre>
-<h3 id="第三步、输入"><a href="#第三步、输入" class="headerlink" title="第三步、输入"></a>第三步、输入</h3><pre class=" language-shell"><code class="language-shell">cscript ospp.vbs /sethst:192.168.1.1    #（你的路由IP）</code></pre>
-<h3 id="第四步、输入"><a href="#第四步、输入" class="headerlink" title="第四步、输入"></a>第四步、输入</h3><pre class=" language-bash"><code class="language-bash">cscript ospp.vbs /act</code></pre>
-<p>接下来享受激活的WINDOWS和OFFICE吧（使用系统自身批处理命令激活，因此不可能有后门，不用担心病毒和信息窃取之类的）。如果失败，请检查WINDOWS和OFFICE具体版本信息。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+                <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">password</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="2ef0d0a5674f5ead3292a799d2d9bb7c8afe350c53ccda5500d411e1c3089b68">0e3b57922368a7d0991b3f8386be6a35ad0ab20580f2f9e502a77cd748f7fce281ac24e18ad2e780ec7d1cccd2e3ae24b9c4a3c19a9fdc255b52816015e787f557f4d17a1be720d14536140f0f30b590fae3d32cc07b841ccae291adf72a76844a9e25bb24fab1301f2816156d998c345c47b837aa09767c5bc65e0d14ed9dcf233894da9410e66dfe008d0c073895ea65536f3b29ba8ce4d527c5411889a3c5808edf59f0310453931eb5d84d7eb9be7e7a0035196072c3db3df37d5fe800da1b254bbd0e37edcec9c89c515bbca36e4c34c1f441b240f7734495c26fa859400702001a85ffae3d579bf9264dc71e89c19117ca7ca3251b429ed13043b6d864a5fba3152c18ae3f3b2d6ef47274a2adb55d4f00be58a63ead2c0e534be9f5a646cd6aaa14d8f401c7f6abf1d3e978031869af2ba4026514a976157474d6975ceefbc99c12e27eec44a1df65b1250ac382c7d3757cef59b215784cd8e5336b99b0fc7754d3141c0be12f25b524907cc7ab672f93e7b75802d00e03ec2df01bf4d41ca1c9151290028f38706e960350f33481f329f9a601d6306bafd03eaad31dd7e0479597d5ffef00d4a1900bf9d7dff1f5d3ab8a218380f1db82d2b61df66160bae6113dfea400a930645c176447d150f3992cfae95b42409d54e1a4993e94d7a3375da15252b5d7955394adbbfca269f84aa48aa41a8ae7c076fa6a6f2e561af6acff75f49974c933215b58a4378696083f46d1a713428f24d3f5dc7b7a0075abdad68c91067a1942845de20991ef71206959e2d7ff639a4d0a5dbfdd6748078b2add7b0e2b98d37c231fe2412b690007793edcb710fd19070a2fc05dc9dcde35134f415010f27940866e74b0fa48efced74c57f21c0a6fb4e2f2c302fb32f39be115b3305e4f3a70c8325e141dce4d17b753359487a3e55b3b8f20b2dca823b3d4cfe10176720f57ffe1aee3326bd9ece5de04d9b3a41c54f3e6c24efa7a84bdb43034149746fb13cc3ef799fe27fcfed62b7aef033bf4207b4806d2751c07a7b51a458e386e416a848e51e528064a9e4313bc03682ad0ae8c4f3618d5c3a6b412e8e4f7e86d75d26e49bac8a5ae87efd96245401545144ba7d7b8137645f38ec3a6a3e663b7afaf29d15e7aa446155240762431d64ae4aea64635b0c91b4c8767d4dc2b805d807f628b2754eb7f702fa216b7759987175476a0a0cb8cc7cf0f021b1323aa433b12dcc56d5321d35e6b4f3eaab092aad19e242fc91332bfcbd997b759691232a21f17f2c1cf7c339d8dbc1c68536ab44481f3ef77e6b36b7e07636cb0e8cb330c495e5da81093c490c30bf463c6cbb496c20278b7fad0b27ffa3ce4f00a54e6d6a1a76ca1e1dc30082fe9fcec8dc4810949a35887957d5619661a7cf79e974deb34e64cb194177ac514dc6e9d0c824cf4084758533b020532ef559b8e762c9638d5e7f50ce00c5f9ff1b9b10caa2ed51666cd5b1061128afcce7a721446ddd000cf8cd1f18c4497698ffd7601d99db4aad3ac3ec09ea72b</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
             </div>
             <hr/>
 
@@ -565,7 +518,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/07/13/ji-yu-openwrt-gu-jian-da-jian-kms-fu-wu-qi-ji-huo-windows-office/">http://blog.amahv.cn/2020/07/13/ji-yu-openwrt-gu-jian-da-jian-kms-fu-wu-qi-ji-huo-windows-office/</a>
+                    <a href="http://blog.amahv.cn/2020/07/15/3t-audio/">http://blog.amahv.cn/2020/07/15/3t-audio/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -602,19 +555,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/openwrt/">
-                                    <span class="chip bg-color">openwrt</span>
-                                </a>
-                            
-                                <a href="/tags/office/">
-                                    <span class="chip bg-color">office</span>
-                                </a>
-                            
-                                <a href="/tags/kms/">
-                                    <span class="chip bg-color">kms</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -783,7 +724,7 @@
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-07-13T10-43-06',
+        id: '2020-07-15T01-18-07',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -807,9 +748,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/07/15/3t-audio/">
                     <div class="card-image">
@@ -833,9 +775,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -844,6 +786,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -854,32 +797,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/09/solidworks-bao-cun-shi-ti-shi-ti-shi-mo-ren-mo-ban-wu-xiao-zen-me-ban/">
+                <a href="/2020/07/13/ji-yu-openwrt-gu-jian-da-jian-kms-fu-wu-qi-ji-huo-windows-office/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/10.jpg" class="responsive-img" alt="solidworks保存实体时提示默认模板无效怎么办?">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/6.jpg" class="responsive-img" alt="基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE">
                         
-                        <span class="card-title">solidworks保存实体时提示默认模板无效怎么办?</span>
+                        <span class="card-title">基于openwrt固件搭建KMS服务器激活WINDOWS+OFFICE</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            保存实体时提示默认模板无效，或者分割特征失败，如下图：
-
-
-解决办法：点击右下角齿轮图标，点击默认模板，将零件、装配体、工程图三个默认模板选择一下保存即可，具体设置看下图。
-
-
-挨个点一下，选择一个有效模板，问题就解决了！
-
-       
+                            原文：https://www.bilibili.com/read/cv1712931/
+逼逼叨首先，先介绍一下KMS这东西，KMS全称 Key Management Service，是微软官方面对大客户（使用数量多）的用于VOL版系统和OF
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-13
                             </span>
                         <span class="publish-author">
                             
@@ -892,8 +828,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/solidworks/">
-                        <span class="chip bg-color">solidworks</span>
+                    <a href="/tags/openwrt/">
+                        <span class="chip bg-color">openwrt</span>
+                    </a>
+                    
+                    <a href="/tags/office/">
+                        <span class="chip bg-color">office</span>
+                    </a>
+                    
+                    <a href="/tags/kms/">
+                        <span class="chip bg-color">kms</span>
                     </a>
                     
                 </div>
