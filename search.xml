@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>如何提高Docker的下载速度-----配置国内源</title>
+      <link href="/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/"/>
+      <url>/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在正常情况下，docker默认连接的国外官方镜像，在国外的网友访问该官方镜像自然不成问题，中国的网络访问国外官方镜像网速一向很慢，而且往往还会遭遇断网的窘境。docker pull 国内网络链接失败或很卡慢，一般都需要更换至国内。</p><h3 id="目前有哪些-Docker-国内加速器："><a href="#目前有哪些-Docker-国内加速器：" class="headerlink" title="目前有哪些 Docker 国内加速器："></a>目前有哪些 Docker 国内加速器：</h3><p> Docker中国区官方、网易、阿里云、ustc 等；根据自己情况选择一个。<br>各个镜像下面是详细列表：</p><pre><code>Docker中国区官方               "https://registry.docker-cn.com"网易                          "http://hub-mirror.c.163.com"  ustc                          "https://docker.mirrors.ustc.edu.cn"阿里云                        "https://kfwkfulq.mirror.aliyuncs.com"</code></pre><h3 id="开始配置加速器"><a href="#开始配置加速器" class="headerlink" title="开始配置加速器"></a>开始配置加速器</h3><p>1）修改 /etc/docker/daemon.json 文件，执行命令：</p><pre class=" language-shell"><code class="language-shell">sudo vim /etc/docker/daemon.json </code></pre><p> 2）修改为如下形式：</p><pre class=" language-shell"><code class="language-shell">{ "registry-mirrors": ["https://kfwkfulq.mirror.aliyuncs.com"]} </code></pre><p>3) 重启Docker,以使docker的配置文件生效。</p><pre class=" language-shell"><code class="language-shell">service docker restart</code></pre><p>好啦，配置Docker加速完成。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux下文件名批量编号</title>
       <link href="/2020/07/17/linux-xia-wen-jian-ming-pi-liang-bian-hao/"/>
       <url>/2020/07/17/linux-xia-wen-jian-ming-pi-liang-bian-hao/</url>

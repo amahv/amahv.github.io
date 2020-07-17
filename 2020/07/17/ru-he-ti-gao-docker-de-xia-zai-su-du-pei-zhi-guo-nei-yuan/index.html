@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux下文件名批量编号, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
+    <meta name="keywords" content="如何提高Docker的下载速度-----配置国内源, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
     <meta name="description" content="陶逸南的个人站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Linux下文件名批量编号 | AMAHV</title>
+    <title>如何提高Docker的下载速度-----配置国内源 | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux下文件名批量编号</h1>
+                    <h1 class="description center-align post-title">如何提高Docker的下载速度-----配置国内源</h1>
                 </div>
             </div>
         </div>
@@ -442,8 +442,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/docker/">
+                                <span class="chip bg-color">docker</span>
                             </a>
                         
                     </div>
@@ -489,10 +489,20 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>而我们在编写程序时，往往希望读入的这些数据集的文件名是一种更简洁的形式，比如按照索引(index)方式：1.png，2.png，3.png…，那么如何批量重命名一个文件夹下的文件名呢？方法很简单，只需要在Terminal里面进入数据集所在的文件夹，输入以下命令即可：</p>
-<pre class=" language-shell"><code class="language-shell">i=1; for x in *; do mv $x $i.png; let i=i+1; done</code></pre>
-<p>重命名后的数据集如下，可以看到文件名已经变成了按数字索引编号，这样就不用担心程序难以适配不同数据集数据的问题了：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200717121025.png" alt=""></p>
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在正常情况下，docker默认连接的国外官方镜像，在国外的网友访问该官方镜像自然不成问题，中国的网络访问国外官方镜像网速一向很慢，而且往往还会遭遇断网的窘境。docker pull 国内网络链接失败或很卡慢，一般都需要更换至国内。</p>
+<h3 id="目前有哪些-Docker-国内加速器："><a href="#目前有哪些-Docker-国内加速器：" class="headerlink" title="目前有哪些 Docker 国内加速器："></a>目前有哪些 Docker 国内加速器：</h3><p> Docker中国区官方、网易、阿里云、ustc 等；根据自己情况选择一个。<br>各个镜像下面是详细列表：</p>
+<pre><code>Docker中国区官方               "https://registry.docker-cn.com"
+网易                          "http://hub-mirror.c.163.com"  
+ustc                          "https://docker.mirrors.ustc.edu.cn"
+阿里云                        "https://kfwkfulq.mirror.aliyuncs.com"</code></pre><h3 id="开始配置加速器"><a href="#开始配置加速器" class="headerlink" title="开始配置加速器"></a>开始配置加速器</h3><p>1）修改 /etc/docker/daemon.json 文件，执行命令：</p>
+<pre class=" language-shell"><code class="language-shell">sudo vim /etc/docker/daemon.json </code></pre>
+<p> 2）修改为如下形式：</p>
+<pre class=" language-shell"><code class="language-shell">{
+ "registry-mirrors": ["https://kfwkfulq.mirror.aliyuncs.com"]
+} </code></pre>
+<p>3) 重启Docker,以使docker的配置文件生效。</p>
+<pre class=" language-shell"><code class="language-shell">service docker restart</code></pre>
+<p>好啦，配置Docker加速完成。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -536,7 +546,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/07/17/linux-xia-wen-jian-ming-pi-liang-bian-hao/">http://blog.amahv.cn/2020/07/17/linux-xia-wen-jian-ming-pi-liang-bian-hao/</a>
+                    <a href="http://blog.amahv.cn/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/">http://blog.amahv.cn/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -574,8 +584,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/docker/">
+                                    <span class="chip bg-color">docker</span>
                                 </a>
                             
                         </div>
@@ -746,7 +756,7 @@
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-07-17T12-07-13',
+        id: '2020-07-17T22-16-42',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -770,9 +780,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/">
                     <div class="card-image">
@@ -791,9 +802,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -802,6 +813,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -820,30 +832,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/15/3t-audio/">
+                <a href="/2020/07/17/linux-xia-wen-jian-ming-pi-liang-bian-hao/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/14.jpg" class="responsive-img" alt="3t-audio">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/22.jpg" class="responsive-img" alt="Linux下文件名批量编号">
                         
-                        <span class="card-title">3t-audio</span>
+                        <span class="card-title">Linux下文件名批量编号</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-  
-  
-    password
-    
-  
-  2520dcaaeed742ecb4f0e14859944dfe113b3b802a4ae386e99bbd6b2655f5943c49542ebc34e89646eb96e3f7
+                            而我们在编写程序时，往往希望读入的这些数据集的文件名是一种更简洁的形式，比如按照索引(index)方式：1.png，2.png，3.png…，那么如何批量重命名一个文件夹下的文件名呢？方法很简单，只需要在Terminal里面进入数据集所在的
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-17
                             </span>
                         <span class="publish-author">
                             
@@ -852,6 +858,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
                 </div>
                 
             </div>
