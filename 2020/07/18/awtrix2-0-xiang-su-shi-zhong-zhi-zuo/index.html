@@ -478,7 +478,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    5 分
                 </div>
                 
 
@@ -493,7 +493,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="项目官方网站"><a href="#项目官方网站" class="headerlink" title="# 项目官方网站"></a># 项目官方网站</h2><p><a href="https://awtrixdocs.blueforcer.de/" target="_blank" rel="noopener">https://awtrixdocs.blueforcer.de/</a>(打开有点慢的…)</p>
+                <h2 id="项目官方网站"><a href="#项目官方网站" class="headerlink" title="项目官方网站"></a>项目官方网站</h2><p><a href="https://awtrixdocs.blueforcer.de/" target="_blank" rel="noopener">https://awtrixdocs.blueforcer.de/</a>(打开有点慢的…)</p>
 <img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718151114.png" alt="AWTRIX" style="zoom:50%;">
 
 <h2 id="材料准备"><a href="#材料准备" class="headerlink" title="材料准备"></a>材料准备</h2><table>
@@ -569,7 +569,7 @@
 Erasing flash<span class="token punctuation">..</span><span class="token punctuation">..</span>. 
 Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="token punctuation">(</span>0 %<span class="token punctuation">)</span></code></pre>
 <p>说明一切都很好…</p>
-<h3 id="方法二-源码编译方法"><a href="#方法二-源码编译方法" class="headerlink" title="方法二:源码编译方法"></a>方法二:源码编译方法</h3><ol>
+<h3 id="方法二-源码编译方法-推荐"><a href="#方法二-源码编译方法-推荐" class="headerlink" title="方法二:源码编译方法 (推荐)"></a>方法二:源码编译方法 (推荐)</h3><ol>
 <li>找一个目录,作为你的workspace,然后克隆源码</li>
 </ol>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/awtrix/AWTRIX2.0-Controller.git</code></pre>
@@ -610,7 +610,36 @@ Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="t
 
 </li>
 </ol>
-<h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><h2 id="外壳改进"><a href="#外壳改进" class="headerlink" title="外壳改进"></a>外壳改进</h2><h2 id="组装"><a href="#组装" class="headerlink" title="组装"></a>组装</h2><script>
+<h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><ul>
+<li>服务器端的搭建也有2种方式<ul>
+<li>官方脚本安装</li>
+<li>Docker安装 (推荐)</li>
+</ul>
+</li>
+</ul>
+<h3 id="官方脚本安装"><a href="#官方脚本安装" class="headerlink" title="官方脚本安装"></a>官方脚本安装</h3><p>官方这里好像只提供了Linux\macOS这2个系统的安装脚本，而windows的只提供了jar包。</p>
+<p>所以windows用户要用的话最好就是使用docker安装了，也就是下面要讲的第二种方法。</p>
+<p>不过我觉得这个服务端完全是没有必要安装在windows机器上面的，原因有这么几点：</p>
+<ol>
+<li>Windows系统的电脑一般都性能较高，一般来讲这是好事，但是对于长期需要开机的轻量应用服务器而言，这无谓地增加了功耗。</li>
+<li>Windows的大部分配置都在图形化界面下完成，且不利于远程操控。虽然Windows也支持命令行配置，但是我想在2020年了，没有必要再去琢磨Windows下命令行下配置的各种技巧，花这点精神在Linux机子上面，你会事半功倍。</li>
+<li>其实这个服务端是可以放在阿里云等各云服务器厂商上面的，这样你可以直接不用自己再买个树莓派作为服务器供着，而小带宽服务器是最实惠的，最低可以￥24元一个月，1M的小带宽用命令行操控是最舒服的，用Windows远程桌面的话，就是非主流搞法了。</li>
+<li>服务器和桌面个人电脑在性能上面的观念是不同的，服务器讲究可靠性高、功耗越低越好、在功耗低的情况下性能越高越好。但是我们在购买个人电脑的时候，似乎只需要性能，功耗都不是问题，要多大水冷排？我加就完事儿了！！！！哈哈哈哈哈哈哈哈哈</li>
+</ol>
+<h4 id="执行安装命令"><a href="#执行安装命令" class="headerlink" title="执行安装命令"></a>执行安装命令</h4><pre class=" language-bash"><code class="language-bash">在SSH终端中输入以下命令以自动安装
+<span class="token function">wget</span> -N https://blueforcer.de/awtrix/awtrix.sh <span class="token punctuation">;</span> <span class="token function">sudo</span> sh awtrix.sh</code></pre>
+<p><em>note: 启动后不久，即可通过<a href="http://awtrix_ip:7000/" target="_blank" rel="noopener">http：// awtrix_ip：7000</a>访问Web界面。</em></p>
+<h4 id="Docker安装（推荐）"><a href="#Docker安装（推荐）" class="headerlink" title="Docker安装（推荐）"></a>Docker安装（推荐）</h4><h5 id="准备工作-1"><a href="#准备工作-1" class="headerlink" title="准备工作"></a>准备工作</h5><p>首先你准备一台Linux服务器，可以是树莓派，或者是云服务器。</p>
+<p>我这里以树莓派Debian作为示例。</p>
+<h6 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h6><p><a href="https://www.runoob.com/docker/debian-docker-install.html" target="_blank" rel="noopener">Debian Docker 安装</a></p>
+<h5 id="安装Awtrix"><a href="#安装Awtrix" class="headerlink" title="安装Awtrix"></a>安装Awtrix</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker run -d -v pwd:/data --name AwTriX2 -p 7000:7000 -p 7001:7001 -p 5568:5568/udp --restart always -e TZ<span class="token operator">=</span>Europe/Berlin whyet/awtrix2:latest-arm -e JAVA_TOOL_OPTIONS<span class="token operator">=</span><span class="token string">"-Duser.language=zh -Duser.country=CN"</span></code></pre>
+<h6 id="参数解释"><a href="#参数解释" class="headerlink" title="参数解释"></a>参数解释</h6><p>-d : 代表后台运行。</p>
+<p>For persistent Data add: </p>
+<pre class=" language-bash"><code class="language-bash">-v pwd:/data        <span class="token comment" spellcheck="true"># 这个参数应该是保存配置用的</span></code></pre>
+<p>设置语言</p>
+<pre class=" language-bash"><code class="language-bash">-e JAVA_TOOL_OPTIONS<span class="token operator">=</span><span class="token string">"-Duser.language=zh -Duser.country=CN"</span></code></pre>
+<h6 id="因为是后台运行了-所以要需要输入命令才能查看Docker日志"><a href="#因为是后台运行了-所以要需要输入命令才能查看Docker日志" class="headerlink" title="因为是后台运行了,所以要需要输入命令才能查看Docker日志"></a>因为是后台运行了,所以要需要输入命令才能查看Docker日志</h6><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker logs AwTriX2            <span class="token comment" spellcheck="true"># 查看进程日志</span></code></pre>
+<h2 id="外壳改进"><a href="#外壳改进" class="headerlink" title="外壳改进"></a>外壳改进</h2><h2 id="组装"><a href="#组装" class="headerlink" title="组装"></a>组装</h2><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -908,7 +937,7 @@ Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="t
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            # 项目官方网站https://awtrixdocs.blueforcer.de/(打开有点慢的…)
+                            项目官方网站https://awtrixdocs.blueforcer.de/(打开有点慢的…)
 
 
 材料准备
@@ -928,7 +957,7 @@ click here
 
 
 2
-32x8 全彩RGB
+32x8 全彩RGB屏（
                         
                     </div>
                     <div class="publish-info">
