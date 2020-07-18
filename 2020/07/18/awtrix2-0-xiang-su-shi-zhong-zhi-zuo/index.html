@@ -469,7 +469,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-18
+                    2020-07-19
                 </div>
                 
 
@@ -478,7 +478,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    6 分
                 </div>
                 
 
@@ -623,7 +623,8 @@ Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="t
 </ul>
 </li>
 </ul>
-<h3 id="官方脚本安装"><a href="#官方脚本安装" class="headerlink" title="官方脚本安装"></a>官方脚本安装</h3><p>官方这里好像只提供了Linux\macOS这2个系统的安装脚本，而windows的只提供了jar包。</p>
+<h3 id="官方脚本安装"><a href="#官方脚本安装" class="headerlink" title="官方脚本安装"></a>官方脚本安装</h3><hr>
+<p>官方这里好像只提供了Linux\macOS这2个系统的安装脚本，而windows的只提供了jar包。</p>
 <p>所以windows用户要用的话最好就是使用docker安装了，也就是下面要讲的第二种方法。</p>
 <p>不过我觉得这个服务端完全是没有必要安装在windows机器上面的，原因有这么几点：</p>
 <ol>
@@ -632,19 +633,40 @@ Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="t
 <li>其实这个服务端是可以放在阿里云等各云服务器厂商上面的，这样你可以直接不用自己再买个树莓派作为服务器供着，而小带宽服务器是最实惠的，最低可以￥24元一个月，1M的小带宽用命令行操控是最舒服的，用Windows远程桌面的话，就是非主流搞法了。</li>
 <li>服务器和桌面个人电脑在性能上面的观念是不同的，服务器讲究可靠性高、功耗越低越好、在功耗低的情况下性能越高越好。但是我们在购买个人电脑的时候，似乎只需要性能，功耗都不是问题，要多大水冷排？我加就完事儿了！！！！哈哈哈哈哈哈哈哈哈</li>
 </ol>
+<hr>
 <h4 id="执行安装命令"><a href="#执行安装命令" class="headerlink" title="执行安装命令"></a>执行安装命令</h4><pre class=" language-bash"><code class="language-bash">在SSH终端中输入以下命令以自动安装
 <span class="token function">wget</span> -N https://blueforcer.de/awtrix/awtrix.sh <span class="token punctuation">;</span> <span class="token function">sudo</span> sh awtrix.sh</code></pre>
 <p><em>note: 启动后不久，即可通过<a href="http://awtrix_ip:7000/" target="_blank" rel="noopener">http：// awtrix_ip：7000</a>访问Web界面。</em></p>
 <h4 id="Docker安装（推荐）"><a href="#Docker安装（推荐）" class="headerlink" title="Docker安装（推荐）"></a>Docker安装（推荐）</h4><h5 id="准备工作-1"><a href="#准备工作-1" class="headerlink" title="准备工作"></a>准备工作</h5><p>首先你准备一台Linux服务器，可以是树莓派，或者是云服务器。</p>
 <p>我这里以树莓派Debian作为示例。</p>
 <h6 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h6><p><a href="https://www.runoob.com/docker/debian-docker-install.html" target="_blank" rel="noopener">Debian Docker 安装</a></p>
+<h6 id="docker加速"><a href="#docker加速" class="headerlink" title="docker加速"></a>docker加速</h6><p><a href="https://blog.amahv.cn/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/">如何提高Docker的下载速度—–配置国内源</a></p>
 <h5 id="安装Awtrix"><a href="#安装Awtrix" class="headerlink" title="安装Awtrix"></a>安装Awtrix</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker run -d -v pwd:/data --name AwTriX2 -p 7000:7000 -p 7001:7001 -p 5568:5568/udp --restart always -e TZ<span class="token operator">=</span>Europe/Berlin whyet/awtrix2:latest-arm -e JAVA_TOOL_OPTIONS<span class="token operator">=</span><span class="token string">"-Duser.language=zh -Duser.country=CN"</span></code></pre>
 <h6 id="参数解释"><a href="#参数解释" class="headerlink" title="参数解释"></a>参数解释</h6><p>-d : 代表后台运行。</p>
 <p>For persistent Data add: </p>
 <pre class=" language-bash"><code class="language-bash">-v pwd:/data        <span class="token comment" spellcheck="true"># 这个参数应该是保存配置用的</span></code></pre>
 <p>设置语言</p>
 <pre class=" language-bash"><code class="language-bash">-e JAVA_TOOL_OPTIONS<span class="token operator">=</span><span class="token string">"-Duser.language=zh -Duser.country=CN"</span></code></pre>
-<h6 id="因为是后台运行了-所以要需要输入命令才能查看Docker日志"><a href="#因为是后台运行了-所以要需要输入命令才能查看Docker日志" class="headerlink" title="因为是后台运行了,所以要需要输入命令才能查看Docker日志"></a>因为是后台运行了,所以要需要输入命令才能查看Docker日志</h6><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker logs AwTriX2            <span class="token comment" spellcheck="true"># 查看进程日志</span></code></pre>
+<hr>
+<p>因为是后台运行了,所以要需要输入命令才能查看Docker日志：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker logs AwTriX2            <span class="token comment" spellcheck="true"># 查看进程日志</span></code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718235239.png" alt="成功截图"></p>
+<p>日志中出现100%的时候,就代表你的服务端安装完成了。</p>
+<hr>
+<h6 id="使用浏览器访问服务端"><a href="#使用浏览器访问服务端" class="headerlink" title="使用浏览器访问服务端"></a>使用浏览器访问服务端</h6><pre class=" language-bash"><code class="language-bash">http://xxx.xxx.xxx.xxx:7000            <span class="token comment" spellcheck="true"># IP地址为树莓派的IP地址</span></code></pre>
+<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718235621.png" alt="效果图" style="zoom: 33%;">
+
+<p>有人可能注意到了,我的web面板跟网上别的同学的不同，为什么？我也不知道，大概可能的原因就是我的是docker方式安装的，可能版本不太一样。</p>
+<p>您可能还注意到了，我的面板竟然是中文的！！网上别的同学都是英文面板啊。所以这里就要教大家设置中文了。</p>
+<hr>
+<h6 id="设置中文语言"><a href="#设置中文语言" class="headerlink" title="设置中文语言"></a>设置中文语言</h6><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200719010702.png" alt="设置语言" style="zoom: 33%;">
+
+<p>然后按下Ctrl+F5刷新网页，看有没有中文？</p>
+<p>如果没有，那就需要重启docker</p>
+<h6 id="重启docker镜像"><a href="#重启docker镜像" class="headerlink" title="重启docker镜像"></a>重启docker镜像</h6><p>重启非常简单，一条命令搞定：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker restart AwTriX2</code></pre>
+<p>到这里，我忽然发现用docker真的爽，我也是第二次用docker，这次对docker有了更深的认识，部署神器！！！</p>
+<hr>
 <h2 id="外壳改进"><a href="#外壳改进" class="headerlink" title="外壳改进"></a>外壳改进</h2><p>未完待续……</p>
 <h2 id="组装"><a href="#组装" class="headerlink" title="组装"></a>组装</h2><p>未完待续……</p>
 <script>
