@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-07-17T14:19:18.117Z</updated>
+  <updated>2020-07-18T08:34:26.980Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AWTRIX2.0像素时钟制作</title>
+    <link href="http://blog.amahv.cn/2020/07/18/awtrix2-0-xiang-su-shi-zhong-zhi-zuo/"/>
+    <id>http://blog.amahv.cn/2020/07/18/awtrix2-0-xiang-su-shi-zhong-zhi-zuo/</id>
+    <published>2020-07-18T06:37:50.000Z</published>
+    <updated>2020-07-18T08:34:26.980Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;项目官方网站&quot;&gt;&lt;a href=&quot;#项目官方网站&quot; class=&quot;headerlink&quot; title=&quot;# 项目官方网站&quot;&gt;&lt;/a&gt;# 项目官方网站&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://awtrixdocs.blueforcer.de/&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="AWTRIX" scheme="http://blog.amahv.cn/tags/AWTRIX/"/>
+    
+      <category term="像素钟" scheme="http://blog.amahv.cn/tags/%E5%83%8F%E7%B4%A0%E9%92%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>如何提高Docker的下载速度-----配置国内源</title>
