@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="AWTRIX2.0像素时钟制作, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
+    <meta name="keywords" content="Ubuntu安装MySQL 并设置远程访问, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
     <meta name="description" content="陶逸南的个人站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>AWTRIX2.0像素时钟制作 | AMAHV</title>
+    <title>Ubuntu安装MySQL 并设置远程访问 | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">AWTRIX2.0像素时钟制作</h1>
+                    <h1 class="description center-align post-title">Ubuntu安装MySQL 并设置远程访问</h1>
                 </div>
             </div>
         </div>
@@ -442,12 +442,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/AWTRIX/">
-                                <span class="chip bg-color">AWTRIX</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%83%8F%E7%B4%A0%E9%92%9F/">
-                                <span class="chip bg-color">像素钟</span>
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
                             </a>
                         
                     </div>
@@ -462,7 +458,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-18
+                    2020-07-19
                 </div>
                 
 
@@ -478,7 +474,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    4 分
                 </div>
                 
 
@@ -493,182 +489,111 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="项目官方网站"><a href="#项目官方网站" class="headerlink" title="项目官方网站"></a>项目官方网站</h2><p><a href="https://awtrixdocs.blueforcer.de/" target="_blank" rel="noopener">https://awtrixdocs.blueforcer.de/</a>(打开有点慢的…)</p>
-<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718151114.png" alt="AWTRIX" style="zoom:50%;">
+                <h2 id="安装MySQL"><a href="#安装MySQL" class="headerlink" title="安装MySQL"></a>安装MySQL</h2><h3 id="APT安装"><a href="#APT安装" class="headerlink" title="APT安装"></a>APT安装</h3><p>安装mysql服务mysql-server</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> apt <span class="token function">install</span> mysql-server  <span class="token comment" spellcheck="true">#也可表示为mysql-server-x.x来指定版本，例如mysql-server-5.6</span></code></pre>
+<h2 id="初始化MySQL"><a href="#初始化MySQL" class="headerlink" title="初始化MySQL"></a>初始化MySQL</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> mysql_secure_installation</code></pre>
+<p>首先便是要求设置root密码</p>
+<pre><code>Securing the MySQL server deployment.
 
-<h2 id="材料准备"><a href="#材料准备" class="headerlink" title="材料准备"></a>材料准备</h2><table>
-<thead>
-<tr>
-<th align="left">No</th>
-<th>Name</th>
-<th>链接</th>
-<th>金额</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td>NodeMCU（必选）</td>
-<td><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.6b392e8dBRBXRn&amp;id=542658326644&amp;_u=iuv1t82a050" target="_blank" rel="noopener">click here</a></td>
-<td>￥12</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td>32x8 全彩RGB屏（必选）</td>
-<td><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.29472e8dHGsQWL&amp;id=579131402474&amp;_u=iuv1t8217ac" target="_blank" rel="noopener">click here</a></td>
-<td>￥70</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td>Awtrix 外壳</td>
-<td><a href="https://www.thingiverse.com/thing:2791276" target="_blank" rel="noopener">click here</a></td>
-<td>￥200</td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td>DF Mini Player</td>
-<td><a href="https://detail.tmall.com/item.htm?id=611277941885&amp;spm=a1z09.2.0.0.29472e8dHGsQWL&amp;_u=iuv1t827686" target="_blank" rel="noopener">click here</a></td>
-<td>￥4.7</td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td>3w 30mm全频喇叭</td>
-<td><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.29472e8dHGsQWL&amp;id=559136696205&amp;_u=iuv1t825d29" target="_blank" rel="noopener">click here</a></td>
-<td>￥14.98</td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td>树莓派4B 4G</td>
-<td><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.29472e8dHGsQWL&amp;id=596761703325&amp;_u=iuv1t82ecc5" target="_blank" rel="noopener">click here</a></td>
-<td>￥390</td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td>树莓派外壳</td>
-<td><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.29472e8dHGsQWL&amp;id=608817078527&amp;_u=iuv1t82ee03" target="_blank" rel="noopener">click here</a></td>
-<td>￥24.8</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td></td>
-<td>合计</td>
-<td>￥716.48</td>
-</tr>
-</tbody></table>
-<p><em>note：外壳的价格是预估的，我还没做……</em></p>
-<p><em>还有一些杂碎的东西就不写了，如电源、TF卡、杜邦线、插座等……</em></p>
-<h2 id="ESP8266固件烧写"><a href="#ESP8266固件烧写" class="headerlink" title="ESP8266固件烧写"></a>ESP8266固件烧写</h2><p>固件烧写有2种方法。第一种是不需要折腾的，直接按照官方给的步骤来。第二种是需要克隆源码，并且编译的，使用platformIO下载。</p>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><h4 id="安装python3环境"><a href="#安装python3环境" class="headerlink" title="安装python3环境"></a>安装python3环境</h4><p>略…</p>
-<h4 id="安装git环境"><a href="#安装git环境" class="headerlink" title="安装git环境"></a>安装git环境</h4><p>略…</p>
-<h4 id="安装pyserial"><a href="#安装pyserial" class="headerlink" title="安装pyserial"></a>安装pyserial</h4><pre><code>pip install pyserial</code></pre><p><em>如果这个不会安装,那我觉得制作这个项目对你来说门槛太高了,直接淘宝买成品吧 ! 三百多块钱搞定, 还要啥自行车……….</em></p>
-<h4 id="下载esptool"><a href="#下载esptool" class="headerlink" title="下载esptool"></a>下载esptool</h4><p>windows\Linux\mac下都行</p>
-<pre class=" language-shell"><code class="language-shell">git clone https://github.com/themadinventor/esptool.git</code></pre>
-<h4 id="安装platformIO-IDE"><a href="#安装platformIO-IDE" class="headerlink" title="安装platformIO IDE"></a>安装platformIO IDE</h4><h5 id="安装vscode"><a href="#安装vscode" class="headerlink" title="安装vscode"></a>安装vscode</h5><p>略…</p>
-<h5 id="安装platformIO插件"><a href="#安装platformIO插件" class="headerlink" title="安装platformIO插件"></a>安装platformIO插件</h5><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718153948.png" alt=""></p>
-<h3 id="方法一-官方推荐方法"><a href="#方法一-官方推荐方法" class="headerlink" title="方法一:官方推荐方法"></a>方法一:官方推荐方法</h3><p>官方推荐在Linux\mac系统下执行以下命令,这里我使用的是windows,所以给出的命令和官方的有所不同.</p>
-<h4 id="下载固件"><a href="#下载固件" class="headerlink" title="下载固件"></a>下载固件</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> esptool        <span class="token comment" spellcheck="true"># 进入到esptool目录</span>
-<span class="token function">wget</span> -h https://blueforcer.de/awtrix/stable/firmware.bin</code></pre>
-<h4 id="擦除ESP8266Flash"><a href="#擦除ESP8266Flash" class="headerlink" title="擦除ESP8266Flash"></a>擦除ESP8266Flash</h4><pre class=" language-bash"><code class="language-bash">python3 esptool.py --port COM21 erase_flash</code></pre>
-<p><em>COM口根据实际情况决定</em></p>
-<h4 id="烧写固件到ESP8266"><a href="#烧写固件到ESP8266" class="headerlink" title="烧写固件到ESP8266"></a>烧写固件到ESP8266</h4><pre class=" language-bash"><code class="language-bash">python esptool.py --port COM21 write_flash 0x00000 firmware.bin</code></pre>
-<p>如果几秒钟后读出类似的输出</p>
-<pre class=" language-bash"><code class="language-bash">Connecting<span class="token punctuation">..</span><span class="token punctuation">..</span>
-Erasing flash<span class="token punctuation">..</span><span class="token punctuation">..</span>. 
-Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="token punctuation">(</span>0 %<span class="token punctuation">)</span></code></pre>
-<p>说明一切都很好…</p>
-<h3 id="方法二-源码编译方法-推荐"><a href="#方法二-源码编译方法-推荐" class="headerlink" title="方法二:源码编译方法 (推荐)"></a>方法二:源码编译方法 (推荐)</h3><ol>
-<li>找一个目录,作为你的workspace,然后克隆源码</li>
-</ol>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/awtrix/AWTRIX2.0-Controller.git</code></pre>
-<ol start="2">
-<li><p>打开vscode</p>
-</li>
-<li><p>在vscode种打开awtrix目录</p>
-</li>
-<li><p>等待platform IO自动初始化好</p>
-</li>
-<li><p>修改platformio.ini文件. 因为我使用的是nodeMCU,所以将board改为nodemcuv2,其实不改也不影响的. 如图</p>
-<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718155601.png" style="zoom:50%;">
-</li>
-<li><p>点击→ , 执行编译并烧写</p>
-<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718155901.png" style="zoom: 67%;">
+Connecting to MySQL using a blank password.
 
-<ol start="7">
-<li><p>烧写成功后的样子</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718160127.png" alt=""></p>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="烧写好后的配置"><a href="#烧写好后的配置" class="headerlink" title="烧写好后的配置"></a>烧写好后的配置</h3><ol>
-<li><p>刷好固件后可以在手机端看到这个热点</p>
-<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718162753.png" style="zoom:50%;">
+VALIDATE PASSWORD PLUGIN can be used to test passwords
+and improve security. It checks the strength of password
+and allows the users to set only those passwords which are
+secure enough. Would you like to setup VALIDATE PASSWORD plugin?
 
-<ol start="2">
-<li><p>连接热点,密码为: awtrixxx</p>
-</li>
-<li><p>然后会出现以下界面</p>
-<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/Screenshot_2020-07-18-16-06-26-014_com.android.htmlviewer.jpg" style="zoom: 33%;">
-</li>
-</ol>
-</li>
-<li><p>配置要连接的WiFi,和WiFi密码,下面的IP地址是Awtrix服务器的IP地址,这里我填写的是我树莓派的IP地址, 端口保持不变. </p>
-<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/Screenshot_2020-07-18-16-06-58-857_com.android.htmlviewer.jpg" style="zoom: 33%;">
+Press y|Y for Yes, any other key for No: n
+Please set the password for root here.
 
-</li>
-</ol>
-<h2 id="服务器搭建"><a href="#服务器搭建" class="headerlink" title="服务器搭建"></a>服务器搭建</h2><ul>
-<li>服务器端的搭建也有2种方式<ul>
-<li>官方脚本安装</li>
-<li>Docker安装 (推荐)</li>
-</ul>
-</li>
-</ul>
-<h3 id="官方脚本安装"><a href="#官方脚本安装" class="headerlink" title="官方脚本安装"></a>官方脚本安装</h3><hr>
-<p>官方这里好像只提供了Linux\macOS这2个系统的安装脚本，而windows的只提供了jar包。</p>
-<p>所以windows用户要用的话最好就是使用docker安装了，也就是下面要讲的第二种方法。</p>
-<p>不过我觉得这个服务端完全是没有必要安装在windows机器上面的，原因有这么几点：</p>
-<ol>
-<li>Windows系统的电脑一般都性能较高，一般来讲这是好事，但是对于长期需要开机的轻量应用服务器而言，这无谓地增加了功耗。</li>
-<li>Windows的大部分配置都在图形化界面下完成，且不利于远程操控。虽然Windows也支持命令行配置，但是我想在2020年了，没有必要再去琢磨Windows下命令行下配置的各种技巧，花这点精神在Linux机子上面，你会事半功倍。</li>
-<li>其实这个服务端是可以放在阿里云等各云服务器厂商上面的，这样你可以直接不用自己再买个树莓派作为服务器供着，而小带宽服务器是最实惠的，最低可以￥24元一个月，1M的小带宽用命令行操控是最舒服的，用Windows远程桌面的话，就是非主流搞法了。</li>
-<li>服务器和桌面个人电脑在性能上面的观念是不同的，服务器讲究可靠性高、功耗越低越好、在功耗低的情况下性能越高越好。但是我们在购买个人电脑的时候，似乎只需要性能，功耗都不是问题，要多大水冷排？我加就完事儿了！！！！哈哈哈哈哈哈哈哈哈</li>
-</ol>
-<hr>
-<h4 id="执行安装命令"><a href="#执行安装命令" class="headerlink" title="执行安装命令"></a>执行安装命令</h4><pre class=" language-bash"><code class="language-bash">在SSH终端中输入以下命令以自动安装
-<span class="token function">wget</span> -N https://blueforcer.de/awtrix/awtrix.sh <span class="token punctuation">;</span> <span class="token function">sudo</span> sh awtrix.sh</code></pre>
-<p><em>note: 启动后不久，即可通过<a href="http://awtrix_ip:7000/" target="_blank" rel="noopener">http：// awtrix_ip：7000</a>访问Web界面。</em></p>
-<h4 id="Docker安装（推荐）"><a href="#Docker安装（推荐）" class="headerlink" title="Docker安装（推荐）"></a>Docker安装（推荐）</h4><h5 id="准备工作-1"><a href="#准备工作-1" class="headerlink" title="准备工作"></a>准备工作</h5><p>首先你准备一台Linux服务器，可以是树莓派，或者是云服务器。</p>
-<p>我这里以树莓派Debian作为示例。</p>
-<h6 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h6><p><a href="https://www.runoob.com/docker/debian-docker-install.html" target="_blank" rel="noopener">Debian Docker 安装</a></p>
-<h6 id="docker加速"><a href="#docker加速" class="headerlink" title="docker加速"></a>docker加速</h6><p><a href="https://blog.amahv.cn/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/">如何提高Docker的下载速度—–配置国内源</a></p>
-<h5 id="安装Awtrix"><a href="#安装Awtrix" class="headerlink" title="安装Awtrix"></a>安装Awtrix</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker run -d -v pwd:/data --name AwTriX2 -p 7000:7000 -p 7001:7001 -p 5568:5568/udp --restart always -e TZ<span class="token operator">=</span>Europe/Berlin whyet/awtrix2:latest-arm -e JAVA_TOOL_OPTIONS<span class="token operator">=</span><span class="token string">"-Duser.language=zh -Duser.country=CN"</span></code></pre>
-<h6 id="参数解释"><a href="#参数解释" class="headerlink" title="参数解释"></a>参数解释</h6><p>-d : 代表后台运行。</p>
-<p>For persistent Data add: </p>
-<pre class=" language-bash"><code class="language-bash">-v pwd:/data        <span class="token comment" spellcheck="true"># 这个参数应该是保存配置用的</span></code></pre>
-<p>设置语言</p>
-<pre class=" language-bash"><code class="language-bash">-e JAVA_TOOL_OPTIONS<span class="token operator">=</span><span class="token string">"-Duser.language=zh -Duser.country=CN"</span></code></pre>
-<hr>
-<p>因为是后台运行了,所以要需要输入命令才能查看Docker日志：</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker logs AwTriX2            <span class="token comment" spellcheck="true"># 查看进程日志</span></code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718235239.png" alt="成功截图"></p>
-<p>日志中出现100%的时候,就代表你的服务端安装完成了。</p>
-<hr>
-<h6 id="使用浏览器访问服务端"><a href="#使用浏览器访问服务端" class="headerlink" title="使用浏览器访问服务端"></a>使用浏览器访问服务端</h6><pre class=" language-bash"><code class="language-bash">http://xxx.xxx.xxx.xxx:7000            <span class="token comment" spellcheck="true"># IP地址为树莓派的IP地址</span></code></pre>
-<img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200718235621.png" alt="效果图" style="zoom: 33%;">
+New password:
 
-<p>有人可能注意到了,我的web面板跟网上别的同学的不同，为什么？我也不知道，大概可能的原因就是我的是docker方式安装的，可能版本不太一样。</p>
-<p>您可能还注意到了，我的面板竟然是中文的！！网上别的同学都是英文面板啊。所以这里就要教大家设置中文了。</p>
-<hr>
-<h6 id="设置中文语言"><a href="#设置中文语言" class="headerlink" title="设置中文语言"></a>设置中文语言</h6><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200719010702.png" alt="设置语言" style="zoom: 33%;">
+Re-enter new password:
+By default, a MySQL installation has an anonymous user,
+allowing anyone to log into MySQL without having to have
+a user account created for them. This is intended only for
+testing, and to make the installation go a bit smoother.
+You should remove them before moving into a production
+environment.
 
-<p>然后按下Ctrl+F5刷新网页，看有没有中文？</p>
-<p>如果没有，那就需要重启docker</p>
-<h6 id="重启docker镜像"><a href="#重启docker镜像" class="headerlink" title="重启docker镜像"></a>重启docker镜像</h6><p>重启非常简单，一条命令搞定：</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker restart AwTriX2</code></pre>
-<p>到这里，我忽然发现用docker真的爽，我也是第二次用docker，这次对docker有了更深的认识，部署神器！！！</p>
-<hr>
-<h2 id="外壳改进"><a href="#外壳改进" class="headerlink" title="外壳改进"></a>外壳改进</h2><p>未完待续……</p>
-<h2 id="组装"><a href="#组装" class="headerlink" title="组装"></a>组装</h2><p>未完待续……</p>
+Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+
+Normally, root should only be allowed to connect from
+'localhost'. This ensures that someone cannot guess at
+the root password from the network.
+
+Disallow root login remotely? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+By default, MySQL comes with a database named 'test' that
+anyone can access. This is also intended only for testing,
+and should be removed before moving into a production
+environment.
+
+
+Remove test database and access to it? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+Reloading the privilege tables will ensure that all changes
+made so far will take effect immediately.
+
+Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+All done!</code></pre><p>可以依照上面的进行配置.</p>
+<h3 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h3><hr>
+<pre class=" language-bash"><code class="language-bash">Securing the MySQL server deployment.
+
+Enter password <span class="token keyword">for</span> user root:
+Error: Can<span class="token string">'t connect to local MySQL server through socket '</span>/var/run/mysqld/mysqld.sock' <span class="token punctuation">(</span>2<span class="token punctuation">)</span></code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200719223132.png" alt="错误截图"></p>
+<p>解决方法:</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">service</span> mysql stop
+<span class="token function">sudo</span> <span class="token function">service</span> mysql start</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200719223244.png" alt="截图"></p>
+<h2 id="登录MySQL"><a href="#登录MySQL" class="headerlink" title="登录MySQL"></a>登录MySQL</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> mysql -u root -p            <span class="token comment" spellcheck="true"># 注意,需要加sudo</span></code></pre>
+<h2 id="设置远程访问"><a href="#设置远程访问" class="headerlink" title="设置远程访问"></a>设置远程访问</h2><p>需要设置 mysql 数据库支持外部或者远程访问，则需要把绑定 IP 地址改为 0.0.0.0，或者不写IP地址。因此编辑配置文件：</p>
+<pre><code>sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf</code></pre><p>修改绑定地址为 0.0.0.0。原来默认绑定 127.0.0.1 注释掉。</p>
+<pre class=" language-bash"><code class="language-bash">bind-address <span class="token operator">=</span> 0.0.0.0
+<span class="token comment" spellcheck="true"># bind-address = 127.0.0.1</span></code></pre>
+<p>然后登入MySQL</p>
+<pre><code>sudo mysql -u root -p 
+mysql&gt; GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '您的数据库密码' WITH GRANT OPTION;</code></pre><p>同时刷新权限</p>
+<pre class=" language-bash"><code class="language-bash">flush privileges<span class="token punctuation">;</span></code></pre>
+<p>修改完 mysqld.cnf 文件有最好重新启动服务器。</p>
+<pre><code>systemctl restart mysql.service</code></pre><h2 id="远程访问MySQL"><a href="#远程访问MySQL" class="headerlink" title="远程访问MySQL"></a>远程访问MySQL</h2><pre><code>sudo mysql -h 192.168.123.165 -u root -p -P 3306</code></pre><p>-h: 远程主机IP地址</p>
+<p>-P: 远程端口</p>
+<h2 id="跳过密码直接登入MySQL"><a href="#跳过密码直接登入MySQL" class="headerlink" title="跳过密码直接登入MySQL"></a>跳过密码直接登入MySQL</h2><p>通过修改以下文件可以直接跳过密码登录MySQL</p>
+<pre><code>sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf</code></pre><p>在文件最后行加上下面这句</p>
+<pre class=" language-bash"><code class="language-bash">skip-grant-tables</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200719224313.png" alt="修改后的截图"></p>
+<p>修改后保存并退出编辑。</p>
+<p>然后去登录mysql，需要输入密码的时候直接敲回车。</p>
+<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><h3 id="解决-MySQL-的-ERROR-1698-28000-Access-denied-for-user-‘root’-’localhost’"><a href="#解决-MySQL-的-ERROR-1698-28000-Access-denied-for-user-‘root’-’localhost’" class="headerlink" title="解决 MySQL 的 ERROR 1698 (28000): Access denied for user ‘root’@’localhost’"></a>解决 MySQL 的 ERROR 1698 (28000): Access denied for user ‘root’@’localhost’</h3><p>因为在最近的Ubuntu安装（当然也可能是其他安装）中，MySQL默认使用了UNIX auth_socket plugin插件。</p>
+<p>简单来说这意味着当db_users使用数据库时，<strong>将会通过系统用户认证表进行认证</strong>。你可以通过下面的命令看看你的root用户是否设置成了这样：</p>
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">sudo</span> mysql -u root <span class="token comment" spellcheck="true"># I had to use "sudo" since is new installation</span>
+
+mysql<span class="token operator">></span> USE mysql<span class="token punctuation">;</span>
+mysql<span class="token operator">></span> SELECT User, Host, plugin FROM mysql.user<span class="token punctuation">;</span>
+
++------------------+-----------------------+
+<span class="token operator">|</span> User             <span class="token operator">|</span> plugin                <span class="token operator">|</span>
++------------------+-----------------------+
+<span class="token operator">|</span> root             <span class="token operator">|</span> auth_socket           <span class="token operator">|</span>
+<span class="token operator">|</span> mysql.sys        <span class="token operator">|</span> mysql_native_password <span class="token operator">|</span>
+<span class="token operator">|</span> debian-sys-maint <span class="token operator">|</span> mysql_native_password <span class="token operator">|</span>
++------------------+-----------------------+</code></pre>
+<p>就像你在查询语句中看到的那样，root用户在使用auth_socket插件。：</p>
+<p><strong>1. 你可以设置你的root用户使用mysql_native_password插件</strong> </p>
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">sudo</span> mysql -u root <span class="token comment" spellcheck="true"># I had to use "sudo" since is new installation</span>
+
+mysql<span class="token operator">></span> USE mysql<span class="token punctuation">;</span>
+mysql<span class="token operator">></span> UPDATE user SET plugin<span class="token operator">=</span><span class="token string">'mysql_native_password'</span> WHERE User<span class="token operator">=</span><span class="token string">'root'</span><span class="token punctuation">;</span>
+mysql<span class="token operator">></span> FLUSH PRIVILEGES<span class="token punctuation">;</span>
+mysql<span class="token operator">></span> <span class="token keyword">exit</span><span class="token punctuation">;</span>
+
+$ <span class="token function">service</span> mysql restart</code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -712,7 +637,7 @@ Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="t
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/07/18/awtrix2-0-xiang-su-shi-zhong-zhi-zuo/">http://blog.amahv.cn/2020/07/18/awtrix2-0-xiang-su-shi-zhong-zhi-zuo/</a>
+                    <a href="http://blog.amahv.cn/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/">http://blog.amahv.cn/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -750,12 +675,8 @@ Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="t
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/AWTRIX/">
-                                    <span class="chip bg-color">AWTRIX</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%83%8F%E7%B4%A0%E9%92%9F/">
-                                    <span class="chip bg-color">像素钟</span>
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
                                 </a>
                             
                         </div>
@@ -926,7 +847,7 @@ Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="t
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-07-18T14-37-50',
+        id: '2020-07-19T22-25-31',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -950,9 +871,10 @@ Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="t
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/">
                     <div class="card-image">
@@ -972,9 +894,9 @@ sudo apt install mysql-server  #也可表示为mysql-server-x.x来指定版本�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -983,6 +905,7 @@ sudo apt install mysql-server  #也可表示为mysql-server-x.x来指定版本�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1001,25 +924,44 @@ sudo apt install mysql-server  #也可表示为mysql-server-x.x来指定版本�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/">
+                <a href="/2020/07/18/awtrix2-0-xiang-su-shi-zhong-zhi-zuo/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/20.jpg" class="responsive-img" alt="如何提高Docker的下载速度-----配置国内源">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/17.jpg" class="responsive-img" alt="AWTRIX2.0像素时钟制作">
                         
-                        <span class="card-title">如何提高Docker的下载速度-----配置国内源</span>
+                        <span class="card-title">AWTRIX2.0像素时钟制作</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言在正常情况下，docker默认连接的国外官方镜像，在国外的网友访问该官方镜像自然不成问题，中国的网络访问国外官方镜像网速一向很慢，而且往往还会遭遇断网的窘境。docker pull 国内网络链接失败或很卡慢，一般都需要更换至国内。
-目前
+                            项目官方网站https://awtrixdocs.blueforcer.de/(打开有点慢的…)
+
+
+材料准备
+
+
+No
+Name
+链接
+金额
+
+
+
+1
+NodeMCU（必选）
+click here
+￥12
+
+
+2
+32x8 全彩RGB屏（
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-18
                             </span>
                         <span class="publish-author">
                             
@@ -1032,8 +974,12 @@ sudo apt install mysql-server  #也可表示为mysql-server-x.x来指定版本�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/docker/">
-                        <span class="chip bg-color">docker</span>
+                    <a href="/tags/AWTRIX/">
+                        <span class="chip bg-color">AWTRIX</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%83%8F%E7%B4%A0%E9%92%9F/">
+                        <span class="chip bg-color">像素钟</span>
                     </a>
                     
                 </div>

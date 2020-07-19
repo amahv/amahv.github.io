@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-07-18T17:14:10.975Z</updated>
+  <updated>2020-07-19T14:48:19.967Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu安装MySQL 并设置远程访问</title>
+    <link href="http://blog.amahv.cn/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/"/>
+    <id>http://blog.amahv.cn/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/</id>
+    <published>2020-07-19T14:25:31.000Z</published>
+    <updated>2020-07-19T14:48:19.967Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装MySQL&quot;&gt;&lt;a href=&quot;#安装MySQL&quot; class=&quot;headerlink&quot; title=&quot;安装MySQL&quot;&gt;&lt;/a&gt;安装MySQL&lt;/h2&gt;&lt;h3 id=&quot;APT安装&quot;&gt;&lt;a href=&quot;#APT安装&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="MySQL" scheme="http://blog.amahv.cn/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>AWTRIX2.0像素时钟制作</title>
