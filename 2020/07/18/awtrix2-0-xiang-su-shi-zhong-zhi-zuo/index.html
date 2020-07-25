@@ -469,7 +469,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-23
+                    2020-07-26
                 </div>
                 
 
@@ -478,7 +478,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    10 分
                 </div>
                 
 
@@ -576,9 +576,9 @@ Erasing flash<span class="token punctuation">..</span><span class="token punctua
 Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="token punctuation">(</span>0 %<span class="token punctuation">)</span></code></pre>
 <p>说明一切都很好…</p>
 <h3 id="方法二-源码编译方法-推荐"><a href="#方法二-源码编译方法-推荐" class="headerlink" title="方法二:源码编译方法 (推荐)"></a>方法二:源码编译方法 (推荐)</h3><ol>
-<li>找一个目录,作为你的workspace,然后克隆源码</li>
+<li>找一个目录,作为你的workspace,然后克隆0.22版本的源码（Master版本的好像有问题）</li>
 </ol>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/awtrix/AWTRIX2.0-Controller.git</code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> clone -b 0.22 https://github.com/awtrix/AWTRIX2.0-Controller.git</code></pre>
 <ol start="2">
 <li><p>打开vscode</p>
 </li>
@@ -666,6 +666,58 @@ Writing at 0x0000000000<span class="token punctuation">..</span>. <span class="t
 <h6 id="重启docker镜像"><a href="#重启docker镜像" class="headerlink" title="重启docker镜像"></a>重启docker镜像</h6><p>重启非常简单，一条命令搞定：</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> docker restart AwTriX2</code></pre>
 <p>到这里，我忽然发现用docker真的爽，我也是第二次用docker，这次对docker有了更深的认识，部署神器！！！</p>
+<hr>
+<h2 id="配置nginx（可选）"><a href="#配置nginx（可选）" class="headerlink" title="配置nginx（可选）"></a>配置nginx（可选）</h2><p>这里为什么要配置nginx呢？因为为了一个像素钟专门购买一个树莓派其实有点不划算，我买树莓派是因为有别的用处才花这大价钱买的，如果纯粹只是想低成本搭建一个像素钟可以有很多种方案替代树莓派的。</p>
+<ul>
+<li><p>这里推荐几种比较正经的方案，非主流方案不在本博客的讨论范围🙂：</p>
+<ul>
+<li>云服务器</li>
+<li>群晖NAS</li>
+<li>软路由</li>
+</ul>
+<p>这里为什么选择这几种方案是有原因的，首先awtrix需要一直连接服务器的，所以个人电脑就不是那么合适了，有些人会说：“个人电脑我也可以不关机让它一直运行啊”。个人电脑是比较费电的，当然这个费电是相对而言的，相比软路由和nas会更费电，其实还有最重要的一点是个人电脑不是免维护的，运行时间长了需要检查风扇有没有积灰，有没有坏掉，长期不间断运行灰尘肯定是个很大的问题，风扇的存在使得这个方案不是那么合理了。所以最优选择是云服务器，其次就是群晖nas和软路由。不过nas和软路由连我都没有配置，所以云服务器应该是最适合大家的了。</p>
+<p>进入正题……</p>
+</li>
+</ul>
+<h3 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h3><p><em>参考：<a href="https://www.nginx.cn/doc/setup/nginx-ubuntu.html" target="_blank" rel="noopener">https://www.nginx.cn/doc/setup/nginx-ubuntu.html</a></em></p>
+<p>以Debian系统为例，执行以下操作：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> apt update            <span class="token comment" spellcheck="true"># 更新软件源</span>
+<span class="token function">sudo</span> apt <span class="token function">install</span> nginx    <span class="token comment" spellcheck="true"># 安装nginx</span></code></pre>
+<p>装完应该能正常运行了。如果之前有装APACHE要改下端口。。。或者直接</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> apt remove apache2
+<span class="token function">sudo</span> /etc/init.d/nginx stop
+<span class="token function">sudo</span> /etc/init.d/nginx start</code></pre>
+<p>安装php-cgi</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> apt <span class="token function">install</span> php-cgi</code></pre>
+<p>Ubuntu下是/etc/php/7.3/cgi/php.ini<br>之前有安装过php的话会复制apache的配置文件<br>打开cgi.fix_pathinfo选项：<br>cgi.fix_pathinfo=1;</p>
+<h3 id="配置nginx"><a href="#配置nginx" class="headerlink" title="配置nginx"></a>配置nginx</h3><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> /etc/nginx/conf.d            <span class="token comment" spellcheck="true"># 进入nginx的配置目录</span>
+<span class="token function">sudo</span> <span class="token function">touch</span> awtrix.conf            <span class="token comment" spellcheck="true"># 创建awtrix.conf文件</span>
+<span class="token function">sudo</span> vim awtrix.conf            <span class="token comment" spellcheck="true"># 编辑awtrix.conf文件</span></code></pre>
+<p>在awtrix.conf文件中填入以下内容:</p>
+<pre class=" language-bash"><code class="language-bash">upstream awtrix <span class="token punctuation">{</span>
+        server 127.0.0.1:7000<span class="token punctuation">;</span>
+        keepalive 64<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+server <span class="token punctuation">{</span>
+        listen       80<span class="token punctuation">;</span>
+        server_name awtrix.amahv.cn<span class="token punctuation">;</span>
+        location / <span class="token punctuation">{</span>
+                proxy_redirect off<span class="token punctuation">;</span>
+                proxy_pass http://awtrix<span class="token punctuation">;</span>
+                proxy_set_header Host <span class="token variable">$host</span><span class="token punctuation">;</span>
+               <span class="token comment" spellcheck="true"># 支持webSocket</span>
+                proxy_http_version 1.1<span class="token punctuation">;</span>
+                proxy_set_header Upgrade <span class="token variable">$http_upgrade</span><span class="token punctuation">;</span>
+                proxy_set_header Connection <span class="token string">"upgrade"</span><span class="token punctuation">;</span>
+                proxy_read_timeout 86400<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>然而由于 awtrix 的 Web Interface 中有很多依托于 WebSocket 存在的内容，所以我们还得想办法让 nginx 反向代理支持 WebSocket。nginx/1.14.2 已经支持 WebSocket 了，所以我们只需要配置 nginx 正确处理 WebSocket 的 Upgrade 请求头即可。</p>
+<p>最后保存退出。</p>
+<p>执行</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> nginx -s reload        <span class="token comment" spellcheck="true"># 使配置重载并且生效</span></code></pre>
+<hr>
+<p>这里特别说明一下，我并没有配置ssl证书，有很多同学的nginx配置里面增加了ssl证书这一项，我觉得完全用不到吧！这个web端的安全性无所谓，其次证书还要一年到期更换一次，而我想要的就是免维护的一个服务端，越简单越好！</p>
 <hr>
 <h2 id="外壳改进"><a href="#外壳改进" class="headerlink" title="外壳改进"></a>外壳改进</h2><p>网上找了一圈的外壳都没有合适的，来列几个槽点：</p>
 <ol>
