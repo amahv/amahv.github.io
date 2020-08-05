@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Ubuntu安装MySQL 并设置远程访问, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
+    <meta name="keywords" content="github打不开了, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
     <meta name="description" content="陶逸南的个人站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Ubuntu安装MySQL 并设置远程访问 | AMAHV</title>
+    <title>github打不开了 | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Ubuntu安装MySQL 并设置远程访问</h1>
+                    <h1 class="description center-align post-title">github打不开了</h1>
                 </div>
             </div>
         </div>
@@ -442,8 +442,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/MySQL/">
-                                <span class="chip bg-color">MySQL</span>
+                            <a href="/tags/GitHub/">
+                                <span class="chip bg-color">GitHub</span>
                             </a>
                         
                     </div>
@@ -458,14 +458,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-19
+                    2020-08-05
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-19
+                    2020-08-05
                 </div>
                 
 
@@ -474,7 +474,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
 
@@ -489,111 +489,8 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="安装MySQL"><a href="#安装MySQL" class="headerlink" title="安装MySQL"></a>安装MySQL</h2><h3 id="APT安装"><a href="#APT安装" class="headerlink" title="APT安装"></a>APT安装</h3><p>安装mysql服务mysql-server</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> apt <span class="token function">install</span> mysql-server  <span class="token comment" spellcheck="true">#也可表示为mysql-server-x.x来指定版本，例如mysql-server-5.6</span></code></pre>
-<h2 id="初始化MySQL"><a href="#初始化MySQL" class="headerlink" title="初始化MySQL"></a>初始化MySQL</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> mysql_secure_installation</code></pre>
-<p>首先便是要求设置root密码</p>
-<pre><code>Securing the MySQL server deployment.
-
-Connecting to MySQL using a blank password.
-
-VALIDATE PASSWORD PLUGIN can be used to test passwords
-and improve security. It checks the strength of password
-and allows the users to set only those passwords which are
-secure enough. Would you like to setup VALIDATE PASSWORD plugin?
-
-Press y|Y for Yes, any other key for No: n
-Please set the password for root here.
-
-New password:
-
-Re-enter new password:
-By default, a MySQL installation has an anonymous user,
-allowing anyone to log into MySQL without having to have
-a user account created for them. This is intended only for
-testing, and to make the installation go a bit smoother.
-You should remove them before moving into a production
-environment.
-
-Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
-Success.
-
-
-Normally, root should only be allowed to connect from
-'localhost'. This ensures that someone cannot guess at
-the root password from the network.
-
-Disallow root login remotely? (Press y|Y for Yes, any other key for No) : n
-
- ... skipping.
-By default, MySQL comes with a database named 'test' that
-anyone can access. This is also intended only for testing,
-and should be removed before moving into a production
-environment.
-
-
-Remove test database and access to it? (Press y|Y for Yes, any other key for No) : n
-
- ... skipping.
-Reloading the privilege tables will ensure that all changes
-made so far will take effect immediately.
-
-Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
-Success.
-
-All done!</code></pre><p>可以依照上面的进行配置.</p>
-<h3 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h3><hr>
-<pre class=" language-bash"><code class="language-bash">Securing the MySQL server deployment.
-
-Enter password <span class="token keyword">for</span> user root:
-Error: Can<span class="token string">'t connect to local MySQL server through socket '</span>/var/run/mysqld/mysqld.sock' <span class="token punctuation">(</span>2<span class="token punctuation">)</span></code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200719223132.png" alt="错误截图"></p>
-<p>解决方法:</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">service</span> mysql stop
-<span class="token function">sudo</span> <span class="token function">service</span> mysql start</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200719223244.png" alt="截图"></p>
-<h2 id="登录MySQL"><a href="#登录MySQL" class="headerlink" title="登录MySQL"></a>登录MySQL</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> mysql -u root -p            <span class="token comment" spellcheck="true"># 注意,需要加sudo</span></code></pre>
-<h2 id="设置远程访问"><a href="#设置远程访问" class="headerlink" title="设置远程访问"></a>设置远程访问</h2><p>需要设置 mysql 数据库支持外部或者远程访问，则需要把绑定 IP 地址改为 0.0.0.0，或者不写IP地址。因此编辑配置文件：</p>
-<pre><code>sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf</code></pre><p>修改绑定地址为 0.0.0.0。原来默认绑定 127.0.0.1 注释掉。</p>
-<pre class=" language-bash"><code class="language-bash">bind-address <span class="token operator">=</span> 0.0.0.0
-<span class="token comment" spellcheck="true"># bind-address = 127.0.0.1</span></code></pre>
-<p>然后登入MySQL</p>
-<pre><code>sudo mysql -u root -p 
-mysql&gt; GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '您的数据库密码' WITH GRANT OPTION;</code></pre><p>同时刷新权限</p>
-<pre class=" language-bash"><code class="language-bash">flush privileges<span class="token punctuation">;</span></code></pre>
-<p>修改完 mysqld.cnf 文件有最好重新启动服务器。</p>
-<pre><code>systemctl restart mysql.service</code></pre><h2 id="远程访问MySQL"><a href="#远程访问MySQL" class="headerlink" title="远程访问MySQL"></a>远程访问MySQL</h2><pre><code>sudo mysql -h 192.168.123.165 -u root -p -P 3306</code></pre><p>-h: 远程主机IP地址</p>
-<p>-P: 远程端口</p>
-<h2 id="跳过密码直接登入MySQL"><a href="#跳过密码直接登入MySQL" class="headerlink" title="跳过密码直接登入MySQL"></a>跳过密码直接登入MySQL</h2><p>通过修改以下文件可以直接跳过密码登录MySQL</p>
-<pre><code>sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf</code></pre><p>在文件最后行加上下面这句</p>
-<pre class=" language-bash"><code class="language-bash">skip-grant-tables</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200719224313.png" alt="修改后的截图"></p>
-<p>修改后保存并退出编辑。</p>
-<p>然后去登录mysql，需要输入密码的时候直接敲回车。</p>
-<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><h3 id="解决-MySQL-的-ERROR-1698-28000-Access-denied-for-user-‘root’-’localhost’"><a href="#解决-MySQL-的-ERROR-1698-28000-Access-denied-for-user-‘root’-’localhost’" class="headerlink" title="解决 MySQL 的 ERROR 1698 (28000): Access denied for user ‘root’@’localhost’"></a>解决 MySQL 的 ERROR 1698 (28000): Access denied for user ‘root’@’localhost’</h3><p>因为在最近的Ubuntu安装（当然也可能是其他安装）中，MySQL默认使用了UNIX auth_socket plugin插件。</p>
-<p>简单来说这意味着当db_users使用数据库时，<strong>将会通过系统用户认证表进行认证</strong>。你可以通过下面的命令看看你的root用户是否设置成了这样：</p>
-<pre class=" language-bash"><code class="language-bash">$ <span class="token function">sudo</span> mysql -u root <span class="token comment" spellcheck="true"># I had to use "sudo" since is new installation</span>
-
-mysql<span class="token operator">></span> USE mysql<span class="token punctuation">;</span>
-mysql<span class="token operator">></span> SELECT User, Host, plugin FROM mysql.user<span class="token punctuation">;</span>
-
-+------------------+-----------------------+
-<span class="token operator">|</span> User             <span class="token operator">|</span> plugin                <span class="token operator">|</span>
-+------------------+-----------------------+
-<span class="token operator">|</span> root             <span class="token operator">|</span> auth_socket           <span class="token operator">|</span>
-<span class="token operator">|</span> mysql.sys        <span class="token operator">|</span> mysql_native_password <span class="token operator">|</span>
-<span class="token operator">|</span> debian-sys-maint <span class="token operator">|</span> mysql_native_password <span class="token operator">|</span>
-+------------------+-----------------------+</code></pre>
-<p>就像你在查询语句中看到的那样，root用户在使用auth_socket插件。：</p>
-<p><strong>1. 你可以设置你的root用户使用mysql_native_password插件</strong> </p>
-<pre class=" language-bash"><code class="language-bash">$ <span class="token function">sudo</span> mysql -u root <span class="token comment" spellcheck="true"># I had to use "sudo" since is new installation</span>
-
-mysql<span class="token operator">></span> USE mysql<span class="token punctuation">;</span>
-mysql<span class="token operator">></span> UPDATE user SET plugin<span class="token operator">=</span><span class="token string">'mysql_native_password'</span> WHERE User<span class="token operator">=</span><span class="token string">'root'</span><span class="token punctuation">;</span>
-mysql<span class="token operator">></span> FLUSH PRIVILEGES<span class="token punctuation">;</span>
-mysql<span class="token operator">></span> <span class="token keyword">exit</span><span class="token punctuation">;</span>
-
-$ <span class="token function">service</span> mysql restart</code></pre>
+                <p>现在是2020年8月5日下午6点左右，我无法打开GitHub网站，估计又奔溃了，坐标中国北京……</p>
+<p>记录一下难得的时刻……哈哈哈哈</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -637,7 +534,7 @@ $ <span class="token function">service</span> mysql restart</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/">http://blog.amahv.cn/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/</a>
+                    <a href="http://blog.amahv.cn/2020/08/05/github-da-bu-kai-liao/">http://blog.amahv.cn/2020/08/05/github-da-bu-kai-liao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -675,8 +572,8 @@ $ <span class="token function">service</span> mysql restart</code></pre>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/MySQL/">
-                                    <span class="chip bg-color">MySQL</span>
+                                <a href="/tags/GitHub/">
+                                    <span class="chip bg-color">GitHub</span>
                                 </a>
                             
                         </div>
@@ -847,7 +744,7 @@ $ <span class="token function">service</span> mysql restart</code></pre>
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-07-19T22-25-31',
+        id: '2020-08-05T18-03-09',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -871,9 +768,10 @@ $ <span class="token function">service</span> mysql restart</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/08/05/github-da-bu-kai-liao/">
                     <div class="card-image">
@@ -895,9 +793,9 @@ $ <span class="token function">service</span> mysql restart</code></pre>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -906,6 +804,7 @@ $ <span class="token function">service</span> mysql restart</code></pre>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -924,44 +823,26 @@ $ <span class="token function">service</span> mysql restart</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/18/awtrix2-0-xiang-su-shi-zhong-zhi-zuo/">
+                <a href="/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/17.jpg" class="responsive-img" alt="AWTRIX2.0像素时钟制作">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/19.jpg" class="responsive-img" alt="Ubuntu安装MySQL 并设置远程访问">
                         
-                        <span class="card-title">AWTRIX2.0像素时钟制作</span>
+                        <span class="card-title">Ubuntu安装MySQL 并设置远程访问</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            项目官方网站https://awtrixdocs.blueforcer.de/(打开有点慢的…)
-
-
-材料准备
-
-
-No
-Name
-链接
-金额
-
-
-
-1
-NodeMCU（必选）
-click here
-￥12
-
-
-2
-32x8 全彩RGB屏（
+                            安装MySQLAPT安装安装mysql服务mysql-server
+sudo apt install mysql-server  #也可表示为mysql-server-x.x来指定版本，例如mysql-server-5.6
+初始化MySQL
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
                             </span>
                         <span class="publish-author">
                             
@@ -974,16 +855,8 @@ click here
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/AWTRIX/">
-                        <span class="chip bg-color">AWTRIX</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%83%8F%E7%B4%A0%E9%92%9F/">
-                        <span class="chip bg-color">像素钟</span>
-                    </a>
-                    
-                    <a href="/tags/nginx/">
-                        <span class="chip bg-color">nginx</span>
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
                     </a>
                     
                 </div>

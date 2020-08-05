@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-07-19T14:48:19.967Z</updated>
+  <updated>2020-08-05T10:05:12.629Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github打不开了</title>
+    <link href="http://blog.amahv.cn/2020/08/05/github-da-bu-kai-liao/"/>
+    <id>http://blog.amahv.cn/2020/08/05/github-da-bu-kai-liao/</id>
+    <published>2020-08-05T10:03:09.000Z</published>
+    <updated>2020-08-05T10:05:12.629Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;现在是2020年8月5日下午6点左右，我无法打开GitHub网站，估计又奔溃了，坐标中国北京……&lt;/p&gt;
+&lt;p&gt;记录一下难得的时刻……哈哈哈哈&lt;/p&gt;
+&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="GitHub" scheme="http://blog.amahv.cn/tags/GitHub/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu安装MySQL 并设置远程访问</title>

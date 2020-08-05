@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>github打不开了</title>
+      <link href="/2020/08/05/github-da-bu-kai-liao/"/>
+      <url>/2020/08/05/github-da-bu-kai-liao/</url>
+      
+        <content type="html"><![CDATA[<p>现在是2020年8月5日下午6点左右，我无法打开GitHub网站，估计又奔溃了，坐标中国北京……</p><p>记录一下难得的时刻……哈哈哈哈</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Ubuntu安装MySQL 并设置远程访问</title>
       <link href="/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/"/>
       <url>/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/</url>
