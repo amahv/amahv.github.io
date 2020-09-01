@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-07-19T14:48:19.967Z</updated>
+  <updated>2020-09-01T09:27:30.317Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【内网穿透神器】ZeroTier远程访问局域网内web</title>
+    <link href="http://blog.amahv.cn/2020/09/01/nei-wang-chuan-tou-shen-qi-zerotier-yuan-cheng-fang-wen-ju-yu-wang-nei-web/"/>
+    <id>http://blog.amahv.cn/2020/09/01/nei-wang-chuan-tou-shen-qi-zerotier-yuan-cheng-fang-wen-ju-yu-wang-nei-web/</id>
+    <published>2020-09-01T09:25:56.000Z</published>
+    <updated>2020-09-01T09:27:30.317Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在今天以前我我所使用的内网穿透工具只有1个，那就是&lt;a href=&quot;https://github.com/fatedier/frp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;frp&lt;/a&gt;，虽然&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="内网穿透" scheme="http://blog.amahv.cn/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+      <category term="ZeroTier" scheme="http://blog.amahv.cn/tags/ZeroTier/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu安装MySQL 并设置远程访问</title>
