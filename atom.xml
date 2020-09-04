@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-09-01T09:27:30.317Z</updated>
+  <updated>2020-09-04T14:10:47.732Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Altium Designer导出Gerber文件的步骤</title>
+    <link href="http://blog.amahv.cn/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/"/>
+    <id>http://blog.amahv.cn/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/</id>
+    <published>2020-09-04T13:56:07.000Z</published>
+    <updated>2020-09-04T14:10:47.732Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;em&gt;文章参考：&lt;a href=&quot;https://blog.csdn.net/cheer_me/article/details/104470549&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="DXP" scheme="http://blog.amahv.cn/tags/DXP/"/>
+    
+      <category term="Altium Designer" scheme="http://blog.amahv.cn/tags/Altium-Designer/"/>
+    
+      <category term="gerber" scheme="http://blog.amahv.cn/tags/gerber/"/>
+    
+  </entry>
   
   <entry>
     <title>【内网穿透神器】ZeroTier远程访问局域网内web</title>

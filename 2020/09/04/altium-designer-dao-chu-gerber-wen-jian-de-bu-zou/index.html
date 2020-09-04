@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="【内网穿透神器】ZeroTier远程访问局域网内web, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
+    <meta name="keywords" content="Altium Designer导出Gerber文件的步骤, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
     <meta name="description" content="陶逸南的个人站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>【内网穿透神器】ZeroTier远程访问局域网内web | AMAHV</title>
+    <title>Altium Designer导出Gerber文件的步骤 | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">【内网穿透神器】ZeroTier远程访问局域网内web</h1>
+                    <h1 class="description center-align post-title">Altium Designer导出Gerber文件的步骤</h1>
                 </div>
             </div>
         </div>
@@ -442,12 +442,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">
-                                <span class="chip bg-color">内网穿透</span>
+                            <a href="/tags/DXP/">
+                                <span class="chip bg-color">DXP</span>
                             </a>
                         
-                            <a href="/tags/ZeroTier/">
-                                <span class="chip bg-color">ZeroTier</span>
+                            <a href="/tags/Altium-Designer/">
+                                <span class="chip bg-color">Altium Designer</span>
+                            </a>
+                        
+                            <a href="/tags/gerber/">
+                                <span class="chip bg-color">gerber</span>
                             </a>
                         
                     </div>
@@ -462,14 +466,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-01
+                    2020-09-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-01
+                    2020-09-04
                 </div>
                 
 
@@ -478,7 +482,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -493,23 +497,48 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>在今天以前我我所使用的内网穿透工具只有1个，那就是<a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">frp</a>，虽然<a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">frp</a>非常的好用，但是遇到把不常访问的网页服务映射出去就显得比较麻烦了，需要经过云服务器，云服务器侧需要配置nginx，如果有websocket还需要添加websocket的支持。而我大部分的网页都是不常访问的，且有些网页只支持局域网访问，若要映射到广域网上面，需要处理一大堆兼容和转发的问题。</p>
-<p>直到今天，我遇到了<a href="https://www.zerotier.com/" target="_blank" rel="noopener">ZeroTier</a>,开启了我又一扇世界的新大门，对于远程访问局域网内的web页面，对比frp简直是降维打击。</p>
-<p>简单的来说ZeroTier是一个VPN工具，可以免费提供个人使用，时间无限制，但是不能超过100台设备，速度也还行。</p>
-<p>整个部署过程参考：<a href="https://post.smzdm.com/p/a4wmrk7k/" target="_blank" rel="noopener">https://post.smzdm.com/p/a4wmrk7k/</a></p>
-<h2 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h2><p>略</p>
-<h2 id="创建令牌"><a href="#创建令牌" class="headerlink" title="创建令牌"></a>创建令牌</h2><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200901165441.png" alt="创建令牌"></p>
-<h2 id="创建网络"><a href="#创建网络" class="headerlink" title="创建网络"></a>创建网络</h2><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200901165533.png" alt="创建网络"></p>
-<h2 id="路由器端加入网络"><a href="#路由器端加入网络" class="headerlink" title="路由器端加入网络"></a>路由器端加入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200901165833.png" alt="路由器端配置"></p>
-<p>在路由器加入网络后，zeroTier的后台会显示有设备接入，如图：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200901170216.png" alt="这台就是路由器"></p>
-<p>另一台设备是我的电脑。</p>
-<p>前面打上勾勾，代表确认设备，然后系统会自动分配一个IP给这个设备，就是：10.147.17.235。复制这串IP，用到下图的地方：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200901171103.png" alt=""></p>
-<h2 id="PC端下载软件后加入网络"><a href="#PC端下载软件后加入网络" class="headerlink" title="PC端下载软件后加入网络"></a>PC端下载软件后加入网络</h2><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200901171611.png" alt=""></p>
-<p>加入网络后也会显示在后台，也把前面勾选上</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200901171813.png" alt=""></p>
-<h2 id="然后就可以像在局域网内一样访问web服务了"><a href="#然后就可以像在局域网内一样访问web服务了" class="headerlink" title="然后就可以像在局域网内一样访问web服务了"></a>然后就可以像在局域网内一样访问web服务了</h2><script>
+                <p><em>文章参考：<a href="https://blog.csdn.net/cheer_me/article/details/104470549" target="_blank" rel="noopener">https://blog.csdn.net/cheer_me/article/details/104470549</a></em></p>
+<p>​        1.在整个Gerber文件导出过程中，我们<strong><em>\</em>一共需要导出3次才能完成**</strong>，分别为：导出非机械层、导出机械层、导出钻孔层。</p>
+<p>​        2.在导出之前，你需要确保你的目录是干净的，在此之前你从来没有导出过gerber文件。如果之前有导出过，那么请你删掉相关的目录。这点是非常重要的。</p>
+<h1 id="导出非机械层"><a href="#导出非机械层" class="headerlink" title="导出非机械层"></a>导出非机械层</h1><p>点击“File”-&gt;“Fabrication Outputs”-&gt;“Gerber Files”，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220110.png" alt=""></p>
+<p>点击之后弹出Gerber设置窗口，有5个标签页，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220208.png" alt=""></p>
+<p>General标签页，单位为Inches，格式为2:5，一般默认就是，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220238.png" alt=""></p>
+<p>Layers标签页，只在左侧Layers To Plot中除机械层以外的Plot下打钩，Mirror下全部不打勾。另外有四个层的合集，这个和上面显示的层重复，全部不打勾。右侧的机械层不用勾选。将下方Include unconnected mid-layer pads勾选上，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220305.png" alt=""></p>
+<p>Drill Drawing标签里的选项都不用选，直接跳过，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220342.png" alt=""></p>
+<p>Apertures标签，只需要将Embedded apertures (RS274X)勾选即可，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220403.png" alt=""></p>
+<p>Advanced标签页设置前导零，其它默认即可，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220423.png" alt=""></p>
+<p>然后点击OK，一会就弹出CAMtastic1.Cam工程文件，直接关闭就行，不需要保存，如下图所示</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220442.png" alt=""></p>
+<p>到这里非机械层导出完成，下面导出机械层。</p>
+<h1 id="导出机械层"><a href="#导出机械层" class="headerlink" title="导出机械层"></a>导出机械层</h1><p>同样点击“File”-&gt;“Fabrication Outputs”-&gt;“Gerber Files”弹出Gerber设置窗口，只需设置Layers和Drill Drawing两个标签即可，其它标签默认。</p>
+<p>Layers标签，将左侧Layers To Plot中的勾全部取消，下方Include unconnected mid-layer pads也取消勾选。将右侧需要的机械层选中，这个根据自己使用的机械层进行选择。根据PCB，这里只需要选择Mechanical 1即可，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220644.png" alt=""></p>
+<p>Drill Drawing标签，将Drill Drawing Plots和Drill Guide Plots下的Plot all used drill pairs都勾选即可，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220704.png" alt=""></p>
+<p>设置好之后直接点击OK，同样也会弹出CAMtastic1.Cam工程文件，直接关闭就行，不需要保存，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220723.png" alt=""></p>
+<p>到这里机械层导出完成，下面导出钻孔层。</p>
+<h1 id="导出钻孔层"><a href="#导出钻孔层" class="headerlink" title="导出钻孔层"></a>导出钻孔层</h1><p>点击“File”-&gt;“Fabrication Outputs”-&gt;“NC Drill Files”，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220747.png" alt=""></p>
+<p>点击之后弹出NC Drill设置窗口，将Leading/Trailing Zeroes下的Suppress leading zeroes勾选，其它默认即可，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220805.png" alt=""></p>
+<p>设置好之后，点击OK，同样也会弹出CAMtastic1.Cam工程文件，同时有个Import Drill Data的弹窗，直接点击OK即可，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220822.png" alt=""></p>
+<p>又弹出Import Mill/Route Data窗口，直接点击OK即可，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220838.png" alt=""></p>
+<p>同样直接关闭工程就行，不需要保存，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220917.png" alt=""></p>
+<p>到这里就完成了Gerber文件的导出，一般默认直接到PCB所在目录下有一个Project Outputs for XXX的文件夹，Gerber文件就在这个文件夹下，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220935.png" alt=""></p>
+<p>只要将这些文件全部打包，发给生产厂家即可。以上就是Altium Designer导出Gerber文件的全部过程。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -552,7 +581,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/09/01/nei-wang-chuan-tou-shen-qi-zerotier-yuan-cheng-fang-wen-ju-yu-wang-nei-web/">http://blog.amahv.cn/2020/09/01/nei-wang-chuan-tou-shen-qi-zerotier-yuan-cheng-fang-wen-ju-yu-wang-nei-web/</a>
+                    <a href="http://blog.amahv.cn/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/">http://blog.amahv.cn/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -590,12 +619,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">
-                                    <span class="chip bg-color">内网穿透</span>
+                                <a href="/tags/DXP/">
+                                    <span class="chip bg-color">DXP</span>
                                 </a>
                             
-                                <a href="/tags/ZeroTier/">
-                                    <span class="chip bg-color">ZeroTier</span>
+                                <a href="/tags/Altium-Designer/">
+                                    <span class="chip bg-color">Altium Designer</span>
+                                </a>
+                            
+                                <a href="/tags/gerber/">
+                                    <span class="chip bg-color">gerber</span>
                                 </a>
                             
                         </div>
@@ -766,7 +799,7 @@
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-09-01T17-25-56',
+        id: '2020-09-04T21-56-07',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -790,9 +823,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/">
                     <div class="card-image">
@@ -811,9 +845,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -822,6 +856,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -848,26 +883,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/19/ubuntu-an-zhuang-mysql-bing-she-zhi-yuan-cheng-fang-wen/">
+                <a href="/2020/09/01/nei-wang-chuan-tou-shen-qi-zerotier-yuan-cheng-fang-wen-ju-yu-wang-nei-web/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/19.jpg" class="responsive-img" alt="Ubuntu安装MySQL 并设置远程访问">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/22.jpg" class="responsive-img" alt="【内网穿透神器】ZeroTier远程访问局域网内web">
                         
-                        <span class="card-title">Ubuntu安装MySQL 并设置远程访问</span>
+                        <span class="card-title">【内网穿透神器】ZeroTier远程访问局域网内web</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            安装MySQLAPT安装安装mysql服务mysql-server
-sudo apt install mysql-server  #也可表示为mysql-server-x.x来指定版本，例如mysql-server-5.6
-初始化MySQL
+                            在今天以前我我所使用的内网穿透工具只有1个，那就是frp，虽然frp非常的好用，但是遇到把不常访问的网页服务映射出去就显得比较麻烦了，需要经过云服务器，云服务器侧需要配置nginx，如果有websocket还需要添加websocket的支持
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-01
                             </span>
                         <span class="publish-author">
                             
@@ -880,8 +913,12 @@ sudo apt install mysql-server  #也可表示为mysql-server-x.x来指定版本�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/MySQL/">
-                        <span class="chip bg-color">MySQL</span>
+                    <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">
+                        <span class="chip bg-color">内网穿透</span>
+                    </a>
+                    
+                    <a href="/tags/ZeroTier/">
+                        <span class="chip bg-color">ZeroTier</span>
                     </a>
                     
                 </div>
