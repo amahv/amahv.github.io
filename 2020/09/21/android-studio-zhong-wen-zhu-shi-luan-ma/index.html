@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Altium Designer导出Gerber文件的步骤, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
+    <meta name="keywords" content="Android studio中文注释乱码, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
     <meta name="description" content="陶逸南的个人站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>Altium Designer导出Gerber文件的步骤 | AMAHV</title>
+    <title>Android studio中文注释乱码 | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Altium Designer导出Gerber文件的步骤</h1>
+                    <h1 class="description center-align post-title">Android studio中文注释乱码</h1>
                 </div>
             </div>
         </div>
@@ -442,16 +442,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/DXP/">
-                                <span class="chip bg-color">DXP</span>
-                            </a>
-                        
-                            <a href="/tags/Altium-Designer/">
-                                <span class="chip bg-color">Altium Designer</span>
-                            </a>
-                        
-                            <a href="/tags/gerber/">
-                                <span class="chip bg-color">gerber</span>
+                            <a href="/tags/Android-studio/">
+                                <span class="chip bg-color">Android studio</span>
                             </a>
                         
                     </div>
@@ -466,14 +458,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-09-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-04
+                    2020-09-21
                 </div>
                 
 
@@ -482,7 +474,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -497,51 +489,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><em>文章参考：<a href="https://blog.csdn.net/cheer_me/article/details/104470549" target="_blank" rel="noopener">https://blog.csdn.net/cheer_me/article/details/104470549</a></em></p>
-<p>​        1.在整个Gerber文件导出过程中，我们<strong><em>\</em>一共需要导出3次才能完成**</strong>，分别为：导出非机械层、导出机械层、导出钻孔层。</p>
-<p>​        2.在导出之前，你需要确保你的目录是干净的，在此之前你从来没有导出过gerber文件。如果之前有导出过，那么请你删掉相关的目录。这点是非常重要的。</p>
-<h1 id="导出非机械层"><a href="#导出非机械层" class="headerlink" title="导出非机械层"></a>导出非机械层</h1><p>点击“File”-&gt;“Fabrication Outputs”-&gt;“Gerber Files”，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220110.png" alt=""></p>
-<p>点击之后弹出Gerber设置窗口，有5个标签页，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220208.png" alt=""></p>
-<p>General标签页，单位为Inches，格式为2:5，一般默认就是，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220238.png" alt=""></p>
-<p>Layers标签页，只在左侧Layers To Plot中除机械层以外的Plot下打钩，Mirror下全部不打勾。另外有四个层的合集，这个和上面显示的层重复，全部不打勾。右侧的机械层不用勾选。将下方Include unconnected mid-layer pads勾选上，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220305.png" alt=""></p>
-<p>Drill Drawing标签里的选项都不用选，直接跳过，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220342.png" alt=""></p>
-<p>Apertures标签，只需要将Embedded apertures (RS274X)勾选即可，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220403.png" alt=""></p>
-<p>Advanced标签页设置前导零，其它默认即可，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220423.png" alt=""></p>
-<p>然后点击OK，一会就弹出CAMtastic1.Cam工程文件，直接关闭就行，不需要保存，如下图所示</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220442.png" alt=""></p>
-<p>到这里非机械层导出完成，下面导出机械层。</p>
-<h1 id="导出机械层"><a href="#导出机械层" class="headerlink" title="导出机械层"></a>导出机械层</h1><p>同样点击“File”-&gt;“Fabrication Outputs”-&gt;“Gerber Files”弹出Gerber设置窗口，只需设置Layers和Drill Drawing两个标签即可，其它标签默认。</p>
-<p>Layers标签，将左侧Layers To Plot中的勾全部取消，下方Include unconnected mid-layer pads也取消勾选。将右侧需要的机械层选中，这个根据自己使用的机械层进行选择。根据PCB，这里只需要选择Mechanical 1即可，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220644.png" alt=""></p>
-<p>Drill Drawing标签，将Drill Drawing Plots和Drill Guide Plots下的Plot all used drill pairs都勾选即可，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220704.png" alt=""></p>
-<p>设置好之后直接点击OK，同样也会弹出CAMtastic1.Cam工程文件，直接关闭就行，不需要保存，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220723.png" alt=""></p>
-<p>到这里机械层导出完成，下面导出钻孔层。</p>
-<h1 id="导出钻孔层"><a href="#导出钻孔层" class="headerlink" title="导出钻孔层"></a>导出钻孔层</h1><p>点击“File”-&gt;“Fabrication Outputs”-&gt;“NC Drill Files”，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220747.png" alt=""></p>
-<p>点击之后弹出NC Drill设置窗口，将Leading/Trailing Zeroes下的Suppress leading zeroes勾选，其它默认即可，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220805.png" alt=""></p>
-<p>设置好之后，点击OK，同样也会弹出CAMtastic1.Cam工程文件，同时有个Import Drill Data的弹窗，直接点击OK即可，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220822.png" alt=""></p>
-<p>又弹出Import Mill/Route Data窗口，直接点击OK即可，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220838.png" alt=""></p>
-<p>同样直接关闭工程就行，不需要保存，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220917.png" alt=""></p>
-<p>到这里就完成了Gerber文件的导出，一般默认直接到PCB所在目录下有一个Project Outputs for XXX的文件夹，Gerber文件就在这个文件夹下，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904220935.png" alt=""></p>
-<p>只要将这些文件全部打包，发给生产厂家即可。以上就是Altium Designer导出Gerber文件的全部过程。</p>
-<h1 id="上传嘉立创"><a href="#上传嘉立创" class="headerlink" title="上传嘉立创"></a>上传嘉立创</h1><p>​        将文件夹压缩成zip后，我上传到嘉立创的平台上。嘉立创平台解析之后就会显示出我的文件的样子。</p>
-<p>该怎么样就是怎么样，非常完美。</p>
-<p>Gerber文件的好处就是屏蔽了各个软件之间版本和兼容性的问题，Gerber文件可以最大程度的保证PCB不会因为软件版本的问题而造成生产稿错误。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20200904221510.png" alt="上传到嘉立创平台后自动解析的效果"></p>
+                <h1 id="感谢简书sayeverything的文章：Android-Studio-3-6稳定版-注释中文出现乱码解决方案"><a href="#感谢简书sayeverything的文章：Android-Studio-3-6稳定版-注释中文出现乱码解决方案" class="headerlink" title="感谢简书sayeverything的文章：Android Studio 3.6稳定版 注释中文出现乱码解决方案"></a>感谢简书sayeverything的文章：<a href="https://www.jianshu.com/p/ac7aea2a847d" target="_blank" rel="noopener">Android Studio 3.6稳定版 注释中文出现乱码解决方案</a></h1><p>其次感谢知乎holk的文章：<a href="https://zhuanlan.zhihu.com/p/110442356" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/110442356</a></p>
+<p>在网上找了很多解决方案：</p>
+<p>1：更改编码 File –&gt;setting —&gt; Editor—-&gt;File Encodings 修改编码未UTF - 8 (然而对我并没有用)</p>
+<p>2：修改文件 打开文件安装目录下的bin文件 找到studio64.exe.vmoptions  与studio.exe.vmoptions  打开并在最后一行添加</p>
+<p>​    -Dfile.encoding=UTF-8  （然而也不管用）</p>
+<p>最后：偶然看到这位大哥的，才得以解决，要不然我估计的返回到低版本了</p>
+<p>  <a href="https://zhuanlan.zhihu.com/p/110442356" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/110442356</a></p>
+<p>3： File –&gt;setting —&gt; Appearance –&gt;Appearance  Antialiasing中的两个只都选择Greyscale 完美解决</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20200921163338.png" alt=""></p>
+<p>从此可以开开心心使用新版本了</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -585,7 +542,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/">http://blog.amahv.cn/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/</a>
+                    <a href="http://blog.amahv.cn/2020/09/21/android-studio-zhong-wen-zhu-shi-luan-ma/">http://blog.amahv.cn/2020/09/21/android-studio-zhong-wen-zhu-shi-luan-ma/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -623,16 +580,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/DXP/">
-                                    <span class="chip bg-color">DXP</span>
-                                </a>
-                            
-                                <a href="/tags/Altium-Designer/">
-                                    <span class="chip bg-color">Altium Designer</span>
-                                </a>
-                            
-                                <a href="/tags/gerber/">
-                                    <span class="chip bg-color">gerber</span>
+                                <a href="/tags/Android-studio/">
+                                    <span class="chip bg-color">Android studio</span>
                                 </a>
                             
                         </div>
@@ -803,7 +752,7 @@
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-09-04T21-56-07',
+        id: '2020-09-21T16-06-27',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -831,20 +780,23 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/09/21/android-studio-zhong-wen-zhu-shi-luan-ma/">
+                <a href="/2020/09/21/picgo-tu-chuang-github-pei-zhi-cdn-jia-su/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/5.jpg" class="responsive-img" alt="Android studio中文注释乱码">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/18.jpg" class="responsive-img" alt="picGo图床github配置CDN加速">
                         
-                        <span class="card-title">Android studio中文注释乱码</span>
+                        <span class="card-title">picGo图床github配置CDN加速</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            感谢简书sayeverything的文章：Android Studio 3.6稳定版 注释中文出现乱码解决方案其次感谢知乎holk的文章：https://zhuanlan.zhihu.com/p/110442356
-在网上找了很多解决方案：
+                            
+
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { retur
                         
                     </div>
                     <div class="publish-info">
@@ -862,8 +814,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Android-studio/">
-                        <span class="chip bg-color">Android studio</span>
+                    <a href="/tags/picGo/">
+                        <span class="chip bg-color">picGo</span>
                     </a>
                     
                 </div>
@@ -877,24 +829,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/01/nei-wang-chuan-tou-shen-qi-zerotier-yuan-cheng-fang-wen-ju-yu-wang-nei-web/">
+                <a href="/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/22.jpg" class="responsive-img" alt="【内网穿透神器】ZeroTier远程访问局域网内web">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/8.jpg" class="responsive-img" alt="Altium Designer导出Gerber文件的步骤">
                         
-                        <span class="card-title">【内网穿透神器】ZeroTier远程访问局域网内web</span>
+                        <span class="card-title">Altium Designer导出Gerber文件的步骤</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在今天以前我我所使用的内网穿透工具只有1个，那就是frp，虽然frp非常的好用，但是遇到把不常访问的网页服务映射出去就显得比较麻烦了，需要经过云服务器，云服务器侧需要配置nginx，如果有websocket还需要添加websocket的支持
+                            文章参考：https://blog.csdn.net/cheer_me/article/details/104470549
+​        1.在整个Gerber文件导出过程中，我们\一共需要导出3次才能完成**，分别为：导出非机械层、导
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-04
                             </span>
                         <span class="publish-author">
                             
@@ -907,12 +860,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">
-                        <span class="chip bg-color">内网穿透</span>
+                    <a href="/tags/DXP/">
+                        <span class="chip bg-color">DXP</span>
                     </a>
                     
-                    <a href="/tags/ZeroTier/">
-                        <span class="chip bg-color">ZeroTier</span>
+                    <a href="/tags/Altium-Designer/">
+                        <span class="chip bg-color">Altium Designer</span>
+                    </a>
+                    
+                    <a href="/tags/gerber/">
+                        <span class="chip bg-color">gerber</span>
                     </a>
                     
                 </div>

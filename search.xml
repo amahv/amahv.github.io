@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>picGo图床github配置CDN加速</title>
+      <link href="/2020/09/21/picgo-tu-chuang-github-pei-zhi-cdn-jia-su/"/>
+      <url>/2020/09/21/picgo-tu-chuang-github-pei-zhi-cdn-jia-su/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20200921164257.png" alt="配置截图"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> picGo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Android studio中文注释乱码</title>
+      <link href="/2020/09/21/android-studio-zhong-wen-zhu-shi-luan-ma/"/>
+      <url>/2020/09/21/android-studio-zhong-wen-zhu-shi-luan-ma/</url>
+      
+        <content type="html"><![CDATA[<h1 id="感谢简书sayeverything的文章：Android-Studio-3-6稳定版-注释中文出现乱码解决方案"><a href="#感谢简书sayeverything的文章：Android-Studio-3-6稳定版-注释中文出现乱码解决方案" class="headerlink" title="感谢简书sayeverything的文章：Android Studio 3.6稳定版 注释中文出现乱码解决方案"></a>感谢简书sayeverything的文章：<a href="https://www.jianshu.com/p/ac7aea2a847d" target="_blank" rel="noopener">Android Studio 3.6稳定版 注释中文出现乱码解决方案</a></h1><p>其次感谢知乎holk的文章：<a href="https://zhuanlan.zhihu.com/p/110442356" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/110442356</a></p><p>在网上找了很多解决方案：</p><p>1：更改编码 File –&gt;setting —&gt; Editor—-&gt;File Encodings 修改编码未UTF - 8 (然而对我并没有用)</p><p>2：修改文件 打开文件安装目录下的bin文件 找到studio64.exe.vmoptions  与studio.exe.vmoptions  打开并在最后一行添加</p><p>​    -Dfile.encoding=UTF-8  （然而也不管用）</p><p>最后：偶然看到这位大哥的，才得以解决，要不然我估计的返回到低版本了</p><p>  <a href="https://zhuanlan.zhihu.com/p/110442356" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/110442356</a></p><p>3： File –&gt;setting —&gt; Appearance –&gt;Appearance  Antialiasing中的两个只都选择Greyscale 完美解决</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20200921163338.png" alt=""></p><p>从此可以开开心心使用新版本了</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Android studio </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Altium Designer导出Gerber文件的步骤</title>
       <link href="/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/"/>
       <url>/2020/09/04/altium-designer-dao-chu-gerber-wen-jian-de-bu-zou/</url>
