@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-09-21T08:43:28.976Z</updated>
+  <updated>2020-10-12T13:31:12.153Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jdk11，jdk15，高版本没有jre的解决方法</title>
+    <link href="http://blog.amahv.cn/2020/10/12/jdk11-jdk15-gao-ban-ben-mei-you-jre-de-jie-jue-fang-fa/"/>
+    <id>http://blog.amahv.cn/2020/10/12/jdk11-jdk15-gao-ban-ben-mei-you-jre-de-jie-jue-fang-fa/</id>
+    <published>2020-10-12T13:24:23.000Z</published>
+    <updated>2020-10-12T13:31:12.153Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h2&gt;&lt;p&gt;jdk11和jdk12在以前版本基础上，改动有点大，安装后默认是没有jre的。&lt;/p&gt;
+&lt;h2 id=&quot;解决方法&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="JAVA" scheme="http://blog.amahv.cn/tags/JAVA/"/>
+    
+      <category term="JRE" scheme="http://blog.amahv.cn/tags/JRE/"/>
+    
+  </entry>
   
   <entry>
     <title>picGo图床github配置CDN加速</title>
