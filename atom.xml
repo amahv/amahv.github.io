@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-10-13T05:27:05.253Z</updated>
+  <updated>2020-10-13T09:31:39.720Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Git】Git取消对文件的跟踪</title>
+    <link href="http://blog.amahv.cn/2020/10/13/git-git-qu-xiao-dui-wen-jian-de-gen-zong/"/>
+    <id>http://blog.amahv.cn/2020/10/13/git-git-qu-xiao-dui-wen-jian-de-gen-zong/</id>
+    <published>2020-10-13T09:20:04.000Z</published>
+    <updated>2020-10-13T09:31:39.720Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h2&gt;&lt;p&gt;直接上命令&lt;/p&gt;
+&lt;pre class=&quot; language-shell&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="http://blog.amahv.cn/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://blog.amahv.cn/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>【Android】解决Android SSL peer shut down incorrectly无法下载pom包</title>
@@ -514,29 +542,6 @@
       <category term="stm32" scheme="http://blog.amahv.cn/tags/stm32/"/>
     
       <category term="lowPower" scheme="http://blog.amahv.cn/tags/lowPower/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://blog.amahv.cn/2020/06/23/hello-world/"/>
-    <id>http://blog.amahv.cn/2020/06/23/hello-world/</id>
-    <published>2020-06-22T18:06:51.028Z</published>
-    <updated>2020-06-22T18:06:51.028Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-    
     
   </entry>
   

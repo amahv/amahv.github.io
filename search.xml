@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>【Git】Git取消对文件的跟踪</title>
+      <link href="/2020/10/13/git-git-qu-xiao-dui-wen-jian-de-gen-zong/"/>
+      <url>/2020/10/13/git-git-qu-xiao-dui-wen-jian-de-gen-zong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><p>直接上命令</p><pre class=" language-shell"><code class="language-shell">适用于文件夹:git rm -r --cached dir/适用于文件:  git rm --cached file想把刚才删除的文件添加回来: git add -f file预览操作加 -n 参数    例:  git rm -r -n --cached "bin/" #加上-n这个参数可以预览会删除的文件,但是不会执行任何实质性改动</code></pre><h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><pre class=" language-shell"><code class="language-shell">-r:给定前导目录时,递归包含其目录下的所有文件和文件夹--cached:使用此选项可以取消提交并仅从索引中删除路径。 无论是否修改，工作树文件都将被保留。add -f :强制添加被.gitignore忽略的文件或文件夹</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【Android】解决Android SSL peer shut down incorrectly无法下载pom包</title>
       <link href="/2020/10/13/android-jie-jue-android-ssl-peer-shut-down-incorrectly-wu-fa-xia-zai-pom-bao/"/>
       <url>/2020/10/13/android-jie-jue-android-ssl-peer-shut-down-incorrectly-wu-fa-xia-zai-pom-bao/</url>
