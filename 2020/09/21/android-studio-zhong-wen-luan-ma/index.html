@@ -465,7 +465,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-12
+                    2020-10-14
                 </div>
                 
 
@@ -499,6 +499,13 @@
 <p>3： File –&gt;setting —&gt; Appearance –&gt;Appearance  Antialiasing中的两个只都选择Greyscale 完美解决</p>
 <p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20200921163338.png" alt=""></p>
 <p>从此可以开开心心使用新版本了</p>
+<h1 id="Android-Studio-Build-Output-栏内汉字出现乱码的解决方案"><a href="#Android-Studio-Build-Output-栏内汉字出现乱码的解决方案" class="headerlink" title="Android Studio Build Output 栏内汉字出现乱码的解决方案"></a>Android Studio Build Output 栏内汉字出现乱码的解决方案</h1><p>就是图中红框内显示的毛病，Build Output栏中的汉字出现了乱码，其它地方都没有乱码。<br>此方案仅适用于图片中出现的乱码。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201014155606.png" alt=""></p>
+<p>在Android studio安装目录中搜索 studio64.exe.vmoptions 文件</p>
+<p>在文件末尾加上</p>
+<pre><code>-Dfile.encoding=UTF-8</code></pre><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201014155844.png" alt=""></p>
+<p>保存后重启Android studio</p>
+<h3 id="有图有真相"><a href="#有图有真相" class="headerlink" title="有图有真相"></a>有图有真相</h3><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201014160108.png" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -542,7 +549,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/09/21/android-studio-zhong-wen-zhu-shi-luan-ma/">http://blog.amahv.cn/2020/09/21/android-studio-zhong-wen-zhu-shi-luan-ma/</a>
+                    <a href="http://blog.amahv.cn/2020/09/21/android-studio-zhong-wen-luan-ma/">http://blog.amahv.cn/2020/09/21/android-studio-zhong-wen-luan-ma/</a>
                 </span>
             </div>
             <div class="reprint__notice">
