@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Awtrix像素钟外壳版本说明</title>
+      <link href="/2020/10/14/awtrix-xiang-su-zhong-wai-ke-ban-ben-shuo-ming/"/>
+      <url>/2020/10/14/awtrix-xiang-su-zhong-wai-ke-ban-ben-shuo-ming/</url>
+      
+        <content type="html"><![CDATA[<h2 id="查看本文件请使用Typora软件（或其他支持markdown的软件）"><a href="#查看本文件请使用Typora软件（或其他支持markdown的软件）" class="headerlink" title="查看本文件请使用Typora软件（或其他支持markdown的软件）"></a>查看本文件请使用Typora软件（或其他支持markdown的软件）</h2><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/%E5%83%8F%E7%B4%A0%E9%92%9F%E7%88%86%E7%82%B8%E5%9B%BE_%E6%B8%B2%E6%9F%932.JPG" alt=""></p><h2 id="外壳版本说明"><a href="#外壳版本说明" class="headerlink" title="外壳版本说明"></a>外壳版本说明</h2><p>半吊子版本 V0.9</p><h2 id="我为什么设计这个外壳"><a href="#我为什么设计这个外壳" class="headerlink" title="我为什么设计这个外壳"></a>我为什么设计这个外壳</h2><p>网上找了一圈的外壳都没有合适的，来列几个槽点：</p><ol><li>官方外壳极其简陋，中间有缝。</li><li>网络上普遍的外壳都比较窄，有种立不住的感觉。</li><li>屏幕边框都巨厚，看起来很不美观。</li><li>没有柔性屏保持架，盒子打开屏幕跟着掉下来。</li><li>要使用胶水或者螺丝固定，拆装折腾麻烦。</li><li>没有电容按键的表示区域。</li><li>没有喇叭孔。不好安装喇叭。</li><li>使用的是同轴电源座，这种数据线在家里不常有，得单独配一根。</li><li>没有光敏电阻孔。</li><li>外形是四四方方，没有圆角，看起来非常生硬。</li></ol><p>根据以上的10个槽点，我作出了以下改进：</p><ol><li>全一体化3D打印，装配好之后看不到一颗螺丝孔，看不到安装缝。</li><li>后壳的长度为12cm，放在高处也可以非常稳固，不容易因为晃动掉下来。</li><li>屏占比约99%。（当然这只是算正面黑色部分的占比，有点水分，hhhhhh）</li><li>多画了一层柔性屏保持架，通过20颗钕磁铁和光栅紧紧地贴合在一起，非常稳固和方便。</li><li>全部的连接都采用磁吸的方式，不需要用螺丝。亚克力挡板用3M双面胶，因为这块东西粘上去之后不会再拆它了。</li><li>增加了顶部3个电容按键区域。</li><li>后壳上有一个安装小喇叭的位置。</li><li>使用的是type-c母座，5V的充电头和type-c数据线在家中随处可见。</li><li>后壳上有一个光敏电阻安装孔。</li><li>外壳的棱采用圆角设计，看起来不会那么生硬。</li></ol><h2 id="外壳使用前提"><a href="#外壳使用前提" class="headerlink" title="外壳使用前提"></a>外壳使用前提</h2><h3 id="自身素质"><a href="#自身素质" class="headerlink" title="自身素质"></a>自身素质</h3><ol><li>有耐心</li><li>爱折腾</li></ol><h3 id="具备技能"><a href="#具备技能" class="headerlink" title="具备技能"></a>具备技能</h3><ol><li><p>会使用3D模型编辑软件</p></li><li><p>具有一定钳工功底，会使用锉刀</p></li><li><p>会喷漆</p></li></ol><h2 id="外壳问题说明"><a href="#外壳问题说明" class="headerlink" title="外壳问题说明"></a>外壳问题说明</h2><p>因为我在设计的时候考虑装配得紧密一些，而店家声称的打印精度为0.1mm，所以我在需要装配的地方留的余量大概只有0.2mm，但是盒子大了，且是薄壁零件，有热胀冷缩的问题，导致打印完成之后无法顺利进行装配，需要用锉刀打磨才能装配进去。也是因为这样，我不敢把外壳公然挂到网上供大家下载，怕被喷成筛子。</p><h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><p>最近都比较忙，后续等我有时间了，我会慢慢升级我的像素钟。</p><h2 id="外壳实拍效果"><a href="#外壳实拍效果" class="headerlink" title="外壳实拍效果"></a>外壳实拍效果</h2><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/c5e0fce925a1a04ac90c6165739420b.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/42d12eae2768d09026b82a4830dfbf1.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/5657a79b4abf090589b448c63b1705d.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/24bdd08bd91ba353e13d376fa725d9f.jpg" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 像素钟 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 像素钟 </tag>
+            
+            <tag> Awtrix </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【Git】Git取消对文件的跟踪</title>
       <link href="/2020/10/13/git-git-qu-xiao-dui-wen-jian-de-gen-zong/"/>
       <url>/2020/10/13/git-git-qu-xiao-dui-wen-jian-de-gen-zong/</url>

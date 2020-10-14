@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-10-13T09:31:39.720Z</updated>
+  <updated>2020-10-14T05:05:44.641Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Awtrix像素钟外壳版本说明</title>
+    <link href="http://blog.amahv.cn/2020/10/14/awtrix-xiang-su-zhong-wai-ke-ban-ben-shuo-ming/"/>
+    <id>http://blog.amahv.cn/2020/10/14/awtrix-xiang-su-zhong-wai-ke-ban-ben-shuo-ming/</id>
+    <published>2020-10-14T05:03:59.000Z</published>
+    <updated>2020-10-14T05:05:44.641Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;查看本文件请使用Typora软件（或其他支持markdown的软件）&quot;&gt;&lt;a href=&quot;#查看本文件请使用Typora软件（或其他支持markdown的软件）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="像素钟" scheme="http://blog.amahv.cn/categories/%E5%83%8F%E7%B4%A0%E9%92%9F/"/>
+    
+    
+      <category term="像素钟" scheme="http://blog.amahv.cn/tags/%E5%83%8F%E7%B4%A0%E9%92%9F/"/>
+    
+      <category term="Awtrix" scheme="http://blog.amahv.cn/tags/Awtrix/"/>
+    
+  </entry>
   
   <entry>
     <title>【Git】Git取消对文件的跟踪</title>
@@ -521,27 +550,6 @@
       <category term="vscode" scheme="http://blog.amahv.cn/tags/vscode/"/>
     
       <category term="windows" scheme="http://blog.amahv.cn/tags/windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>cover开发记录</title>
-    <link href="http://blog.amahv.cn/2020/06/23/cover-kai-fa-ji-lu/"/>
-    <id>http://blog.amahv.cn/2020/06/23/cover-kai-fa-ji-lu/</id>
-    <published>2020-06-23T07:13:11.000Z</published>
-    <updated>2020-06-24T10:22:22.331Z</updated>
-    
-    <summary type="html">
-    
-      ......
-    
-    </summary>
-    
-    
-    
-      <category term="stm32" scheme="http://blog.amahv.cn/tags/stm32/"/>
-    
-      <category term="lowPower" scheme="http://blog.amahv.cn/tags/lowPower/"/>
     
   </entry>
   
