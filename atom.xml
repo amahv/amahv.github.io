@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-10-14T05:05:44.641Z</updated>
+  <updated>2020-10-15T04:49:38.113Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Android】android sdk build-tools sdk tools 历史版本下载地址</title>
+    <link href="http://blog.amahv.cn/2020/10/15/android-android-sdk-build-tools-sdk-tools-li-shi-ban-ben-xia-zai-di-zhi/"/>
+    <id>http://blog.amahv.cn/2020/10/15/android-android-sdk-build-tools-sdk-tools-li-shi-ban-ben-xia-zai-di-zhi/</id>
+    <published>2020-10-15T03:34:11.000Z</published>
+    <updated>2020-10-15T04:49:38.113Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;痛点&quot;&gt;&lt;a href=&quot;#痛点&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Android" scheme="http://blog.amahv.cn/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://blog.amahv.cn/tags/Android/"/>
+    
+      <category term="Android SDK" scheme="http://blog.amahv.cn/tags/Android-SDK/"/>
+    
+  </entry>
   
   <entry>
     <title>Awtrix像素钟外壳版本说明</title>
@@ -523,33 +552,6 @@
       <category term="keil" scheme="http://blog.amahv.cn/tags/keil/"/>
     
       <category term="MDK" scheme="http://blog.amahv.cn/tags/MDK/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vscode输出窗口中文乱码</title>
-    <link href="http://blog.amahv.cn/2020/06/24/vscode-shu-chu-chuang-kou-zhong-wen-luan-ma/"/>
-    <id>http://blog.amahv.cn/2020/06/24/vscode-shu-chu-chuang-kou-zhong-wen-luan-ma/</id>
-    <published>2020-06-24T02:09:53.000Z</published>
-    <updated>2020-06-24T02:38:35.412Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h1&gt;&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="vscode" scheme="http://blog.amahv.cn/tags/vscode/"/>
-    
-      <category term="windows" scheme="http://blog.amahv.cn/tags/windows/"/>
     
   </entry>
   
