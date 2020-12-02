@@ -11,6 +11,12 @@
         <content type="html"><![CDATA[<p>引用<a href="https://www.vediotalk.com/archives/7713" target="_blank" rel="noopener">https://www.vediotalk.com/archives/7713</a></p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>这个方法不仅适合主路由器,也同时适合二级路由器.</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202222603.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202223050.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202223419.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202223515.png" alt="这里可以查看DDNS解析日志"></p><h2 id="使用NAS"><a href="#使用NAS" class="headerlink" title="使用NAS"></a>使用NAS</h2><p>使用NAS的情况下我们希望局域网内的访问直接就解析到IP地址,我们则可以使用这么一个小技巧。</p><p>首先我们看到这个DDNS设置是可以将【查询主机名】和【域名】分开指定的，我在我的局域网内将我的域名直接通过hosts解析为：192.168.123.120，这样的话，查询主机名将一直会是192.168.123.120，这将会一直触发解析配置，这不是我们想要的。要避免这样的情况，可以在你的阿里云云解析中增加一条CNAME解析，将我们的【查询主机名】就指向到CNAME解析的域名上，而【域名】则位置原来的不变。这样就不影响了，下面看我怎么做的。</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202225523.png" alt="CNAME解析妙用"></p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202225928.png" alt=""></p><p>你是否直呼内行！！！妙吧~</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
+      <categories>
+          
+          <category> OpenWrt </category>
+          
+      </categories>
+      
       
         <tags>
             
