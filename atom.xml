@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-10-15T04:49:38.113Z</updated>
+  <updated>2020-12-02T14:35:45.331Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【openwrt】使用LEDE自带的动态DNS进行动态域名解析</title>
+    <link href="http://blog.amahv.cn/2020/12/02/openwrt-shi-yong-lede-zi-dai-de-dong-tai-dns-jin-xing-dong-tai-yu-ming-jie-xi/"/>
+    <id>http://blog.amahv.cn/2020/12/02/openwrt-shi-yong-lede-zi-dai-de-dong-tai-dns-jin-xing-dong-tai-yu-ming-jie-xi/</id>
+    <published>2020-12-02T14:16:22.000Z</published>
+    <updated>2020-12-02T14:35:45.331Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;引用&lt;a href=&quot;https://www.vediotalk.com/archives/7713&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="DDNS" scheme="http://blog.amahv.cn/tags/DDNS/"/>
+    
+  </entry>
   
   <entry>
     <title>【Android】android sdk build-tools sdk tools 历史版本下载地址</title>
@@ -520,38 +545,6 @@
       <category term="hexo" scheme="http://blog.amahv.cn/tags/hexo/"/>
     
       <category term="matery" scheme="http://blog.amahv.cn/tags/matery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【长期更新】STM32CubeMX和MDK ARM最新版下载地址</title>
-    <link href="http://blog.amahv.cn/2020/06/24/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/"/>
-    <id>http://blog.amahv.cn/2020/06/24/chang-qi-geng-xin-stm32cubemx-he-mdk-arm-zui-xin-ban-xia-zai-di-zhi/</id>
-    <published>2020-06-24T07:13:11.000Z</published>
-    <updated>2020-06-24T02:02:41.831Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;﻿# 一.STM32CubeMX&lt;/p&gt;
-&lt;h4 id=&quot;STM32CubeMX-5-6-0&quot;&gt;&lt;a href=&quot;#STM32CubeMX-5-6-0&quot; class=&quot;headerlink&quot; title=&quot;STM32CubeMX
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="stm32" scheme="http://blog.amahv.cn/tags/stm32/"/>
-    
-      <category term="cubeMX" scheme="http://blog.amahv.cn/tags/cubeMX/"/>
-    
-      <category term="keil" scheme="http://blog.amahv.cn/tags/keil/"/>
-    
-      <category term="MDK" scheme="http://blog.amahv.cn/tags/MDK/"/>
     
   </entry>
   
