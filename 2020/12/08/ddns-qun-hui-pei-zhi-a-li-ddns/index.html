@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="【openwrt】使用LEDE自带的动态DNS进行动态域名解析, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
+    <meta name="keywords" content="【DDNS】群晖配置阿里DDNS, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
     <meta name="description" content="陶逸南的个人站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>【openwrt】使用LEDE自带的动态DNS进行动态域名解析 | AMAHV</title>
+    <title>【DDNS】群晖配置阿里DDNS | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202222418.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208234142.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">【openwrt】使用LEDE自带的动态DNS进行动态域名解析</h1>
+                    <h1 class="description center-align post-title">【DDNS】群晖配置阿里DDNS</h1>
                 </div>
             </div>
         </div>
@@ -446,6 +446,10 @@
                                 <span class="chip bg-color">DDNS</span>
                             </a>
                         
+                            <a href="/tags/%E7%BE%A4%E6%99%96/">
+                                <span class="chip bg-color">群晖</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -454,8 +458,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/OpenWrt/" class="post-category">
-                                OpenWrt
+                            <a href="/categories/DDNS/" class="post-category">
+                                DDNS
                             </a>
                         
                     </div>
@@ -467,14 +471,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-02
+                    2020-12-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-02
+                    2020-12-08
                 </div>
                 
 
@@ -498,18 +502,61 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>引用<a href="https://www.vediotalk.com/archives/7713" target="_blank" rel="noopener">https://www.vediotalk.com/archives/7713</a></p>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>这个方法不仅适合主路由器,也同时适合二级路由器.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202222603.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202223050.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202223419.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202223515.png" alt="这里可以查看DDNS解析日志"></p>
-<h2 id="使用NAS"><a href="#使用NAS" class="headerlink" title="使用NAS"></a>使用NAS</h2><p>使用NAS的情况下我们希望局域网内的访问直接就解析到IP地址,我们则可以使用这么一个小技巧。</p>
-<p>首先我们看到这个DDNS设置是可以将【查询主机名】和【域名】分开指定的，我在我的局域网内将我的域名直接通过hosts解析为：192.168.123.120，这样的话，查询主机名将一直会是192.168.123.120，这将会一直触发解析配置，这不是我们想要的。要避免这样的情况，可以在你的阿里云云解析中增加一条CNAME解析，将我们的【查询主机名】就指向到CNAME解析的域名上，而【域名】则维持原来的不变。这样就不影响了，下面看我怎么做的。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202225523.png" alt="CNAME解析妙用"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202225928.png" alt=""></p>
-<p>你是否直呼内行！！！妙吧~</p>
-<script>
+                <h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><h4 id="配置容器"><a href="#配置容器" class="headerlink" title="配置容器"></a>配置容器</h4><p>群晖自带的DDNS中并不直接支持阿里DDNS，所以这里采用docker的方式来实现。</p>
+<ul>
+<li>首先打开Docker</li>
+<li>搜索“ddns-go”</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208231824.png" alt=""></p>
+<ul>
+<li><p>下载ddns-go</p>
+</li>
+<li><p>然后启动</p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232116.png" alt=""></p>
+</li>
+<li><p>高级设置</p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232235.png" alt=""></p>
+</li>
+<li><p>改成和容器端口一样</p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232400.png" alt=""></p>
+</li>
+<li><p>在高级设置里面选择“创建桌面快捷方式”</p>
+</li>
+<li><p>选择网页。</p>
+</li>
+<li><p>在网址后面加上端口号</p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232446.png" alt=""></p>
+</li>
+<li><p>最后点击应用</p>
+</li>
+<li><p>点击下一步</p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232716.png" alt=""></p>
+</li>
+<li><p>保持默认</p>
+</li>
+<li><p>点击“应用”</p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232838.png" alt=""></p>
+</li>
+</ul>
+<h4 id="配置解析"><a href="#配置解析" class="headerlink" title="配置解析"></a>配置解析</h4><ul>
+<li>容器启动后，桌面上会多出这样一个快捷方式</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232922.png" alt="点击图标可进入管理页面"></p>
+<ul>
+<li><p>点击图标进入管理页面</p>
+</li>
+<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208233725.png" alt=""></p>
+</li>
+<li><p>下面的配置保持默认不动。这里配置完之后直接保存</p>
+</li>
+</ul>
+<h3 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h3><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -552,7 +599,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/12/02/openwrt-shi-yong-lede-zi-dai-de-dong-tai-dns-jin-xing-dong-tai-yu-ming-jie-xi/">http://blog.amahv.cn/2020/12/02/openwrt-shi-yong-lede-zi-dai-de-dong-tai-dns-jin-xing-dong-tai-yu-ming-jie-xi/</a>
+                    <a href="http://blog.amahv.cn/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/">http://blog.amahv.cn/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -592,6 +639,10 @@
                             
                                 <a href="/tags/DDNS/">
                                     <span class="chip bg-color">DDNS</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BE%A4%E6%99%96/">
+                                    <span class="chip bg-color">群晖</span>
                                 </a>
                             
                         </div>
@@ -762,7 +813,7 @@
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-12-02T22-16-22',
+        id: '2020-12-08T23-16-15',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -786,9 +837,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/">
                     <div class="card-image">
@@ -826,9 +878,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -841,6 +893,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -863,35 +916,36 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/15/android-android-sdk-build-tools-sdk-tools-li-shi-ban-ben-xia-zai-di-zhi/">
+                <a href="/2020/12/02/openwrt-shi-yong-lede-zi-dai-de-dong-tai-dns-jin-xing-dong-tai-yu-ming-jie-xi/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn/picGo/20201012215226.png" class="responsive-img" alt="【Android】android sdk build-tools sdk tools 历史版本下载地址">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202222418.png" class="responsive-img" alt="【openwrt】使用LEDE自带的动态DNS进行动态域名解析">
                         
-                        <span class="card-title">【Android】android sdk build-tools sdk tools 历史版本下载地址</span>
+                        <span class="card-title">【openwrt】使用LEDE自带的动态DNS进行动态域名解析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            痛点国内网络环境导致访问谷歌困难。无形的提高了开发门槛。
-墙这东西，有好处也有坏。
-挡住了外面要进来捣乱的人，也让里面的人出去不方便。
-先上结论SDK下载地址例举4个,剩下请看下面的方法:
-Android SDK Platform 30:
+                            引用https://www.vediotalk.com/archives/7713
+配置这个方法不仅适合主路由器,也同时适合二级路由器.
 
+
+
+
+使用NAS使用NAS的情况下我们希望局域网内的访问直接就解析到IP地址,我们则可以使用这么一个
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Android/" class="post-category">
-                                    Android
+                            <a href="/categories/OpenWrt/" class="post-category">
+                                    OpenWrt
                                 </a>
                             
                             
@@ -901,12 +955,8 @@ Android SDK Platform 30:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Android/">
-                        <span class="chip bg-color">Android</span>
-                    </a>
-                    
-                    <a href="/tags/Android-SDK/">
-                        <span class="chip bg-color">Android SDK</span>
+                    <a href="/tags/DDNS/">
+                        <span class="chip bg-color">DDNS</span>
                     </a>
                     
                 </div>

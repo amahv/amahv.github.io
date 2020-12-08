@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-12-02T15:57:54.220Z</updated>
+  <updated>2020-12-08T15:42:10.058Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【DDNS】群晖配置阿里DDNS</title>
+    <link href="http://blog.amahv.cn/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/"/>
+    <id>http://blog.amahv.cn/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/</id>
+    <published>2020-12-08T15:16:15.000Z</published>
+    <updated>2020-12-08T15:42:10.058Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;实现&quot;&gt;&lt;a href=&quot;#实现&quot; class=&quot;headerlink&quot; title=&quot;实现&quot;&gt;&lt;/a&gt;实现&lt;/h3&gt;&lt;h4 id=&quot;配置容器&quot;&gt;&lt;a href=&quot;#配置容器&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DDNS" scheme="http://blog.amahv.cn/categories/DDNS/"/>
+    
+    
+      <category term="DDNS" scheme="http://blog.amahv.cn/tags/DDNS/"/>
+    
+      <category term="群晖" scheme="http://blog.amahv.cn/tags/%E7%BE%A4%E6%99%96/"/>
+    
+  </entry>
   
   <entry>
     <title>【openwrt】使用LEDE自带的动态DNS进行动态域名解析</title>
@@ -519,33 +548,6 @@
     </summary>
     
     
-    
-      <category term="matery" scheme="http://blog.amahv.cn/tags/matery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo matery(主题)加载gitalk评论系统</title>
-    <link href="http://blog.amahv.cn/2020/06/24/hexo-matery-zhu-ti-jia-zai-gitalk-ping-lun-xi-tong/"/>
-    <id>http://blog.amahv.cn/2020/06/24/hexo-matery-zhu-ti-jia-zai-gitalk-ping-lun-xi-tong/</id>
-    <published>2020-06-24T13:59:05.000Z</published>
-    <updated>2020-06-24T15:38:17.884Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;注册GitHub-oAuth&quot;&gt;&lt;a href=&quot;#注册GitHub-oAuth&quot; class=&quot;headerlink&quot; title=&quot;注册GitHub oAuth&quot;&gt;&lt;/a&gt;注册GitHub
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="http://blog.amahv.cn/tags/hexo/"/>
     
       <category term="matery" scheme="http://blog.amahv.cn/tags/matery/"/>
     

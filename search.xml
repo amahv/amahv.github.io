@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>【DDNS】群晖配置阿里DDNS</title>
+      <link href="/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/"/>
+      <url>/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/</url>
+      
+        <content type="html"><![CDATA[<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><h4 id="配置容器"><a href="#配置容器" class="headerlink" title="配置容器"></a>配置容器</h4><p>群晖自带的DDNS中并不直接支持阿里DDNS，所以这里采用docker的方式来实现。</p><ul><li>首先打开Docker</li><li>搜索“ddns-go”</li></ul><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208231824.png" alt=""></p><ul><li><p>下载ddns-go</p></li><li><p>然后启动</p></li><li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232116.png" alt=""></p></li><li><p>高级设置</p></li><li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232235.png" alt=""></p></li><li><p>改成和容器端口一样</p></li><li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232400.png" alt=""></p></li><li><p>在高级设置里面选择“创建桌面快捷方式”</p></li><li><p>选择网页。</p></li><li><p>在网址后面加上端口号</p></li><li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232446.png" alt=""></p></li><li><p>最后点击应用</p></li><li><p>点击下一步</p></li><li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232716.png" alt=""></p></li><li><p>保持默认</p></li><li><p>点击“应用”</p></li><li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232838.png" alt=""></p></li></ul><h4 id="配置解析"><a href="#配置解析" class="headerlink" title="配置解析"></a>配置解析</h4><ul><li>容器启动后，桌面上会多出这样一个快捷方式</li></ul><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232922.png" alt="点击图标可进入管理页面"></p><ul><li><p>点击图标进入管理页面</p></li><li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208233725.png" alt=""></p></li><li><p>下面的配置保持默认不动。这里配置完之后直接保存</p></li></ul><h3 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h3><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> DDNS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> DDNS </tag>
+            
+            <tag> 群晖 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【openwrt】使用LEDE自带的动态DNS进行动态域名解析</title>
       <link href="/2020/12/02/openwrt-shi-yong-lede-zi-dai-de-dong-tai-dns-jin-xing-dong-tai-yu-ming-jie-xi/"/>
       <url>/2020/12/02/openwrt-shi-yong-lede-zi-dai-de-dong-tai-dns-jin-xing-dong-tai-yu-ming-jie-xi/</url>
