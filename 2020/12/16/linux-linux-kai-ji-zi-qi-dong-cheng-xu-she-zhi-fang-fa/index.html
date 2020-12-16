@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="【DDNS】群晖配置阿里DDNS, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
+    <meta name="keywords" content="【Linux】linux开机自启动程序设置方法, amahv,blog,陶逸南,博客,stm32,vscode,csdn,Yarnell">
     <meta name="description" content="陶逸南的个人站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>【DDNS】群晖配置阿里DDNS | AMAHV</title>
+    <title>【Linux】linux开机自启动程序设置方法 | AMAHV</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208234142.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/amahv/cdn@1.6/source/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">【DDNS】群晖配置阿里DDNS</h1>
+                    <h1 class="description center-align post-title">【Linux】linux开机自启动程序设置方法</h1>
                 </div>
             </div>
         </div>
@@ -442,27 +442,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/DDNS/">
-                                <span class="chip bg-color">DDNS</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%BE%A4%E6%99%96/">
-                                <span class="chip bg-color">群晖</span>
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/DDNS/" class="post-category">
-                                DDNS
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -471,14 +458,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-08
+                    2020-12-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-08
+                    2020-12-16
                 </div>
                 
 
@@ -487,7 +474,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -502,61 +489,94 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><h4 id="配置容器"><a href="#配置容器" class="headerlink" title="配置容器"></a>配置容器</h4><p>群晖自带的DDNS中并不直接支持阿里DDNS，所以这里采用docker的方式来实现。</p>
-<ul>
-<li>首先打开Docker</li>
-<li>搜索“ddns-go”</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208231824.png" alt=""></p>
-<ul>
-<li><p>下载ddns-go</p>
-</li>
-<li><p>然后启动</p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232116.png" alt=""></p>
-</li>
-<li><p>高级设置</p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232235.png" alt=""></p>
-</li>
-<li><p>改成和容器端口一样</p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232400.png" alt=""></p>
-</li>
-<li><p>在高级设置里面选择“创建桌面快捷方式”</p>
-</li>
-<li><p>选择网页。</p>
-</li>
-<li><p>在网址后面加上端口号</p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232446.png" alt=""></p>
-</li>
-<li><p>最后点击应用</p>
-</li>
-<li><p>点击下一步</p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232716.png" alt=""></p>
-</li>
-<li><p>保持默认</p>
-</li>
-<li><p>点击“应用”</p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232838.png" alt=""></p>
-</li>
-</ul>
-<h4 id="配置解析"><a href="#配置解析" class="headerlink" title="配置解析"></a>配置解析</h4><ul>
-<li>容器启动后，桌面上会多出这样一个快捷方式</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208232922.png" alt="点击图标可进入管理页面"></p>
-<ul>
-<li><p>点击图标进入管理页面</p>
-</li>
-<li><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208233725.png" alt=""></p>
-</li>
-<li><p>下面的配置保持默认不动。这里配置完之后直接保存</p>
-</li>
-</ul>
-<h3 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h3><script>
+                <p>引用：<a href="https://blog.csdn.net/qingtian506/article/details/53008605" target="_blank" rel="noopener">https://blog.csdn.net/qingtian506/article/details/53008605</a></p>
+<p>1.首先在自己的工程文件里编写自启动shell文件，这是我的例子如下：文件名字（testudp.sh）,可执行程序为tst_client:</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/sh</span>
+<span class="token comment" spellcheck="true">###BEGIN INIT INFO </span>
+<span class="token comment" spellcheck="true"># Provides:         tst_client</span>
+<span class="token comment" spellcheck="true"># Required-Start:    </span>
+<span class="token comment" spellcheck="true"># Required-Stop:</span>
+<span class="token comment" spellcheck="true"># Default-Start:     2 3 4 5</span>
+<span class="token comment" spellcheck="true"># Default-Stop:   0 1 6</span>
+<span class="token comment" spellcheck="true"># Description:        my test</span>
+<span class="token comment" spellcheck="true">### END INIT INFO</span>
+user<span class="token operator">=</span><span class="token string">"root"</span>
+dir<span class="token operator">=</span><span class="token string">"/home/usr/test/udp3/tst_client"</span>
+cmd<span class="token operator">=</span><span class="token string">"./tst_client"</span>
+name<span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">basename</span> $0<span class="token variable">`</span></span>
+pid_file<span class="token operator">=</span><span class="token string">"/var/run/<span class="token variable">$name</span>.pid"</span>
+stdout_log<span class="token operator">=</span><span class="token string">"/tmp/<span class="token variable">$name</span>.log"</span>
+stderr_log<span class="token operator">=</span><span class="token string">"/tmp/<span class="token variable">$name</span>.err"</span>
+
+get_pid<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">cat</span> <span class="token string">"<span class="token variable">$pid_file</span>"</span>
+<span class="token punctuation">}</span>
+
+is_running<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span> -f <span class="token string">"<span class="token variable">$pid_file</span>"</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token function">ps</span> <span class="token variable"><span class="token variable">`</span>get_pid<span class="token variable">`</span></span> <span class="token operator">></span> /dev/null 2<span class="token operator">></span><span class="token operator">&amp;</span>1
+<span class="token punctuation">}</span>
+
+<span class="token keyword">case</span> <span class="token string">"<span class="token variable">$1</span>"</span> <span class="token keyword">in</span>
+    start<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> is_running<span class="token punctuation">;</span> <span class="token keyword">then</span>
+            <span class="token keyword">echo</span> <span class="token string">"Already started"</span>
+        <span class="token keyword">fi</span>
+        <span class="token function">cd</span> <span class="token string">"<span class="token variable">$dir</span>"</span>
+        <span class="token function">sudo</span> -u <span class="token string">"<span class="token variable">$user</span>"</span> <span class="token variable">$cmd</span> <span class="token operator">>></span> <span class="token string">"<span class="token variable">$stdout_log</span>"</span> 2<span class="token operator">>></span> <span class="token string">"<span class="token variable">$stderr_log</span>"</span> <span class="token operator">&amp;</span>
+        <span class="token keyword">echo</span> <span class="token variable">$!</span> <span class="token operator">></span> <span class="token string">"<span class="token variable">$pid_file</span>"</span>
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    stop<span class="token punctuation">)</span>
+        <span class="token function">kill</span> <span class="token variable"><span class="token variable">`</span>get_pid<span class="token variable">`</span></span>
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    *<span class="token punctuation">)</span>
+        <span class="token keyword">echo</span> <span class="token string">"auto start failed"</span>
+        <span class="token keyword">exit</span> 1
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+esac
+
+<span class="token keyword">exit</span> 0</code></pre>
+<p>编写规则如下：1.要有一个start，一般写上执行自己程序所需bash指令，就如在终端中运行一样：</p>
+<p>sudo -root ./run</p>
+<p>2.其次要有一个stop，一般都是写上kill当前自己的进程。</p>
+<p>start和stop用于放在/etc/rc.d文件中，s开头用于启动当前程序，k开头表示kill当前进程。</p>
+<p>注：编写好shell文件后，chmod +x  shell文件将其变为可执行文件，然后一定要现在自己的终端窗口试一下，可以运行后再进行下一步操作。</p>
+<p>2.再将刚刚编写的shell文件拷贝到/etc/init.d中</p>
+<p>3.再将shell文件的软链接放置在/etc/rc.d文件中：</p>
+<p>rc.d文件分为rc0~rc6，每个数字表示不同的运行等级，每个等级表示如下：</p>
+<p>Linux系统有7个运行级别(runlevel)<br>运行级别0：系统停机状态，系统默认运行级别不能设为0，否则不能正常启动<br>运行级别1：单用户工作状态，root权限，用于系统维护，禁止远程登陆<br>运行级别2：多用户状态(没有NFS)<br>运行级别3：完全的多用户状态(有NFS)，登陆后进入控制台命令行模式<br>运行级别4：系统未使用，保留<br>运行级别5：X11控制台，登陆后进入图形GUI模式<br>运行级别6：系统正常关闭并重启，默认运行级别不能设为6，否则不能正常启动</p>
+<p>因此可以将启动链接放置在2,3，4,5，将kill链接放置在0,1,6.</p>
+<p>打开自己的linux文件夹中，rc0.d、rc6.d中的文件一般以K开头，表示停机时关闭这些程序；</p>
+<p>rc1.d中的文件既有k也有s，</p>
+<p>rc2.d、rc3.d、rc4.d、rc5.d中全部为s开头，表示此等级下启动程序</p>
+<p>软连接设置shell文件如下，也可以拆分成bash指令，一个一个来执行，但太繁琐。shell文件如下：(可将此文件起名为install.sh)</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+SMTCDIR<span class="token operator">=</span>/home/usr/test/udp3/tst_client
+INITD<span class="token operator">=</span><span class="token string">"/etc/init.d/testudp.sh"</span>
+TARGET<span class="token operator">=</span><span class="token string">"testudp.sh"</span>
+<span class="token function">install</span> -m 755 -g root -o root <span class="token variable">$SMTCDIR</span>/testudp.sh <span class="token variable">$INITD</span>
+<span class="token function">ln</span> -s <span class="token variable">$INITD</span> /etc/rc0.d/<span class="token string">"K01<span class="token variable">$TARGET</span>"</span>
+<span class="token function">ln</span> -s <span class="token variable">$INITD</span> /etc/rc1.d/<span class="token string">"K01<span class="token variable">$TARGET</span>"</span>
+<span class="token function">ln</span> -s <span class="token variable">$INITD</span> /etc/rc2.d/<span class="token string">"S05<span class="token variable">$TARGET</span>"</span>
+<span class="token function">ln</span> -s <span class="token variable">$INITD</span> /etc/rc3.d/<span class="token string">"S05<span class="token variable">$TARGET</span>"</span>
+<span class="token function">ln</span> -s <span class="token variable">$INITD</span> /etc/rc4.d/<span class="token string">"S05<span class="token variable">$TARGET</span>"</span>
+<span class="token function">ln</span> -s <span class="token variable">$INITD</span> /etc/rc5.d/<span class="token string">"S05<span class="token variable">$TARGET</span>"</span>
+<span class="token function">ln</span> -s <span class="token variable">$INITD</span> /etc/rc6.d/<span class="token string">"K01<span class="token variable">$TARGET</span>"</span></code></pre>
+<p>将此shell文件chmod +x设置为可执行文件，在终端执行./shell即可。此时查看你的/etc/rc.d各个文件中都有了你的软连接。</p>
+<p>注：一般自己的应用程序设置级别要注意，开启时要放在系统程序之后，如上述shell文件中都为S05;关闭时要放在系统程序之前，即最早关闭，如上述shell文件中都为K01。</p>
+<p>   linux执行时都是按照序号来进行，序号越小越先执行。</p>
+<p>4.取消开机自启动编写shell脚本如下：（可将此文件起名为unstall.sh）</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>pre name<span class="token operator">=</span><span class="token string">"code"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"plain"</span><span class="token operator">></span>#<span class="token operator">!</span><span class="token operator">/</span>bin<span class="token operator">/</span>bash
+INITD<span class="token operator">=</span><span class="token string">"/etc/init.d/testudp.sh"</span>
+TARGET<span class="token operator">=</span><span class="token string">"testudp.sh"</span>
+rm <span class="token operator">-</span>f $INITD
+rm <span class="token operator">-</span>f <span class="token operator">/</span>etc<span class="token operator">/</span>rc<span class="token operator">*</span><span class="token punctuation">.</span>d<span class="token operator">/</span><span class="token operator">*</span>$TARGET</code></pre>
+<p>好了目前为了实现开机自运行编写的文件有：</p>
+<p>自启动shell文件：testudp.sh</p>
+<p>rc.d软链接设置文件：install.sh</p>
+<p>取消开机自运行文件：unstall.sh</p>
+<p>大家按照我的模板来写就好了。</p>
+<p>好了，以上就是我的心得。写在这里，怕以后忘记了。因为自启动文件写的也少。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -599,7 +619,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://blog.amahv.cn/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/">http://blog.amahv.cn/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/</a>
+                    <a href="http://blog.amahv.cn/2020/12/16/linux-linux-kai-ji-zi-qi-dong-cheng-xu-she-zhi-fang-fa/">http://blog.amahv.cn/2020/12/16/linux-linux-kai-ji-zi-qi-dong-cheng-xu-she-zhi-fang-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -637,12 +657,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/DDNS/">
-                                    <span class="chip bg-color">DDNS</span>
-                                </a>
-                            
-                                <a href="/tags/%E7%BE%A4%E6%99%96/">
-                                    <span class="chip bg-color">群晖</span>
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
                                 </a>
                             
                         </div>
@@ -813,7 +829,7 @@
         repo: 'amahv.github.io',
         owner: 'amahv',
         admin: "amahv",
-        id: '2020-12-08T23-16-15',
+        id: '2020-12-16T21-52-30',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -837,9 +853,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/12/16/linux-linux-kai-ji-zi-qi-dong-cheng-xu-she-zhi-fang-fa/">
                     <div class="card-image">
@@ -858,9 +875,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -869,6 +886,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -887,36 +905,51 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/02/openwrt-shi-yong-lede-zi-dai-de-dong-tai-dns-jin-xing-dong-tai-yu-ming-jie-xi/">
+                <a href="/2020/12/08/ddns-qun-hui-pei-zhi-a-li-ddns/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201202222418.png" class="responsive-img" alt="【openwrt】使用LEDE自带的动态DNS进行动态域名解析">
+                        <img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201208234142.png" class="responsive-img" alt="【DDNS】群晖配置阿里DDNS">
                         
-                        <span class="card-title">【openwrt】使用LEDE自带的动态DNS进行动态域名解析</span>
+                        <span class="card-title">【DDNS】群晖配置阿里DDNS</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            引用https://www.vediotalk.com/archives/7713
-配置这个方法不仅适合主路由器,也同时适合二级路由器.
+                            实现配置容器群晖自带的DDNS中并不直接支持阿里DDNS，所以这里采用docker的方式来实现。
+
+首先打开Docker
+搜索“ddns-go”
 
 
 
+下载ddns-go
 
-使用NAS使用NAS的情况下我们希望局域网内的访问直接就解析到IP地址,我们则可以使用这么一个
+然后启动
+
+
+
+高级设置
+
+
+
+改成和容器端口一样
+
+
+
+在高级设
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-08
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/OpenWrt/" class="post-category">
-                                    OpenWrt
+                            <a href="/categories/DDNS/" class="post-category">
+                                    DDNS
                                 </a>
                             
                             
@@ -928,6 +961,10 @@
                     
                     <a href="/tags/DDNS/">
                         <span class="chip bg-color">DDNS</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BE%A4%E6%99%96/">
+                        <span class="chip bg-color">群晖</span>
                     </a>
                     
                 </div>

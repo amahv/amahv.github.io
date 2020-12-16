@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-12-08T15:42:10.058Z</updated>
+  <updated>2020-12-16T13:55:28.323Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Linux】linux开机自启动程序设置方法</title>
+    <link href="http://blog.amahv.cn/2020/12/16/linux-linux-kai-ji-zi-qi-dong-cheng-xu-she-zhi-fang-fa/"/>
+    <id>http://blog.amahv.cn/2020/12/16/linux-linux-kai-ji-zi-qi-dong-cheng-xu-she-zhi-fang-fa/</id>
+    <published>2020-12-16T13:52:30.000Z</published>
+    <updated>2020-12-16T13:55:28.323Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;引用：&lt;a href=&quot;https://blog.csdn.net/qingtian506/article/details/53008605&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Linux" scheme="http://blog.amahv.cn/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>【DDNS】群晖配置阿里DDNS</title>
@@ -525,31 +550,6 @@
     
     
       <category term="Matery" scheme="http://blog.amahv.cn/tags/Matery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在matery中嵌入bilibili视频</title>
-    <link href="http://blog.amahv.cn/2020/06/25/zai-matery-zhong-qian-ru-bilibili-shi-pin/"/>
-    <id>http://blog.amahv.cn/2020/06/25/zai-matery-zhong-qian-ru-bilibili-shi-pin/</id>
-    <published>2020-06-24T18:09:17.000Z</published>
-    <updated>2020-06-24T18:44:03.099Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;首先找到分享嵌入代码&quot;&gt;&lt;a href=&quot;#首先找到分享嵌入代码&quot; class=&quot;headerlink&quot; title=&quot;首先找到分享嵌入代码&quot;&gt;&lt;/a&gt;首先找到分享嵌入代码&lt;/h3&gt;&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="matery" scheme="http://blog.amahv.cn/tags/matery/"/>
     
   </entry>
   
