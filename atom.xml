@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-12-16T13:55:28.323Z</updated>
+  <updated>2020-12-16T14:00:21.435Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.amahv.cn/2020/12/16/linux-linux-kai-ji-zi-qi-dong-cheng-xu-she-zhi-fang-fa/"/>
     <id>http://blog.amahv.cn/2020/12/16/linux-linux-kai-ji-zi-qi-dong-cheng-xu-she-zhi-fang-fa/</id>
     <published>2020-12-16T13:52:30.000Z</published>
-    <updated>2020-12-16T13:55:28.323Z</updated>
+    <updated>2020-12-16T14:00:21.435Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,8 @@
     
     </summary>
     
+    
+      <category term="Linux" scheme="http://blog.amahv.cn/categories/Linux/"/>
     
     
       <category term="Linux" scheme="http://blog.amahv.cn/tags/Linux/"/>
