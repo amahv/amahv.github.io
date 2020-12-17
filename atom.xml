@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-12-16T14:00:21.435Z</updated>
+  <updated>2020-12-17T03:06:27.069Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【Linux】USB设备绑定固定名称</title>
+    <link href="http://blog.amahv.cn/2020/12/17/linux-usb-she-bei-bang-ding-gu-ding-ming-cheng/"/>
+    <id>http://blog.amahv.cn/2020/12/17/linux-usb-she-bei-bang-ding-gu-ding-ming-cheng/</id>
+    <published>2020-12-17T02:45:41.000Z</published>
+    <updated>2020-12-17T03:06:27.069Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;参考：&lt;a href=&quot;https://wangpengcheng.github.io/2019/09/18/change_usb_rules_ubuntu/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://blog.amahv.cn/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://blog.amahv.cn/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【Linux】linux开机自启动程序设置方法</title>
     <link href="http://blog.amahv.cn/2020/12/16/linux-linux-kai-ji-zi-qi-dong-cheng-xu-she-zhi-fang-fa/"/>
     <id>http://blog.amahv.cn/2020/12/16/linux-linux-kai-ji-zi-qi-dong-cheng-xu-she-zhi-fang-fa/</id>
     <published>2020-12-16T13:52:30.000Z</published>
-    <updated>2020-12-16T14:00:21.435Z</updated>
+    <updated>2020-12-16T14:03:46.793Z</updated>
     
     <summary type="html">
     
@@ -527,31 +554,6 @@
     
     
       <category term="solidworks" scheme="http://blog.amahv.cn/tags/solidworks/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在hexo中接入站长统计工具</title>
-    <link href="http://blog.amahv.cn/2020/06/25/zai-hexo-zhong-jie-ru-zhan-chang-tong-ji-gong-ju/"/>
-    <id>http://blog.amahv.cn/2020/06/25/zai-hexo-zhong-jie-ru-zhan-chang-tong-ji-gong-ju/</id>
-    <published>2020-06-24T19:27:54.000Z</published>
-    <updated>2020-06-25T07:15:13.486Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;申请百度统计的ID&quot;&gt;&lt;a href=&quot;#申请百度统计的ID&quot; class=&quot;headerlink&quot; title=&quot;申请百度统计的ID&quot;&gt;&lt;/a&gt;申请百度统计的ID&lt;/h2&gt;&lt;h3 id=&quot;新增网站&quot;&gt;&lt;a href=&quot;#新增网站&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Matery" scheme="http://blog.amahv.cn/tags/Matery/"/>
     
   </entry>
   
