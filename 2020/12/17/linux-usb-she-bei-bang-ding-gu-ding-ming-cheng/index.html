@@ -619,19 +619,8 @@
 <td align="left">在<code>/etc/udev/rules.d</code>文件夹下创建自定义<code>myVideoDev.rules</code>文件内容如下</td>
 <td align="left"></td>
 </tr>
-<tr>
-<td align="left">```bash</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">ACTION==”add”,ATTRS{idVendor}==”32e4”,ATTRS{idProduct}==”9422”,ATTR{index}==”0”,SYMLINK+=”rerVideo”</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">```</td>
-<td align="left"></td>
-</tr>
 </tbody></table>
+<pre class=" language-bash"><code class="language-bash">ACTION<span class="token operator">==</span><span class="token string">"add"</span>,ATTRS<span class="token punctuation">{</span>idVendor<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">"32e4"</span>,ATTRS<span class="token punctuation">{</span>idProduct<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">"9422"</span>,ATTR<span class="token punctuation">{</span>index<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">"0"</span>,SYMLINK+<span class="token operator">=</span><span class="token string">"rerVideo"</span></code></pre>
 <p>可以自由添加和删减字段,但是<code>ACTION</code>和<code>SYMLINK+=</code>不能删减</p>
 <h3 id="重启服务查看-对应设备"><a href="#重启服务查看-对应设备" class="headerlink" title="重启服务查看 对应设备"></a>重启服务查看 对应设备</h3><p>当添加或者删除udev的rules文件后，都需要使用如下命令，进行设备读取rules的更新</p>
 <pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">service</span> udev reload
