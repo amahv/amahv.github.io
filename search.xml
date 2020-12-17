@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>【Linux】树莓派系统压缩备份</title>
+      <link href="/2020/12/17/linux-shu-mei-pai-xi-tong-ya-suo-bei-fen/"/>
+      <url>/2020/12/17/linux-shu-mei-pai-xi-tong-ya-suo-bei-fen/</url>
+      
+        <content type="html"><![CDATA[<p>引用:<a href="https://post.smzdm.com/p/apzkgne7/" target="_blank" rel="noopener">树莓派学习笔记 篇四：树莓派4B 的系统备份方法大全（全卡+压缩备份）</a></p><h3 id="1-原理"><a href="#1-原理" class="headerlink" title="1. 原理"></a>1. 原理</h3><p>树莓派的官方系统是基于 Debian 的，主要是两个分区：启动分区（boot）、根分区（root），烧录系统的时候就是将这两个分区写入 SD 卡。首次开机后需使用raspi-config来扩展 root 分区的大小，boot 分区不变，来达到使用所有 SD 卡内容量的目的（最新的系统已经不需要扩展操作）。</p><blockquote><p>boot分区：fat32格式，挂载点/boot，存放一些系统启动需要的基本文件，包括内核、驱动、firmware、启动脚本等，可以在Windows上打开读取。</p><p>root分区：ext4格式，挂载点/，存放一些安装的软件和库文件、系统配置、用户数据等。 另外当系统启动时会自动生成和挂载一些必要的其他<a href="https://www.smzdm.com/fenlei/wenjianjia/" target="_blank" rel="noopener">文件夹</a>，包括temfs、sysfs、proc、debugfs、configfs等虚拟文件系统，由操作系统自动管理，备份时不需要关注。root 分区在 Windows 上无法识别，所以每次将 SD 卡插到 Windows 电脑上会弹出来格式化的选项，千万不要点。</p></blockquote><p><strong>对于树莓派系统的备份，主要就是对 boot 和 root 分区的备份。</strong>而 root 分区里面只有一部分空间存储有内容，剩下的部分是空的，如果直接备份的话那就是整个 SD 卡空间备份，也就是上面所说的全卡备份。而压缩备份则是备份 boot 分区和 root 分区中有内容的空间。</p><h4 id="使用gparted"><a href="#使用gparted" class="headerlink" title="使用gparted"></a>使用gparted</h4><p>根据上述压缩备份原理，先在 Linux 环境中将 root 分区拆分内容空间和空白空间，然后在 Windows 上用Win32DiskImager 软件仅读取内容空间进行备份。以下以 Windows 10 64位 + 虚拟机 Ubuntu 18.04 为例，对树莓派4B 的 Raspbian 系统进行压缩备份。</p><p>(1).打开虚拟机，在终端输入sudo apt install gparted 安装 gparted</p><p>(2).将需要备份的 SD 卡插入读卡器然后插入电脑，等待 Linux 读取成功。</p><p>(3).输入sudo gparted启动 gparted，在右上角选择 SD 卡，可以看到 ext4 分区当中置使用了2.46G，剩余12.26G 都是空白的。</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201217132700.png" alt=""></p><p>(4).在 ext4 分区上右击点击 umount 卸载，然后继续右键点击更改大小。</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201217132338.png" alt=""></p><p>(5).在弹出的窗口中重新分配大小，在新大小一栏填入比最小值（3689）大上三四百就行，我这里大 300M，在点击空余空间会自动计算，然后点击右下角 Resize，之后可以看到原来的分区只剩下 4.07G，剩下的 10.58G 空间未分配。</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201217132401.png" alt=""></p><p>(6).然后点击绿色的对号键确认，在弹出的对话框中点应用。</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201217132427.png" alt=""></p><p>(7).等待执行完成，可以看到分区由14.66G 缩小到 4.07G，然后弹出 SD 卡，到这里 Linux 上的操作完成。</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201217132452.png" alt=""></p><p>(8).将 SD 卡重新插到 Windows 上，新建一个空白 img 文件，打开 Win32DiskImager 软件，选中该文件，然后勾选‘’仅读取已分配分区‘’（注意要最新版，旧版本没有这个功能）。<a href="https://sourceforge.net/projects/win32diskimager/" target="_blank" rel="noopener">win32DiskImager下载地址</a></p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201217132618.png" alt=""></p><p>(9).等待读取完成，压缩的镜像备份就制作完成了，源镜像文件 3.9GB，备份的镜像文件 4.5GB，如果压缩一下的话就只有 1.8GB 了，适合存储。</p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20201217132640.png" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【Linux】USB设备绑定固定名称</title>
       <link href="/2020/12/17/linux-usb-she-bei-bang-ding-gu-ding-ming-cheng/"/>
       <url>/2020/12/17/linux-usb-she-bei-bang-ding-gu-ding-ming-cheng/</url>

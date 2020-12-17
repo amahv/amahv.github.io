@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-12-17T03:10:17.512Z</updated>
+  <updated>2020-12-17T05:28:27.695Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Linux】树莓派系统压缩备份</title>
+    <link href="http://blog.amahv.cn/2020/12/17/linux-shu-mei-pai-xi-tong-ya-suo-bei-fen/"/>
+    <id>http://blog.amahv.cn/2020/12/17/linux-shu-mei-pai-xi-tong-ya-suo-bei-fen/</id>
+    <published>2020-12-17T05:16:08.000Z</published>
+    <updated>2020-12-17T05:28:27.695Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;引用:&lt;a href=&quot;https://post.smzdm.com/p/apzkgne7/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;树莓派学习笔记 篇四：树莓派4B 的系统备份方法大全（全卡+压缩备份）&lt;/a&gt;&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://blog.amahv.cn/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://blog.amahv.cn/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>【Linux】USB设备绑定固定名称</title>
@@ -528,32 +556,6 @@
       <category term="office" scheme="http://blog.amahv.cn/tags/office/"/>
     
       <category term="kms" scheme="http://blog.amahv.cn/tags/kms/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>solidworks保存实体时提示默认模板无效怎么办?</title>
-    <link href="http://blog.amahv.cn/2020/07/09/solidworks-bao-cun-shi-ti-shi-ti-shi-mo-ren-mo-ban-wu-xiao-zen-me-ban/"/>
-    <id>http://blog.amahv.cn/2020/07/09/solidworks-bao-cun-shi-ti-shi-ti-shi-mo-ren-mo-ban-wu-xiao-zen-me-ban/</id>
-    <published>2020-07-09T03:15:03.000Z</published>
-    <updated>2020-07-09T03:43:50.089Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;保存实体时提示默认模板无效，或者分割特征失败，如下图：&lt;/p&gt;
-&lt;img
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="solidworks" scheme="http://blog.amahv.cn/tags/solidworks/"/>
     
   </entry>
   
