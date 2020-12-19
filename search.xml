@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>【Linux】解决Ubuntu下Qt Creator无法输入中文</title>
+      <link href="/2020/12/20/linux-jie-jue-ubuntu-xia-qt-creator-wu-fa-shu-ru-zhong-wen/"/>
+      <url>/2020/12/20/linux-jie-jue-ubuntu-xia-qt-creator-wu-fa-shu-ru-zhong-wen/</url>
+      
+        <content type="html"><![CDATA[<p><em>引用：<a href="https://blog.csdn.net/zmnqazqaz/article/details/80074578" target="_blank" rel="noopener">https://blog.csdn.net/zmnqazqaz/article/details/80074578</a></em></p><p>环境：<br>ubuntu16.04<br>fcitx的输入法<br>Qt Creator 5.10.1</p><p>首先需要安装</p><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> apt -y <span class="token function">install</span> fcitx-frontend-qt5</code></pre><p>然后将：</p><p>/usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so</p><p>拷贝到：<br>~/Qt/5.10.1/gcc_64/plugins/platforminputcontexts<br>~/Qt/Tools/QtCreator/lib/Qt/plugins/platforminputcontexts</p><p>重启后就可以了。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> QT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> QT </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【Linux】树莓派系统压缩备份</title>
       <link href="/2020/12/17/linux-shu-mei-pai-xi-tong-ya-suo-bei-fen/"/>
       <url>/2020/12/17/linux-shu-mei-pai-xi-tong-ya-suo-bei-fen/</url>
