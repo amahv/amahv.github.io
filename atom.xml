@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-12-19T18:23:50.410Z</updated>
+  <updated>2020-12-20T13:17:55.281Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【群晖】Docker安装frpc客户端</title>
+    <link href="http://blog.amahv.cn/2020/12/20/qun-hui-docker-an-zhuang-frpc-ke-hu-duan/"/>
+    <id>http://blog.amahv.cn/2020/12/20/qun-hui-docker-an-zhuang-frpc-ke-hu-duan/</id>
+    <published>2020-12-20T12:50:53.000Z</published>
+    <updated>2020-12-20T13:17:55.281Z</updated>
+    
+    <summary type="html">
+    
+      ......
+    
+    </summary>
+    
+    
+      <category term="群晖" scheme="http://blog.amahv.cn/categories/%E7%BE%A4%E6%99%96/"/>
+    
+    
+      <category term="群晖" scheme="http://blog.amahv.cn/tags/%E7%BE%A4%E6%99%96/"/>
+    
+  </entry>
   
   <entry>
     <title>【Linux】解决Ubuntu下Qt Creator无法输入中文</title>
@@ -537,23 +558,6 @@
     
     
       <category term="Linux" scheme="http://blog.amahv.cn/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>3t-audio</title>
-    <link href="http://blog.amahv.cn/2020/07/15/3t-audio/"/>
-    <id>http://blog.amahv.cn/2020/07/15/3t-audio/</id>
-    <published>2020-07-14T17:18:07.000Z</published>
-    <updated>2020-07-14T17:34:43.173Z</updated>
-    
-    <summary type="html">
-    
-      ......
-    
-    </summary>
-    
-    
     
   </entry>
   
