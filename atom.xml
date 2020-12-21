@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-12-20T13:17:55.281Z</updated>
+  <updated>2020-12-21T18:02:21.906Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【IPV6】LEDE二级路由配置ipv6</title>
+    <link href="http://blog.amahv.cn/2020/12/22/ipv6-lede-er-ji-lu-you-pei-zhi-ipv6/"/>
+    <id>http://blog.amahv.cn/2020/12/22/ipv6-lede-er-ji-lu-you-pei-zhi-ipv6/</id>
+    <published>2020-12-21T17:55:08.000Z</published>
+    <updated>2020-12-21T18:02:21.906Z</updated>
+    
+    <summary type="html">
+    
+      ......
+    
+    </summary>
+    
+    
+    
+      <category term="IPV6" scheme="http://blog.amahv.cn/tags/IPV6/"/>
+    
+  </entry>
   
   <entry>
     <title>【群晖】Docker安装frpc客户端</title>
@@ -533,31 +552,6 @@
     
     
       <category term="docker" scheme="http://blog.amahv.cn/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux下文件名批量编号</title>
-    <link href="http://blog.amahv.cn/2020/07/17/linux-xia-wen-jian-ming-pi-liang-bian-hao/"/>
-    <id>http://blog.amahv.cn/2020/07/17/linux-xia-wen-jian-ming-pi-liang-bian-hao/</id>
-    <published>2020-07-17T04:07:13.000Z</published>
-    <updated>2020-07-17T04:10:55.783Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;而我们在编写程序时，往往希望读入的这些数据集的文件名是一种更简洁的形式，比如按照索引(index)方式：1.png，2.png，3.png…，那么如何批量重命名一个文件夹下的文件名呢？方法很简单，只需要在Terminal里面进入数据集所在的文件夹，输入以下命令即可：&lt;/p&gt;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Linux" scheme="http://blog.amahv.cn/tags/Linux/"/>
     
   </entry>
   
