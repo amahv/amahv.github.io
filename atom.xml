@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.amahv.cn/"/>
-  <updated>2020-12-26T04:32:43.321Z</updated>
+  <updated>2021-02-16T10:58:02.310Z</updated>
   <id>http://blog.amahv.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【MXE安装】Ubuntu20.04安装MXE</title>
+    <link href="http://blog.amahv.cn/2021/02/16/mxe-an-zhuang-ubuntu20-04-an-zhuang-mxe/"/>
+    <id>http://blog.amahv.cn/2021/02/16/mxe-an-zhuang-ubuntu20-04-an-zhuang-mxe/</id>
+    <published>2021-02-16T08:49:04.000Z</published>
+    <updated>2021-02-16T10:58:02.310Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;为什么写这篇博客&quot;&gt;&lt;a href=&quot;#为什么写这篇博客&quot; class=&quot;headerlink&quot; title=&quot;为什么写这篇博客 ?&quot;&gt;&lt;/a&gt;为什么写这篇博客 ?&lt;/h2&gt;&lt;p&gt;经过2天的捣腾, 网上关于MXE的安装教程是非常少的.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="MXE" scheme="http://blog.amahv.cn/categories/MXE/"/>
+    
+    
+      <category term="QT" scheme="http://blog.amahv.cn/tags/QT/"/>
+    
+      <category term="MXE" scheme="http://blog.amahv.cn/tags/MXE/"/>
+    
+  </entry>
   
   <entry>
     <title>【IPV6】LEDE二级路由配置ipv6</title>
@@ -527,31 +556,6 @@
       <category term="像素钟" scheme="http://blog.amahv.cn/tags/%E5%83%8F%E7%B4%A0%E9%92%9F/"/>
     
       <category term="nginx" scheme="http://blog.amahv.cn/tags/nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何提高Docker的下载速度-----配置国内源</title>
-    <link href="http://blog.amahv.cn/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/"/>
-    <id>http://blog.amahv.cn/2020/07/17/ru-he-ti-gao-docker-de-xia-zai-su-du-pei-zhi-guo-nei-yuan/</id>
-    <published>2020-07-17T14:16:42.000Z</published>
-    <updated>2020-07-17T14:19:18.117Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="docker" scheme="http://blog.amahv.cn/tags/docker/"/>
     
   </entry>
   

@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>【MXE安装】Ubuntu20.04安装MXE</title>
+      <link href="/2021/02/16/mxe-an-zhuang-ubuntu20-04-an-zhuang-mxe/"/>
+      <url>/2021/02/16/mxe-an-zhuang-ubuntu20-04-an-zhuang-mxe/</url>
+      
+        <content type="html"><![CDATA[<h2 id="为什么写这篇博客"><a href="#为什么写这篇博客" class="headerlink" title="为什么写这篇博客 ?"></a>为什么写这篇博客 ?</h2><p>经过2天的捣腾, 网上关于MXE的安装教程是非常少的. 可能大家都更习惯在windows下安装QT creator , 所以用MXE的人并不是非常多, 导致安装教程也比较少. </p><p>我是一个Linux重度使用者, 我觉得Linux下搭建开发环境和安装编译器非常方便. </p><p>网上大部分的安装方式都是基于源代码编译安装, 这种方式非常耗时间, 没有必要. 我们绝大多数使用的Linux开发环境都是Ubuntu, 所以这期教程我就出一个基于Ubuntu的安装教程. 直接使用apt命令来进行安装. </p><h2 id="1-MXE是什么？"><a href="#1-MXE是什么？" class="headerlink" title="1. MXE是什么？"></a>1. MXE是什么？</h2><p>MXE（M cross environment）是一个GNU Makefile，用于编译交叉编译器并交叉编译许多免费库，例如SDL和Qt。因此，它为各种目标平台提供了一个不错的交叉编译环境。</p><ul><li>设计用于 <a href="https://mxe.cc/#requirements" target="_blank" rel="noopener">在任何Unix系统上运行</a></li></ul><h2 id="2-MXE有什么用？"><a href="#2-MXE有什么用？" class="headerlink" title="2. MXE有什么用？"></a>2. MXE有什么用？</h2><p>在Linux系统上交叉编译windows平台的应用程序。</p><h2 id="3-MXE项目地址"><a href="#3-MXE项目地址" class="headerlink" title="3. MXE项目地址"></a>3. MXE项目地址</h2><p>项目主页：<a href="https://github.com/mxe/mxe" target="_blank" rel="noopener">https://github.com/mxe/mxe</a></p><p>项目官网：<a href="https://mxe.cc/" target="_blank" rel="noopener">https://mxe.cc/</a></p><h2 id="4-在Ubuntu20-04上安装MXE"><a href="#4-在Ubuntu20-04上安装MXE" class="headerlink" title="4. 在Ubuntu20.04上安装MXE"></a>4. 在Ubuntu20.04上安装MXE</h2><h3 id="从二进制发行版安装MXE"><a href="#从二进制发行版安装MXE" class="headerlink" title="从二进制发行版安装MXE"></a>从二进制发行版安装MXE</h3><h4 id="1-安装依赖"><a href="#1-安装依赖" class="headerlink" title="1. 安装依赖"></a>1. 安装依赖</h4><pre class=" language-shell"><code class="language-shell">sudo apt update && \sudo apt install \    software-properties-common \    lsb-release</code></pre><h4 id="2-添加和刷新MXE存储库"><a href="#2-添加和刷新MXE存储库" class="headerlink" title="2. 添加和刷新MXE存储库"></a>2. 添加和刷新MXE存储库</h4><pre class=" language-shell"><code class="language-shell">sudo apt-key adv \    --keyserver keyserver.ubuntu.com \    --recv-keys 86B72ED9 && \sudo add-apt-repository \    "deb [arch=amd64] https://pkg.mxe.cc/repos/apt `lsb_release -sc` main" && \sudo apt-get update</code></pre><h4 id="3-安装基本的交叉编译器"><a href="#3-安装基本的交叉编译器" class="headerlink" title="3. 安装基本的交叉编译器"></a>3. 安装基本的交叉编译器</h4><pre class=" language-shell"><code class="language-shell">sudo apt-get install \    mxe-{i686,x86-64}-w64-mingw32.{static,shared}-cc</code></pre><h4 id="4-安装qt5交叉编译器"><a href="#4-安装qt5交叉编译器" class="headerlink" title="4. 安装qt5交叉编译器"></a>4. 安装qt5交叉编译器</h4><pre class=" language-shell"><code class="language-shell">sudo apt-get install \    mxe-{i686,x86-64}-w64-mingw32.{static,shared}-qt5</code></pre><h4 id="5-设置环境变量"><a href="#5-设置环境变量" class="headerlink" title="5. 设置环境变量"></a>5. 设置环境变量</h4><p>安装好之后 , MXE默认放在/usr/lib/目录下 , 如图 : </p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20210216185432.png" alt="MXE安装路径"></p><p>然后就要去设置全局环境变量 : </p><pre class=" language-shell"><code class="language-shell">sudo vim /etc/profile# 在文件末尾新行添加: export PATH=$PATH:/usr/lib/mxe/usr/bin# 保存退出source /etc/profile        # 使环境变量生效</code></pre><h4 id="6-编译工程"><a href="#6-编译工程" class="headerlink" title="6. 编译工程"></a>6. 编译工程</h4><p>MXE安装好之后就可以开始编译工程了</p><pre class=" language-shell"><code class="language-shell">#i686架构：/usr/lib/mxe/usr/i686-w64-mingw32.static/qt5/bin/qmake 项目文件,比如doge.pro#x86-64架构：/usr/lib/mxe/usr/x86-64-w64-mingw32.static/qt5/bin/qmake 项目文件,比如doge.pro#把上面指令中的/usr/lib/mxe/替换成你的mxe安装路径(环境变量配置里加粗的部分)，如果你的IDE是Qt 4.x的话把qt5换成qt# 利用mxe的qmake生成Makefile后就可以执行make命令了make#不管哪个架构最后都要make</code></pre><h4 id="6-找到可执行文件"><a href="#6-找到可执行文件" class="headerlink" title="6. 找到可执行文件"></a>6. 找到可执行文件</h4><p>Make 完成后程序会放在 re­lease 目录下. </p><p><img src="https://cdn.jsdelivr.net/gh/amahv/cdn//picGo/20210216185008.png" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> MXE </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> QT </tag>
+            
+            <tag> MXE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【IPV6】LEDE二级路由配置ipv6</title>
       <link href="/2020/12/22/ipv6-lede-er-ji-lu-you-pei-zhi-ipv6/"/>
       <url>/2020/12/22/ipv6-lede-er-ji-lu-you-pei-zhi-ipv6/</url>
